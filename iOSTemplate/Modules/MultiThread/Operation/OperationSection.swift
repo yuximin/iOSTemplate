@@ -1,0 +1,64 @@
+//
+//  OperationSection.swift
+//  iOSTemplate
+//
+//  Created by apple on 2022/7/8.
+//
+
+import Foundation
+
+enum OperationSection {
+    case primary
+    case downloader
+    
+    var title: String? {
+        switch self {
+        case .primary:
+            return "初级"
+        case .downloader:
+            return "下载器"
+        }
+    }
+    
+    var rows: [OperationRow] {
+        switch self {
+        case .primary:
+            return [.simple, .maxCount, .barrier, .dependency, .customOperation]
+        case .downloader:
+            return [.downloaderStart, .downloaderPause, .downloaderCancel]
+        }
+    }
+}
+
+enum OperationRow {
+    case simple
+    case maxCount
+    case barrier
+    case dependency
+    case customOperation
+    
+    case downloaderStart
+    case downloaderPause
+    case downloaderCancel
+    
+    var title: String {
+        switch self {
+        case .simple:
+            return "简单使用"
+        case .maxCount:
+            return "最大并发数"
+        case .barrier:
+            return "栅栏"
+        case .dependency:
+            return "依赖"
+        case .customOperation:
+            return "自定义 Operation"
+        case .downloaderStart:
+            return "开始下载"
+        case .downloaderPause:
+            return "暂停下载"
+        case .downloaderCancel:
+            return "取消下载"
+        }
+    }
+}
