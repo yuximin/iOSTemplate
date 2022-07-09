@@ -8,6 +8,8 @@
 import UIKit
 
 class DownloadOperation: Operation {
+    
+    var url: URL?
 
     override func main() {
         Logger.info("download begin: \(name ?? "unknown")")

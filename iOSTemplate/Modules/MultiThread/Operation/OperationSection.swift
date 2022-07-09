@@ -7,16 +7,16 @@
 
 import Foundation
 
-enum OperationSection {
+enum OperationSection: CaseIterable {
     case primary
-    case downloader
+    case practical
     
     var title: String? {
         switch self {
         case .primary:
             return "初级"
-        case .downloader:
-            return "下载器"
+        case .practical:
+            return "实操"
         }
     }
     
@@ -24,8 +24,8 @@ enum OperationSection {
         switch self {
         case .primary:
             return [.simple, .maxCount, .barrier, .dependency, .customOperation]
-        case .downloader:
-            return [.downloaderStart, .downloaderPause, .downloaderCancel]
+        case .practical:
+            return [.downloader]
         }
     }
 }
@@ -37,9 +37,7 @@ enum OperationRow {
     case dependency
     case customOperation
     
-    case downloaderStart
-    case downloaderPause
-    case downloaderCancel
+    case downloader
     
     var title: String {
         switch self {
@@ -53,12 +51,8 @@ enum OperationRow {
             return "依赖"
         case .customOperation:
             return "自定义 Operation"
-        case .downloaderStart:
-            return "开始下载"
-        case .downloaderPause:
-            return "暂停下载"
-        case .downloaderCancel:
-            return "取消下载"
+        case .downloader:
+            return "下载器"
         }
     }
 }

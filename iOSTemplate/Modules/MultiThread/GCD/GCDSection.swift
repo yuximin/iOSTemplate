@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GCDSection {
+enum GCDSection: CaseIterable {
     case primary
     case advanced
     

@@ -7,11 +7,7 @@
 
 import UIKit
 
-class OperationViewController: UITableViewController, YNavigationBarStyleProtocol {
-    
-    var isNavigationBarHidden: Bool {
-        false
-    }
+class OperationViewController: UITableViewController {
     
     let viewModel = OperationViewModel()
 
@@ -45,12 +41,8 @@ extension OperationViewController {
             dependency()
         case .customOperation:
             customOperation()
-        case .downloaderStart:
-            downloaderStart()
-        case .downloaderPause:
-            downloaderPause()
-        case .downloaderCancel:
-            downloadCancel()
+        case .downloader:
+            downloader()
         }
     }
 }
@@ -304,22 +296,11 @@ extension OperationViewController {
     }
 }
 
-// MARK: - 下载器
+// MARK: - 实操
 extension OperationViewController {
-    /// 开始下载
-    private func downloaderStart() {
-        let downloadOperation = DownloadOperation()
-        downloadOperation.name = "下载任务1"
-        Downloader.shared.addDownloadOperation(downloadOperation)
-    }
-    
-    /// 暂停下载
-    private func downloaderPause() {
-        
-    }
-    
-    /// 取消下载
-    private func downloadCancel() {
-        Downloader.shared.cancelAllDownloadOperations()
+    /// 下载器
+    private func downloader() {
+        let viewController = DownloaderViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

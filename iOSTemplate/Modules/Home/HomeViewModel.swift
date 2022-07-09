@@ -8,5 +8,5 @@
 import Foundation
 
 struct HomeViewModel {
-    let sections: [HomeSection] = [.multiThread]
+    let sections: [HomeSection] = HomeSection.allCases
 }

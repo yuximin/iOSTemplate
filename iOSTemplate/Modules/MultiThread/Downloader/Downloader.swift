@@ -14,6 +14,7 @@ class Downloader {
     private let maxConcurrentOperationCount = 5
     
     let downloadOperationQueue = OperationQueue()
+    let session = URLSession()
     
     // MARK: - init
     

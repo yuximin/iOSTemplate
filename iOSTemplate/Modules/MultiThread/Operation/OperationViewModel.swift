@@ -8,5 +8,5 @@
 import Foundation
 
 struct OperationViewModel {
-    let sections: [OperationSection] = [.primary, .downloader]
+    let sections: [OperationSection] = OperationSection.allCases
 }

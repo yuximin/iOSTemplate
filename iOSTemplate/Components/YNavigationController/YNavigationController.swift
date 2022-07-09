@@ -40,6 +40,8 @@ extension YNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let viewController = viewController as? UIViewController & YNavigationBarStyleProtocol {
             viewController.navigationController?.navigationBar.isHidden = viewController.isNavigationBarHidden
+        } else {
+            viewController.navigationController?.navigationBar.isHidden = false
         }
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 struct GCDViewModel {
-    let sections: [GCDSection] = [.primary, .advanced]
+    let sections: [GCDSection] = GCDSection.allCases
 }
