@@ -9,15 +9,15 @@ import Foundation
 
 public class Logger {
     
-    public static func info(_ message: String) {
-        print("ℹ️ \(message)")
+    public static func info(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+        print("ℹ️", items, separator: separator, terminator: terminator)
     }
     
-    public static func warn(_ message: String) {
-        print("⚠️ \(message)")
+    public static func warn(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+        print("⚠️", items, separator: separator, terminator: terminator)
     }
     
-    public static func error(_ message: String) {
-        print("❌ \(message)")
+    public static func error(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+        print("❌", items, separator: separator, terminator: terminator)
     }
 }

@@ -30,7 +30,7 @@ extension SessionViewController {
         let rowItem = sectionItem.rows[indexPath.row]
         switch (sectionItem.title, rowItem.title) {
         case ("初级", "simple"):
-            Logger.info("simple")
+            viewModel.requestJson()
         default:
             break
         }

@@ -10,6 +10,7 @@
 		033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC807287AA94C00AA8F29 /* ListViewController.swift */; };
 		033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC809287AA9B300AA8F29 /* ListSection.swift */; };
 		033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */; };
+		033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC80E287AD4DD00AA8F29 /* UserInfoModel.swift */; };
 		039C8BDF28000684002624EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C8BDE28000684002624EB /* AppDelegate.swift */; };
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
@@ -33,6 +34,7 @@
 		033DC807287AA94C00AA8F29 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		033DC809287AA9B300AA8F29 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
 		033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		033DC80E287AD4DD00AA8F29 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		039C8BDB28000684002624EB /* iOSTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039C8BDE28000684002624EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039C8BE728000685002624EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 				033DC809287AA9B300AA8F29 /* ListSection.swift */,
 			);
 			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		033DC80D287AD4CA00AA8F29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				033DC80E287AD4DD00AA8F29 /* UserInfoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		039C8BD228000684002624EB = {
@@ -134,6 +144,7 @@
 		1871E52728792EC7007C518F /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				033DC80D287AD4CA00AA8F29 /* Model */,
 				1871E52828792FB2007C518F /* SessionViewController.swift */,
 				033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */,
 			);
@@ -372,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
