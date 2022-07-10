@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct GCDViewModel {
-    let sections: [GCDSection] = GCDSection.allCases
-}
+struct GCDViewModel {}

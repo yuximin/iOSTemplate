@@ -8,52 +8,50 @@
 import UIKit
 import SnapKit
 
-class HomeViewController: UITableViewController, YNavigationBarStyleProtocol {
+class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
     
     var isNavigationBarHidden: Bool {
         true
     }
-    
-    let viewModel = HomeViewModel()
 
     // MARK: - life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        sections = [
+            ListSection(title: "多线程", rows: [
+                ListRow(title: "GCD"),
+                ListRow(title: "Operation")
+            ]),
+            ListSection(title: "网络编程", rows: [
+                ListRow(title: "UISession")
+            ])
+        ]
     }
 
 }
 
 // MARK: - UITableViewDelegate
 extension HomeViewController {
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        viewModel.sections[section].title
-    }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rowItem = viewModel.sections[indexPath.section].rows[indexPath.row]
-        let viewController = rowItem.viewController
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-}
-
-// MARK: - UITableViewDataSource
-extension HomeViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        viewModel.sections.count
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.sections[section].rows.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        let rowItem = viewModel.sections[indexPath.section].rows[indexPath.row]
-        cell.textLabel?.text = rowItem.title
-        return cell
+        let viewController: UIViewController?
+        
+        let sectionItem = sections[indexPath.section]
+        let rowItem = sectionItem.rows[indexPath.row]
+        switch (sectionItem.title, rowItem.title) {
+        case ("多线程", "GCD"):
+            viewController = GCDViewController()
+        case ("多线程", "Operation"):
+            viewController = OperationViewController()
+        case ("网络编程", "UISession"):
+            viewController = SessionViewController()
+        default:
+            viewController = nil
+        }
+        
+        if let viewController = viewController {
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }

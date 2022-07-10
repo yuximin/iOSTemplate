@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct OperationViewModel {
-    let sections: [OperationSection] = OperationSection.allCases
-}
+struct OperationViewModel {}

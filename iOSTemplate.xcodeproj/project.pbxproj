@@ -7,23 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC807287AA94C00AA8F29 /* ListViewController.swift */; };
+		033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC809287AA9B300AA8F29 /* ListSection.swift */; };
+		033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */; };
 		039C8BDF28000684002624EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C8BDE28000684002624EB /* AppDelegate.swift */; };
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
-		185D81872878118700B9A838 /* GCDSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81862878118700B9A838 /* GCDSection.swift */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
-		1871E52B287932B6007C518F /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52A287932B6007C518F /* SessionViewModel.swift */; };
-		1871E52D287932D5007C518F /* SessionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52C287932D5007C518F /* SessionSection.swift */; };
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
-		18B081782878226B00D3F3E0 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B081772878226B00D3F3E0 /* HomeSection.swift */; };
-		18B0817A2878227800D3F3E0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B081792878227800D3F3E0 /* HomeViewModel.swift */; };
 		18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817C287822EB00D3F3E0 /* OperationViewController.swift */; };
 		18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817E287823A900D3F3E0 /* OperationViewModel.swift */; };
-		18B08181287823B800D3F3E0 /* OperationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08180287823B800D3F3E0 /* OperationSection.swift */; };
 		18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08182287856E100D3F3E0 /* SimpleOperation.swift */; };
 		18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818528785DAB00D3F3E0 /* Downloader.swift */; };
 		18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */; };
@@ -33,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033DC807287AA94C00AA8F29 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		033DC809287AA9B300AA8F29 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
 		039C8BDB28000684002624EB /* iOSTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039C8BDE28000684002624EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039C8BE728000685002624EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,18 +40,12 @@
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
-		185D81862878118700B9A838 /* GCDSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDSection.swift; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
-		1871E52A287932B6007C518F /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
-		1871E52C287932D5007C518F /* SessionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSection.swift; sourceTree = "<group>"; };
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		18B081772878226B00D3F3E0 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
-		18B081792878227800D3F3E0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		18B0817C287822EB00D3F3E0 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		18B0817E287823A900D3F3E0 /* OperationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewModel.swift; sourceTree = "<group>"; };
-		18B08180287823B800D3F3E0 /* OperationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationSection.swift; sourceTree = "<group>"; };
 		18B08182287856E100D3F3E0 /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
 		18B0818528785DAB00D3F3E0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
@@ -74,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033DC806287AA92600AA8F29 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				033DC807287AA94C00AA8F29 /* ListViewController.swift */,
+				033DC809287AA9B300AA8F29 /* ListSection.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		039C8BD228000684002624EB = {
 			isa = PBXGroup;
 			children = (
@@ -124,24 +127,15 @@
 			isa = PBXGroup;
 			children = (
 				1871E52728792EC7007C518F /* Session */,
-				1871E52628792E9B007C518F /* Request */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		1871E52628792E9B007C518F /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		1871E52728792EC7007C518F /* Session */ = {
 			isa = PBXGroup;
 			children = (
 				1871E52828792FB2007C518F /* SessionViewController.swift */,
-				1871E52A287932B6007C518F /* SessionViewModel.swift */,
-				1871E52C287932D5007C518F /* SessionSection.swift */,
+				033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -149,9 +143,7 @@
 		188F57F42875B924006DD570 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				18B081772878226B00D3F3E0 /* HomeSection.swift */,
 				188F57F52875B96C006DD570 /* HomeViewController.swift */,
-				18B081792878227800D3F3E0 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -159,7 +151,6 @@
 		18B0817B287822D500D3F3E0 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
-				18B08180287823B800D3F3E0 /* OperationSection.swift */,
 				18B0817C287822EB00D3F3E0 /* OperationViewController.swift */,
 				18B0817E287823A900D3F3E0 /* OperationViewModel.swift */,
 				18B08182287856E100D3F3E0 /* SimpleOperation.swift */,
@@ -190,7 +181,6 @@
 		18F802192876CBA70070A3DA /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				185D81862878118700B9A838 /* GCDSection.swift */,
 				18F8021A2876CBBE0070A3DA /* GCDViewController.swift */,
 				185D81842878112E00B9A838 /* GCDViewModel.swift */,
 			);
@@ -229,6 +219,7 @@
 		18F802202876CDFB0070A3DA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				033DC806287AA92600AA8F29 /* ListViewController */,
 				185D817D28770B7200B9A838 /* YNavigationController */,
 			);
 			path = Components;
@@ -381,26 +372,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185D81872878118700B9A838 /* GCDSection.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
-				18B0817A2878227800D3F3E0 /* HomeViewModel.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
+				033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */,
 				185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */,
+				033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */,
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
-				1871E52D287932D5007C518F /* SessionSection.swift in Sources */,
-				18B081782878226B00D3F3E0 /* HomeSection.swift in Sources */,
-				18B08181287823B800D3F3E0 /* OperationSection.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
-				1871E52B287932B6007C518F /* SessionViewModel.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
+				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,7 @@
 
 import UIKit
 
-class GCDViewController: UITableViewController, YNavigationBarStyleProtocol {
-    
-    var isNavigationBarHidden: Bool {
-        false
-    }
+class GCDViewController: ListViewController {
     
     let viewModel = GCDViewModel()
     
@@ -26,52 +22,45 @@ class GCDViewController: UITableViewController, YNavigationBarStyleProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        sections = [
+            ListSection(title: "初级", rows: [
+                ListRow(title: "同步串行队列"),
+                ListRow(title: "同步并发队列"),
+                ListRow(title: "异步串行队列"),
+                ListRow(title: "异步并发队列")
+                
+            ]),
+            ListSection(title: "进阶", rows: [
+                ListRow(title: "DispatchGroup"),
+                ListRow(title: "DispatchWorkItem.barrier")
+            ])
+        ]
     }
     
 }
 
 // MARK: - UITableViewDelegate
 extension GCDViewController {
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        viewModel.sections[section].title
-    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rowItem = viewModel.sections[indexPath.section].rows[indexPath.row]
-        switch rowItem {
-        case .syncSerialQueue:
+        let sectionItem = sections[indexPath.section]
+        let rowItem = sectionItem.rows[indexPath.row]
+        switch (sectionItem.title, rowItem.title) {
+        case ("初级", "同步串行队列"):
             syncSerialQueue()
-        case .syncConcurrentQueue:
+        case ("初级", "同步并发队列"):
             syncConcurrentQueue()
-        case .asyncSerialQueue:
+        case ("初级", "异步串行队列"):
             asyncSerialQueue()
-        case .asyncConcurrentQueue:
+        case ("初级", "异步并发队列"):
             asyncConcurrentQueue()
-        case .dispatchGroup:
+        case ("进阶", "DispatchGroup"):
             dispatchGroup()
-        case .barrier:
+        case ("进阶", "DispatchWorkItem.barrier"):
             barrier()
+        default:
+            break
         }
-    }
-}
-
-// MARK: - UITableViewDataSource
-extension GCDViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        viewModel.sections.count
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.sections[section].rows.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        let rowItem = viewModel.sections[indexPath.section].rows[indexPath.row]
-        cell.textLabel?.text = rowItem.title
-        return cell
     }
 }
 

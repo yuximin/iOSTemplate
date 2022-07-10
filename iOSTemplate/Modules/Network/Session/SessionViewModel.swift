@@ -8,5 +8,5 @@
 import Foundation
 
 struct SessionViewModel {
-    let sections: [SessionSection] = SessionSection.allCases
+    
 }
