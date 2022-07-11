@@ -16,7 +16,9 @@ class SessionViewController: ListViewController {
         
         sections = [
             ListSection(title: "初级", rows: [
-                ListRow(title: "simple")
+                ListRow(title: "dataTask"),
+                ListRow(title: "dataTaskWithRequest"),
+                ListRow(title: "Custom Session")
             ])
         ]
     }
@@ -29,8 +31,12 @@ extension SessionViewController {
         let sectionItem = sections[indexPath.section]
         let rowItem = sectionItem.rows[indexPath.row]
         switch (sectionItem.title, rowItem.title) {
-        case ("初级", "simple"):
-            viewModel.requestJson()
+        case ("初级", "dataTask"):
+            viewModel.loadJson()
+        case ("初级", "dataTaskWithRequest"):
+            viewModel.loadJsonWithRequest()
+        case ("初级", "Custom Session"):
+            viewModel.loadJsonWithCustomSession()
         default:
             break
         }
