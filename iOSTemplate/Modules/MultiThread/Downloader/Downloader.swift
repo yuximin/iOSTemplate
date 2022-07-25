@@ -7,23 +7,28 @@
 
 import Foundation
 
-class Downloader {
+class Downloader: NSObject {
     
     static let shared = Downloader()
     
     private let maxConcurrentOperationCount = 5
     
-    let downloadOperationQueue = OperationQueue()
-    let session = URLSession()
+    private lazy var downloadOperationQueue: OperationQueue = {
+        let operationQueue = OperationQueue()
+        operationQueue.maxConcurrentOperationCount = maxConcurrentOperationCount
+        return operationQueue
+    }()
+    
+    private lazy var session: URLSession = {
+        let configuration = URLSessionConfiguration.default
+        let session = URLSession(configuration: configuration, delegate: self, delegateQueue: downloadOperationQueue)
+        return session
+    }()
     
     // MARK: - init
     
-    init() {
-        setupConfig()
-    }
-    
-    private func setupConfig() {
-        downloadOperationQueue.maxConcurrentOperationCount = maxConcurrentOperationCount
+    override init() {
+        super.init()
     }
     
     // MARK: - public
@@ -36,4 +41,16 @@ class Downloader {
         downloadOperationQueue.cancelAllOperations()
     }
     
+}
+
+// MARK: - URLSessionDelegate
+extension Downloader: URLSessionDelegate {
+    
+}
+
+// MARK: - URLSessionDownloadTask
+extension Downloader: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        
+    }
 }

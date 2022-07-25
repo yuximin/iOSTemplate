@@ -19,6 +19,9 @@ class SessionViewController: ListViewController {
                 ListRow(title: "dataTask"),
                 ListRow(title: "dataTaskWithRequest"),
                 ListRow(title: "Custom Session")
+            ]),
+            ListSection(title: "Tasks", rows: [
+                ListRow(title: "downloadTask")
             ])
         ]
     }
@@ -37,6 +40,8 @@ extension SessionViewController {
             viewModel.loadJsonWithRequest()
         case ("初级", "Custom Session"):
             viewModel.loadJsonWithCustomSession()
+        case ("Tasks", "downloadTask"):
+            viewModel.downloadTask()
         default:
             break
         }

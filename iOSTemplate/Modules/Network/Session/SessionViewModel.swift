@@ -12,6 +12,7 @@ class SessionViewModel: NSObject {
     let delegateQueue = OperationQueue()
     
     let jsonUrl: String = "https://raw.githubusercontent.com/yuximin/StaticResources/master/Json/userInfo.json"
+    let mp4Url: String = "https://github.com/yuximin/StaticResources/raw/master/Mp4/HotAirBalloon.mp4"
     
     func loadJson() {
         guard let url = URL(string: jsonUrl) else { return }
@@ -39,6 +40,18 @@ class SessionViewModel: NSObject {
         let session = URLSession(configuration: configuration, delegate: self, delegateQueue: delegateQueue)
         let task = session.dataTask(with: url)
         task.resume()
+    }
+    
+    func downloadTask() {
+        guard let url = URL(string: mp4Url) else { return }
+        
+        Logger.info("begin")
+        let configuration = URLSessionConfiguration.default
+        let session = URLSession(configuration: configuration, delegate: self, delegateQueue: delegateQueue)
+        let task = session.downloadTask(with: url)
+        Logger.info("resume")
+        task.resume()
+        Logger.info("end")
     }
     
 }
@@ -91,5 +104,27 @@ extension SessionViewModel: URLSessionDataDelegate {
     
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         handleData(data)
+    }
+}
+
+// MARK: - URLSessionDownloadDelegate
+extension SessionViewModel: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        Logger.info("location:", location)
+        let fileManager = FileManager.default
+        var dstURL = location.deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Library/Caches", isDirectory: true).appendingPathComponent("a.mp4")
+        do {
+            try fileManager.moveItem(at: location, to: dstURL)
+        } catch {
+            Logger.error(error)
+        }
+    }
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        Logger.info("bytesWritten:", bytesWritten, "totalBytesWritten:", totalBytesWritten, "totalBytesExpectedToWrite:", totalBytesExpectedToWrite)
+    }
+    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didResumeAtOffset fileOffset: Int64, expectedTotalBytes: Int64) {
+        Logger.info("fileOffset:", fileOffset, "expectedTotalBytes:", expectedTotalBytes)
     }
 }
