@@ -20,6 +20,9 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
         super.viewDidLoad()
         
         sections = [
+            ListSection(title: "UIKit", rows: [
+                ListRow(title: "UILabel")
+            ]),
             ListSection(title: "多线程", rows: [
                 ListRow(title: "GCD"),
                 ListRow(title: "Operation")
@@ -40,6 +43,8 @@ extension HomeViewController {
         let sectionItem = sections[indexPath.section]
         let rowItem = sectionItem.rows[indexPath.row]
         switch (sectionItem.title, rowItem.title) {
+        case ("UIKit", "UILabel"):
+            viewController = UILabelDemoViewController()
         case ("多线程", "GCD"):
             viewController = GCDViewController()
         case ("多线程", "Operation"):
