@@ -21,7 +21,9 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
         
         sections = [
             ListSection(title: "UIKit", rows: [
-                ListRow(title: "UILabel")
+                ListRow(title: "UIImage"),
+                ListRow(title: "UILabel"),
+                ListRow(title: "UICollectionView"),
             ]),
             ListSection(title: "多线程", rows: [
                 ListRow(title: "GCD"),
@@ -43,8 +45,12 @@ extension HomeViewController {
         let sectionItem = sections[indexPath.section]
         let rowItem = sectionItem.rows[indexPath.row]
         switch (sectionItem.title, rowItem.title) {
+        case ("UIKit", "UIImage"):
+            viewController = UIImageDemoViewController()
         case ("UIKit", "UILabel"):
             viewController = UILabelDemoViewController()
+        case ("UIKit", "UICollectionView"):
+            viewController = CollectionViewDemoController()
         case ("多线程", "GCD"):
             viewController = GCDViewController()
         case ("多线程", "Operation"):

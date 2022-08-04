@@ -19,6 +19,14 @@
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
+		188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */; };
+		188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */; };
+		188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494D12897EE6400E4C464 /* NormalCollectionViewCell.swift */; };
+		188494D52897EEF800E4C464 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494D42897EEF800E4C464 /* String+Extension.swift */; };
+		188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494E7289BC67900E4C464 /* UIImage+Extension.swift */; };
+		188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */; };
+		188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */; };
+		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
 		18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18932032288E62D9007E5872 /* UILabelDemoViewController.swift */; };
 		18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817C287822EB00D3F3E0 /* OperationViewController.swift */; };
@@ -46,6 +54,14 @@
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoController.swift; sourceTree = "<group>"; };
+		188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewStyle1ViewController.swift; sourceTree = "<group>"; };
+		188494D12897EE6400E4C464 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
+		188494D42897EEF800E4C464 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		188494E7289BC67900E4C464 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationViewController.swift; sourceTree = "<group>"; };
+		188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageDemoViewController.swift; sourceTree = "<group>"; };
+		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18932032288E62D9007E5872 /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
 		18B0817C287822EB00D3F3E0 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +126,7 @@
 		039C8BDD28000684002624EB /* iOSTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				188494D32897EEE000E4C464 /* Extension */,
 				18F8021D2876CD2D0070A3DA /* AppDelegate */,
 				18F802202876CDFB0070A3DA /* Components */,
 				18F8021F2876CDC20070A3DA /* Modules */,
@@ -154,6 +171,59 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
+		188494CA2897EC3700E4C464 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				188494D02897EE4100E4C464 /* View */,
+				188494CD2897ED1400E4C464 /* Style1 */,
+				188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		188494CD2897ED1400E4C464 /* Style1 */ = {
+			isa = PBXGroup;
+			children = (
+				188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */,
+			);
+			path = Style1;
+			sourceTree = "<group>";
+		};
+		188494D02897EE4100E4C464 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188494D12897EE6400E4C464 /* NormalCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188494D32897EEE000E4C464 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				188494D42897EEF800E4C464 /* String+Extension.swift */,
+				188494E7289BC67900E4C464 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		188494E9289BCF8200E4C464 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				188494EA289BCF8F00E4C464 /* Orientation */,
+				188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		188494EA289BCF8F00E4C464 /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */,
+				188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
 		188F57F42875B924006DD570 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +235,8 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				188494E9289BCF8200E4C464 /* UIImage */,
+				188494CA2897EC3700E4C464 /* UICollectionView */,
 				18932031288E62BD007E5872 /* UILabel */,
 			);
 			path = UIKit;
@@ -403,7 +475,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
+				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
+				188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
@@ -412,13 +486,19 @@
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
 				033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */,
+				188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */,
+				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
+				188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */,
 				185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */,
+				188494D52897EEF800E4C464 /* String+Extension.swift in Sources */,
 				033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */,
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
+				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
+				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
 			);

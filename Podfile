@@ -9,4 +9,5 @@ target 'iOSTemplate' do
 
   # Pods for iOSTemplate
   pod 'SnapKit', '~> 5.6.0'
+  pod 'FSPagerView'
 end
