@@ -24,6 +24,7 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "UIImage"),
                 ListRow(title: "UILabel"),
                 ListRow(title: "UICollectionView"),
+                ListRow(title: "LayoutSubviews")
             ]),
             ListSection(title: "多线程", rows: [
                 ListRow(title: "GCD"),
@@ -51,6 +52,8 @@ extension HomeViewController {
             viewController = UILabelDemoViewController()
         case ("UIKit", "UICollectionView"):
             viewController = CollectionViewDemoController()
+        case ("UIKit", "LayoutSubviews"):
+            viewController = LayoutSubviewsDemoViewController()
         case ("多线程", "GCD"):
             viewController = GCDViewController()
         case ("多线程", "Operation"):
