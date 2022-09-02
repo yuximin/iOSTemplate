@@ -14,6 +14,7 @@
 		039C8BDF28000684002624EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C8BDE28000684002624EB /* AppDelegate.swift */; };
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
+		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
@@ -34,6 +35,9 @@
 		18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08182287856E100D3F3E0 /* SimpleOperation.swift */; };
 		18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818528785DAB00D3F3E0 /* Downloader.swift */; };
 		18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */; };
+		18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */; };
+		18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */; };
+		18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC228AF3F4300EC0473 /* PushViewController.swift */; };
 		18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */; };
 		18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */; };
 		18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */; };
@@ -52,6 +56,7 @@
 		039C8BE728000685002624EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039C8BEA28000685002624EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +77,9 @@
 		18B08182287856E100D3F3E0 /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
 		18B0818528785DAB00D3F3E0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAndPushViewController.swift; sourceTree = "<group>"; };
+		18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		18CBBFC228AF3F4300EC0473 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoViewController.swift; sourceTree = "<group>"; };
 		18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoView.swift; sourceTree = "<group>"; };
 		18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoSubViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +148,14 @@
 				18F802262876FEDC0070A3DA /* Tools */,
 			);
 			path = iOSTemplate;
+			sourceTree = "<group>";
+		};
+		181777A928BDEA060041DA6D /* Tiercel */ = {
+			isa = PBXGroup;
+			children = (
+				181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */,
+			);
+			path = Tiercel;
 			sourceTree = "<group>";
 		};
 		185D817D28770B7200B9A838 /* YNavigationController */ = {
@@ -241,6 +257,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18CBBFBD28AF3EE700EC0473 /* PresentAndPush */,
 				18D8859E28A74EA10072DD36 /* LayoutSubviews */,
 				188494E9289BCF8200E4C464 /* UIImage */,
 				188494CA2897EC3700E4C464 /* UICollectionView */,
@@ -275,6 +292,16 @@
 				1871E52028792152007C518F /* Demo */,
 			);
 			path = Downloader;
+			sourceTree = "<group>";
+		};
+		18CBBFBD28AF3EE700EC0473 /* PresentAndPush */ = {
+			isa = PBXGroup;
+			children = (
+				18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */,
+				18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */,
+				18CBBFC228AF3F4300EC0473 /* PushViewController.swift */,
+			);
+			path = PresentAndPush;
 			sourceTree = "<group>";
 		};
 		18D8859E28A74EA10072DD36 /* LayoutSubviews */ = {
@@ -335,6 +362,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				181777A928BDEA060041DA6D /* Tiercel */,
 				18932030288E6248007E5872 /* UIKit */,
 				188F57F42875B924006DD570 /* Home */,
 				18F802182876C5630070A3DA /* MultiThread */,
@@ -501,12 +529,14 @@
 			files = (
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
+				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
 				188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
+				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
@@ -521,8 +551,10 @@
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
+				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
+				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,

@@ -1,20 +1,24 @@
 PODS:
   - FSPagerView (0.8.3)
   - SnapKit (5.6.0)
+  - Tiercel (3.2.5)
 
 DEPENDENCIES:
   - FSPagerView
   - SnapKit (~> 5.6.0)
+  - Tiercel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FSPagerView
     - SnapKit
+    - Tiercel
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: 1ec0171d0aad40b6b00a868c85a392a023512014
+PODFILE CHECKSUM: d0c2c98320cffa5597b83ff2036f3e9cb8b454ad
 
 COCOAPODS: 1.11.3
