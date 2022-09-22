@@ -1,24 +1,28 @@
 PODS:
   - FSPagerView (0.8.3)
+  - libpag (4.0.5.66)
   - SnapKit (5.6.0)
   - Tiercel (3.2.5)
 
 DEPENDENCIES:
   - FSPagerView
+  - libpag
   - SnapKit (~> 5.6.0)
   - Tiercel
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FSPagerView
+    - libpag
     - SnapKit
     - Tiercel
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: d0c2c98320cffa5597b83ff2036f3e9cb8b454ad
+PODFILE CHECKSUM: f27eba63c5c8a22a26a3617867d9241bec2f850b
 
 COCOAPODS: 1.11.3

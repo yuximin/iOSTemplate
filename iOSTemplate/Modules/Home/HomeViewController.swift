@@ -24,6 +24,7 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "UIImage"),
                 ListRow(title: "UILabel"),
                 ListRow(title: "UICollectionView"),
+                ListRow(title: "UIStackView"),
                 ListRow(title: "LayoutSubviews"),
                 ListRow(title: "PresentAndPush")
             ]),
@@ -35,7 +36,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "UISession")
             ]),
             ListSection(title: "三方库", rows: [
-                ListRow(title: "Tiercel - swift下载器")
+                ListRow(title: "Tiercel - swift下载器"),
+                ListRow(title: "Pag - 动效播放")
             ])
         ]
     }
@@ -56,6 +58,8 @@ extension HomeViewController {
             viewController = UILabelDemoViewController()
         case ("UIKit", "UICollectionView"):
             viewController = CollectionViewDemoController()
+        case ("UIKit", "UIStackView"):
+            viewController = UIStackViewDemoViewController()
         case ("UIKit", "LayoutSubviews"):
             viewController = LayoutSubviewsDemoViewController()
         case ("UIKit", "PresentAndPush"):
@@ -68,6 +72,8 @@ extension HomeViewController {
             viewController = SessionViewController()
         case ("三方库", "Tiercel - swift下载器"):
             viewController = TiercelDemoViewController()
+        case ("三方库", "Pag - 动效播放"):
+            viewController = PagDemoViewController()
         default:
             viewController = nil
         }

@@ -11,4 +11,5 @@ target 'iOSTemplate' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'FSPagerView'
   pod 'Tiercel'
+  pod 'libpag'
 end
