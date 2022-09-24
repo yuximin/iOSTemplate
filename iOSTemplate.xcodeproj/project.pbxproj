@@ -40,6 +40,8 @@
 		18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */; };
 		18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7281E28DDE566003982C7 /* RongCloudViewController.swift */; };
 		18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282128DDE700003982C7 /* RongCloudViewModel.swift */; };
+		18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282528DEEE02003982C7 /* AnimationDemoViewController.swift */; };
+		18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282728DEEEBB003982C7 /* AnimationDemo1ViewController.swift */; };
 		18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */; };
 		18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */; };
 		18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC228AF3F4300EC0473 /* PushViewController.swift */; };
@@ -89,6 +91,8 @@
 		18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
 		18C7281E28DDE566003982C7 /* RongCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RongCloudViewController.swift; sourceTree = "<group>"; };
 		18C7282128DDE700003982C7 /* RongCloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RongCloudViewModel.swift; sourceTree = "<group>"; };
+		18C7282528DEEE02003982C7 /* AnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemoViewController.swift; sourceTree = "<group>"; };
+		18C7282728DEEEBB003982C7 /* AnimationDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemo1ViewController.swift; sourceTree = "<group>"; };
 		18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAndPushViewController.swift; sourceTree = "<group>"; };
 		18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		18CBBFC228AF3F4300EC0473 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18C7282328DEEDE0003982C7 /* Animation */,
 				18CC2E5B28DC9F3100647E1F /* UIStackView */,
 				18CBBFBD28AF3EE700EC0473 /* PresentAndPush */,
 				18D8859E28A74EA10072DD36 /* LayoutSubviews */,
@@ -349,6 +354,23 @@
 				18C7282128DDE700003982C7 /* RongCloudViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18C7282328DEEDE0003982C7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				18C7282428DEEDE5003982C7 /* Demo1 */,
+				18C7282528DEEE02003982C7 /* AnimationDemoViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		18C7282428DEEDE5003982C7 /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				18C7282728DEEEBB003982C7 /* AnimationDemo1ViewController.swift */,
+			);
+			path = Demo1;
 			sourceTree = "<group>";
 		};
 		18CBBFBD28AF3EE700EC0473 /* PresentAndPush */ = {
@@ -635,9 +657,11 @@
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
+				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
 				033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */,
+				18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */,
 				188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */,
 				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
 				18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */,

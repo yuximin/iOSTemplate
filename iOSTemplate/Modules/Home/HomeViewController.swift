@@ -26,7 +26,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "UICollectionView"),
                 ListRow(title: "UIStackView"),
                 ListRow(title: "LayoutSubviews"),
-                ListRow(title: "PresentAndPush")
+                ListRow(title: "PresentAndPush"),
+                ListRow(title: "Animation")
             ]),
             ListSection(title: "多线程", rows: [
                 ListRow(title: "GCD"),
@@ -65,6 +66,8 @@ extension HomeViewController {
             viewController = LayoutSubviewsDemoViewController()
         case ("UIKit", "PresentAndPush"):
             viewController = PresentAndPushViewController()
+        case ("UIKit", "Animation"):
+            viewController = AnimationDemoViewController()
         case ("多线程", "GCD"):
             viewController = GCDViewController()
         case ("多线程", "Operation"):
