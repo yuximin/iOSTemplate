@@ -38,6 +38,8 @@
 		18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08182287856E100D3F3E0 /* SimpleOperation.swift */; };
 		18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818528785DAB00D3F3E0 /* Downloader.swift */; };
 		18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */; };
+		18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7281E28DDE566003982C7 /* RongCloudViewController.swift */; };
+		18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282128DDE700003982C7 /* RongCloudViewModel.swift */; };
 		18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */; };
 		18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */; };
 		18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC228AF3F4300EC0473 /* PushViewController.swift */; };
@@ -85,6 +87,8 @@
 		18B08182287856E100D3F3E0 /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
 		18B0818528785DAB00D3F3E0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		18B0818728785DEA00D3F3E0 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		18C7281E28DDE566003982C7 /* RongCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RongCloudViewController.swift; sourceTree = "<group>"; };
+		18C7282128DDE700003982C7 /* RongCloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RongCloudViewModel.swift; sourceTree = "<group>"; };
 		18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAndPushViewController.swift; sourceTree = "<group>"; };
 		18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		18CBBFC228AF3F4300EC0473 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +326,31 @@
 			path = Downloader;
 			sourceTree = "<group>";
 		};
+		18C7281C28DDE53C003982C7 /* RongCloud */ = {
+			isa = PBXGroup;
+			children = (
+				18C7282028DDE6DD003982C7 /* ViewModel */,
+				18C7281D28DDE54B003982C7 /* ViewControllers */,
+			);
+			path = RongCloud;
+			sourceTree = "<group>";
+		};
+		18C7281D28DDE54B003982C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18C7281E28DDE566003982C7 /* RongCloudViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18C7282028DDE6DD003982C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18C7282128DDE700003982C7 /* RongCloudViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		18CBBFBD28AF3EE700EC0473 /* PresentAndPush */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +437,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18C7281C28DDE53C003982C7 /* RongCloud */,
 				18AABA3828C1F6F500AAAFCC /* Pag */,
 				181777A928BDEA060041DA6D /* Tiercel */,
 				18932030288E6248007E5872 /* UIKit */,
@@ -472,6 +502,7 @@
 				039C8BD828000684002624EB /* Frameworks */,
 				039C8BD928000684002624EB /* Resources */,
 				257D00CA8392006190D3E1D4 /* [CP] Embed Pods Frameworks */,
+				05D84BE9BD6BB29725A560E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -529,6 +560,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05D84BE9BD6BB29725A560E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		257D00CA8392006190D3E1D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,10 +651,12 @@
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
+				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
+				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,

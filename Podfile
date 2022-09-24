@@ -12,4 +12,5 @@ target 'iOSTemplate' do
   pod 'FSPagerView'
   pod 'Tiercel'
   pod 'libpag'
+  pod 'RongCloudIM/IMKit', '~> 5.2.5'
 end

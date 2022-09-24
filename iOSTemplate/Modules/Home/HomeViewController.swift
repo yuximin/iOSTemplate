@@ -37,7 +37,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
             ]),
             ListSection(title: "三方库", rows: [
                 ListRow(title: "Tiercel - swift下载器"),
-                ListRow(title: "Pag - 动效播放")
+                ListRow(title: "Pag - 动效播放"),
+                ListRow(title: "融云")
             ])
         ]
     }
@@ -74,6 +75,8 @@ extension HomeViewController {
             viewController = TiercelDemoViewController()
         case ("三方库", "Pag - 动效播放"):
             viewController = PagDemoViewController()
+        case ("三方库", "融云"):
+            viewController = RongCloudViewController()
         default:
             viewController = nil
         }

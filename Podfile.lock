@@ -1,12 +1,30 @@
 PODS:
   - FSPagerView (0.8.3)
   - libpag (4.0.5.66)
+  - RongCloudIM/ChatRoom (5.2.5):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/CustomerService (5.2.5):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/Discussion (5.2.5):
+    - RongCloudIM/IMLibCore
+  - RongCloudIM/IMKit (5.2.5):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (5.2.5):
+    - RongCloudIM/ChatRoom
+    - RongCloudIM/CustomerService
+    - RongCloudIM/Discussion
+    - RongCloudIM/IMLibCore
+    - RongCloudIM/PublicService
+  - RongCloudIM/IMLibCore (5.2.5)
+  - RongCloudIM/PublicService (5.2.5):
+    - RongCloudIM/IMLibCore
   - SnapKit (5.6.0)
   - Tiercel (3.2.5)
 
 DEPENDENCIES:
   - FSPagerView
   - libpag
+  - RongCloudIM/IMKit (~> 5.2.5)
   - SnapKit (~> 5.6.0)
   - Tiercel
 
@@ -14,15 +32,17 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FSPagerView
     - libpag
+    - RongCloudIM
     - SnapKit
     - Tiercel
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
+  RongCloudIM: 4c3befbe6e9dd813a87c499c81fb2eac54c354b3
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: f27eba63c5c8a22a26a3617867d9241bec2f850b
+PODFILE CHECKSUM: 583402129c90a16ad0216f2e90a125b296756ccc
 
 COCOAPODS: 1.11.3
