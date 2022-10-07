@@ -1,0 +1,20 @@
+
+<html>
+    <body>
+        <script>
+            window.updateCoin = function(){
+                document.getElementById("tip").innerHTML = Date.now();
+            }
+            function postPay(){
+                window && window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.pay && window.webkit.messageHandlers.pay.postMessage && window.webkit.messageHandlers.pay.postMessage("aaa")
+            }
+        </script>
+        <p id="tip"></p>
+        <p>android<p>
+        <button onclick="window.LingxianAndoid.pay()">充值</button><br>
+        <button onclick="window.LingxianAndoid.closeGame()">关闭游戏</button><br>
+        <p>ios<p>
+        <button onclick="window.webkit.messageHandlers.pay.postMessage(' ')">充值</button><br>
+        <button onclick="window.webkit.messageHandlers.closeGame.postMessage(' ')">关闭游戏</button><br>
+    </body>
+    </html>

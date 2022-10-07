@@ -17,6 +17,9 @@ class CollectionViewDemoController: ListViewController {
         sections = [
             ListSection(title: "自定义", rows: [
                 ListRow(title: "样式1")
+            ]),
+            ListSection(title: "进阶", rows: [
+                ListRow(title: "Cell封装")
             ])
         ]
     }
@@ -32,6 +35,9 @@ extension CollectionViewDemoController {
         switch (sectionItem.title, rowItem.title) {
         case ("自定义", "样式1"):
             let viewController = CollectionViewStyle1ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case ("进阶", "Cell封装"):
+            let viewController = CellPackageViewController()
             navigationController?.pushViewController(viewController, animated: true)
         default:
             break

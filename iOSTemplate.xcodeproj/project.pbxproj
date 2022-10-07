@@ -15,6 +15,8 @@
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
+		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
+		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
@@ -30,6 +32,11 @@
 		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
 		18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18932032288E62D9007E5872 /* UILabelDemoViewController.swift */; };
+		189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */; };
+		189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C428EE809B00EA1F51 /* CellPackageCell.swift */; };
+		189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C828EE821500EA1F51 /* CellPackageModel.swift */; };
+		189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12CB28EE886A00EA1F51 /* CellPackageViewModel.swift */; };
+		189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */; };
 		18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */; };
 		18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */; };
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
@@ -52,6 +59,7 @@
 		18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */; };
 		18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8021A2876CBBE0070A3DA /* GCDViewController.swift */; };
 		18F802292876FEFA0070A3DA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F802282876FEFA0070A3DA /* Logger.swift */; };
+		18F8041E28E46E3500B21DBC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 18F8041D28E46E3500B21DBC /* test.html */; };
 		BF15FB9E5CB23DC0527ECEF0 /* Pods_iOSTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CEABED932B66AED5E21A6D /* Pods_iOSTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +74,8 @@
 		039C8BEA28000685002624EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
+		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
+		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +91,11 @@
 		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18932032288E62D9007E5872 /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
+		189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageViewController.swift; sourceTree = "<group>"; };
+		189B12C428EE809B00EA1F51 /* CellPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageCell.swift; sourceTree = "<group>"; };
+		189B12C828EE821500EA1F51 /* CellPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageModel.swift; sourceTree = "<group>"; };
+		189B12CB28EE886A00EA1F51 /* CellPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageViewModel.swift; sourceTree = "<group>"; };
+		189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageItem.swift; sourceTree = "<group>"; };
 		18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTurntableViewController.swift; sourceTree = "<group>"; };
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
@@ -103,6 +118,7 @@
 		18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoSubViewController.swift; sourceTree = "<group>"; };
 		18F8021A2876CBBE0070A3DA /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		18F802282876FEFA0070A3DA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		18F8041D28E46E3500B21DBC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		443D357D19F1A55CBB079D3F /* Pods-iOSTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.debug.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		524E9B951D8A4265427DFE7E /* Pods-iOSTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTemplate.release.xcconfig"; path = "Target Support Files/Pods-iOSTemplate/Pods-iOSTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		69CEABED932B66AED5E21A6D /* Pods_iOSTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +192,23 @@
 			path = Tiercel;
 			sourceTree = "<group>";
 		};
+		1832A6CB28E41A9F0050B7A7 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1832A6CE28E41B800050B7A7 /* Demo1 */,
+				1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		1832A6CE28E41B800050B7A7 /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
 		185D817D28770B7200B9A838 /* YNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +247,7 @@
 		188494CA2897EC3700E4C464 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				188494D02897EE4100E4C464 /* View */,
+				189B12C028EE7F0200EA1F51 /* CellPackage */,
 				188494CD2897ED1400E4C464 /* Style1 */,
 				188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */,
 			);
@@ -224,6 +257,7 @@
 		188494CD2897ED1400E4C464 /* Style1 */ = {
 			isa = PBXGroup;
 			children = (
+				188494D02897EE4100E4C464 /* View */,
 				188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */,
 			);
 			path = Style1;
@@ -275,6 +309,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1832A6CB28E41A9F0050B7A7 /* WKWebView */,
 				18C7282328DEEDE0003982C7 /* Animation */,
 				18CC2E5B28DC9F3100647E1F /* UIStackView */,
 				18CBBFBD28AF3EE700EC0473 /* PresentAndPush */,
@@ -292,6 +327,42 @@
 				18932032288E62D9007E5872 /* UILabelDemoViewController.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		189B12C028EE7F0200EA1F51 /* CellPackage */ = {
+			isa = PBXGroup;
+			children = (
+				189B12CA28EE885700EA1F51 /* ViewModel */,
+				189B12C728EE820000EA1F51 /* Model */,
+				189B12C328EE807A00EA1F51 /* View */,
+				189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */,
+			);
+			path = CellPackage;
+			sourceTree = "<group>";
+		};
+		189B12C328EE807A00EA1F51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				189B12C428EE809B00EA1F51 /* CellPackageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		189B12C728EE820000EA1F51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189B12C828EE821500EA1F51 /* CellPackageModel.swift */,
+				189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		189B12CA28EE885700EA1F51 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				189B12CB28EE886A00EA1F51 /* CellPackageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
@@ -440,6 +511,7 @@
 		18F8021C2876CD130070A3DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18F8041D28E46E3500B21DBC /* test.html */,
 				18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */,
 				039C8BE728000685002624EB /* Assets.xcassets */,
 				039C8BEC28000685002624EB /* Info.plist */,
@@ -573,6 +645,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F8041E28E46E3500B21DBC /* test.html in Resources */,
 				039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */,
 				039C8BE828000685002624EB /* Assets.xcassets in Resources */,
 				18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */,
@@ -649,8 +722,10 @@
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
 				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
+				189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */,
 				188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
+				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
@@ -674,17 +749,22 @@
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
+				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
+				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
+				189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
+				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
+				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
 			);
