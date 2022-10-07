@@ -37,6 +37,8 @@
 		189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C828EE821500EA1F51 /* CellPackageModel.swift */; };
 		189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12CB28EE886A00EA1F51 /* CellPackageViewModel.swift */; };
 		189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */; };
+		189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12D028F04C5500EA1F51 /* CodableDemoViewController.swift */; };
+		189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12D328F04EDC00EA1F51 /* CodableModel.swift */; };
 		18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */; };
 		18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */; };
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
@@ -96,6 +98,8 @@
 		189B12C828EE821500EA1F51 /* CellPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageModel.swift; sourceTree = "<group>"; };
 		189B12CB28EE886A00EA1F51 /* CellPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageViewModel.swift; sourceTree = "<group>"; };
 		189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageItem.swift; sourceTree = "<group>"; };
+		189B12D028F04C5500EA1F51 /* CodableDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDemoViewController.swift; sourceTree = "<group>"; };
+		189B12D328F04EDC00EA1F51 /* CodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableModel.swift; sourceTree = "<group>"; };
 		18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTurntableViewController.swift; sourceTree = "<group>"; };
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
@@ -365,6 +369,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		189B12CF28F04C2300EA1F51 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				189B12D228F04ECC00EA1F51 /* Model */,
+				189B12D028F04C5500EA1F51 /* CodableDemoViewController.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		189B12D228F04ECC00EA1F51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189B12D328F04EDC00EA1F51 /* CodableModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,6 +552,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				189B12CF28F04C2300EA1F51 /* Codable */,
 				18C7281C28DDE53C003982C7 /* RongCloud */,
 				18AABA3828C1F6F500AAAFCC /* Pag */,
 				181777A928BDEA060041DA6D /* Tiercel */,
@@ -753,6 +775,7 @@
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
+				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
@@ -762,6 +785,7 @@
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
+				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,

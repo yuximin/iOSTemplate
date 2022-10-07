@@ -41,6 +41,9 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "Tiercel - swift下载器"),
                 ListRow(title: "Pag - 动效播放"),
                 ListRow(title: "融云")
+            ]),
+            ListSection(title: "Codable", rows: [
+                ListRow(title: "Demo")
             ])
         ]
     }
@@ -83,6 +86,8 @@ extension HomeViewController {
             viewController = PagDemoViewController()
         case ("三方库", "融云"):
             viewController = RongCloudViewController()
+        case ("Codable", "Demo"):
+            viewController = CodableDemoViewController()
         default:
             viewController = nil
         }
