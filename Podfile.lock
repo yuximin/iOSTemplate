@@ -18,6 +18,12 @@ PODS:
   - RongCloudIM/IMLibCore (5.2.5)
   - RongCloudIM/PublicService (5.2.5):
     - RongCloudIM/IMLibCore
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SnapKit (5.6.0)
   - Tiercel (3.2.5)
 
@@ -25,6 +31,8 @@ DEPENDENCIES:
   - FSPagerView
   - libpag
   - RongCloudIM/IMKit (~> 5.2.5)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
   - SnapKit (~> 5.6.0)
   - Tiercel
 
@@ -33,6 +41,9 @@ SPEC REPOS:
     - FSPagerView
     - libpag
     - RongCloudIM
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - Tiercel
 
@@ -40,9 +51,12 @@ SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
   RongCloudIM: 4c3befbe6e9dd813a87c499c81fb2eac54c354b3
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: 583402129c90a16ad0216f2e90a125b296756ccc
+PODFILE CHECKSUM: 5e171f2af70cee7e97b68ffa35edaa19f15f33c6
 
 COCOAPODS: 1.11.3

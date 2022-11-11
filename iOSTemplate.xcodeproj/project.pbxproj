@@ -51,6 +51,9 @@
 		18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282128DDE700003982C7 /* RongCloudViewModel.swift */; };
 		18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282528DEEE02003982C7 /* AnimationDemoViewController.swift */; };
 		18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7282728DEEEBB003982C7 /* AnimationDemo1ViewController.swift */; };
+		18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA89E428FD785600BB3BE1 /* RxSwiftDemoViewController.swift */; };
+		18CA89E828FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA89E728FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift */; };
+		18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CA89E928FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift */; };
 		18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */; };
 		18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */; };
 		18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CBBFC228AF3F4300EC0473 /* PushViewController.swift */; };
@@ -112,6 +115,9 @@
 		18C7282128DDE700003982C7 /* RongCloudViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RongCloudViewModel.swift; sourceTree = "<group>"; };
 		18C7282528DEEE02003982C7 /* AnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemoViewController.swift; sourceTree = "<group>"; };
 		18C7282728DEEEBB003982C7 /* AnimationDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDemo1ViewController.swift; sourceTree = "<group>"; };
+		18CA89E428FD785600BB3BE1 /* RxSwiftDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoViewController.swift; sourceTree = "<group>"; };
+		18CA89E728FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo1ViewController.swift; sourceTree = "<group>"; };
+		18CA89E928FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo1SubViewController.swift; sourceTree = "<group>"; };
 		18CBBFBE28AF3F1700EC0473 /* PresentAndPushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAndPushViewController.swift; sourceTree = "<group>"; };
 		18CBBFC028AF3F3500EC0473 /* PresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		18CBBFC228AF3F4300EC0473 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -465,6 +471,24 @@
 			path = Demo1;
 			sourceTree = "<group>";
 		};
+		18CA89E328FD782D00BB3BE1 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				18CA89E628FD78D200BB3BE1 /* Demo1 */,
+				18CA89E428FD785600BB3BE1 /* RxSwiftDemoViewController.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		18CA89E628FD78D200BB3BE1 /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				18CA89E728FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift */,
+				18CA89E928FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
 		18CBBFBD28AF3EE700EC0473 /* PresentAndPush */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +576,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18CA89E328FD782D00BB3BE1 /* RxSwift */,
 				189B12CF28F04C2300EA1F51 /* Codable */,
 				18C7281C28DDE53C003982C7 /* RongCloud */,
 				18AABA3828C1F6F500AAAFCC /* Pag */,
@@ -741,6 +766,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
+				18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */,
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
 				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
@@ -763,6 +789,7 @@
 				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
 				18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */,
 				188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */,
+				18CA89E828FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift in Sources */,
 				185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */,
 				188494D52897EEF800E4C464 /* String+Extension.swift in Sources */,
 				18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */,
@@ -772,6 +799,7 @@
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
+				18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */,
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,

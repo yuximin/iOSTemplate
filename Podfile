@@ -13,4 +13,6 @@ target 'iOSTemplate' do
   pod 'Tiercel'
   pod 'libpag'
   pod 'RongCloudIM/IMKit', '~> 5.2.5'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
 end
