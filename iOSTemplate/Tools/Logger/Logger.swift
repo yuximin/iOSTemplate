@@ -37,7 +37,7 @@ public class Logger {
     private static func log(_ items: Any..., separator: String = " ", terminator: String = "\n", level: Level, file: String, method: String, line: Int) {
         let now = dateFormatter.string(from: Date())
         let fileName = (file as NSString).lastPathComponent
-        let logPrefix = "<\(now)> \(level.prefix) [\(fileName) \(line): \(method)]"
+        let logPrefix = "<\(now)> [\(fileName) \(line): \(method)] \(level.prefix)"
         
         // TODO: @whaley 若要支持日志上报，这里需要考虑 `items` 中数据的解析
         print(logPrefix, terminator: " ")

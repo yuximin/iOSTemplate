@@ -41,10 +41,14 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "Tiercel - swift下载器"),
                 ListRow(title: "Pag - 动效播放"),
                 ListRow(title: "融云"),
-                ListRow(title: "RxSwift")
+                ListRow(title: "RxSwift"),
+                ListRow(title: "AFNetworking")
             ]),
             ListSection(title: "Codable", rows: [
                 ListRow(title: "Demo")
+            ]),
+            ListSection(title: "示例项目", rows: [
+                ListRow(title: "下载器")
             ])
         ]
     }
@@ -89,8 +93,12 @@ extension HomeViewController {
             viewController = RongCloudViewController()
         case ("三方库", "RxSwift"):
             viewController = RxSwiftDemoViewController()
+        case ("三方库", "AFNetworking"):
+            viewController = AFNetworkingViewController()
         case ("Codable", "Demo"):
             viewController = CodableDemoViewController()
+        case ("示例项目", "下载器"):
+            viewController = JDownloaderViewController()
         default:
             viewController = nil
         }

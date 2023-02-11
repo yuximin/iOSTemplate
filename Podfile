@@ -15,4 +15,5 @@ target 'iOSTemplate' do
   pod 'RongCloudIM/IMKit', '~> 5.2.5'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  pod 'AFNetworking', '~> 4.0'
 end

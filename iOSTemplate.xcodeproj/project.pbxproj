@@ -62,6 +62,10 @@
 		18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */; };
 		18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */; };
 		18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */; };
+		18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E1229951C860050874A /* AFNetworkingViewController.swift */; };
+		18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E15299671B40050874A /* JDownloaderViewController.swift */; };
+		18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E17299674930050874A /* JDownloaderViewModel.swift */; };
+		18E99E1A299674B50050874A /* JDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E19299674B50050874A /* JDownloader.swift */; };
 		18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8021A2876CBBE0070A3DA /* GCDViewController.swift */; };
 		18F802292876FEFA0070A3DA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F802282876FEFA0070A3DA /* Logger.swift */; };
 		18F8041E28E46E3500B21DBC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 18F8041D28E46E3500B21DBC /* test.html */; };
@@ -126,6 +130,10 @@
 		18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoViewController.swift; sourceTree = "<group>"; };
 		18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoView.swift; sourceTree = "<group>"; };
 		18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoSubViewController.swift; sourceTree = "<group>"; };
+		18E99E1229951C860050874A /* AFNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingViewController.swift; sourceTree = "<group>"; };
+		18E99E15299671B40050874A /* JDownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewController.swift; sourceTree = "<group>"; };
+		18E99E17299674930050874A /* JDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewModel.swift; sourceTree = "<group>"; };
+		18E99E19299674B50050874A /* JDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloader.swift; sourceTree = "<group>"; };
 		18F8021A2876CBBE0070A3DA /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		18F802282876FEFA0070A3DA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		18F8041D28E46E3500B21DBC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -534,9 +542,28 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		18E99E1129951C5B0050874A /* AFNetworkingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18E99E1229951C860050874A /* AFNetworkingViewController.swift */,
+			);
+			path = AFNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		18E99E14299671640050874A /* JDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				18E99E15299671B40050874A /* JDownloaderViewController.swift */,
+				18E99E17299674930050874A /* JDownloaderViewModel.swift */,
+				18E99E19299674B50050874A /* JDownloader.swift */,
+			);
+			path = JDownloader;
+			sourceTree = "<group>";
+		};
 		18F802182876C5630070A3DA /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				18E99E1129951C5B0050874A /* AFNetworkingDemo */,
 				18B0818428785D9500D3F3E0 /* Downloader */,
 				18F802192876CBA70070A3DA /* GCD */,
 				18B0817B287822D500D3F3E0 /* Operation */,
@@ -576,6 +603,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18E99E14299671640050874A /* JDownloader */,
 				18CA89E328FD782D00BB3BE1 /* RxSwift */,
 				189B12CF28F04C2300EA1F51 /* Codable */,
 				18C7281C28DDE53C003982C7 /* RongCloud */,
@@ -774,11 +802,13 @@
 				188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
+				18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
+				18E99E1A299674B50050874A /* JDownloader.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
@@ -803,6 +833,7 @@
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
+				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
@@ -813,6 +844,7 @@
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
+				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
