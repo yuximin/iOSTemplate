@@ -14,6 +14,7 @@ class PagDemoViewController: ListViewController {
 
         sections = [
             ListSection(title: "Case", rows: [
+                ListRow(title: "简单演示"),
                 ListRow(title: "幸运转盘")
             ])
         ]
@@ -28,6 +29,9 @@ extension PagDemoViewController {
         let sectionItem = sections[indexPath.section]
         let rowItem = sectionItem.rows[indexPath.row]
         switch (sectionItem.title, rowItem.title) {
+        case ("Case", "简单演示"):
+            let viewController = PagEasyPlayViewController()
+            navigationController?.pushViewController(viewController, animated: true)
         case ("Case", "幸运转盘"):
             let viewController = LuckyTurntableViewController()
             navigationController?.pushViewController(viewController, animated: true)

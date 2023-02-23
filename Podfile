@@ -16,4 +16,5 @@ target 'iOSTemplate' do
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
   pod 'AFNetworking', '~> 4.0'
+  pod 'LookinServer', :configurations => ['Debug']
 end
