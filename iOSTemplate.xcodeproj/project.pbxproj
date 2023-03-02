@@ -20,6 +20,8 @@
 		1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */; };
 		1851A95929A4F8D200B5A6F0 /* draw.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95829A4F3DA00B5A6F0 /* draw.pag */; };
 		1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95A29A5B90200B5A6F0 /* pk_main.pag */; };
+		1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95E29A713C600B5A6F0 /* PKProgressViewController.swift */; };
+		1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A96129A7144500B5A6F0 /* PKProgressView.swift */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
@@ -91,6 +93,8 @@
 		1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagEasyPlayViewController.swift; sourceTree = "<group>"; };
 		1851A95829A4F3DA00B5A6F0 /* draw.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = draw.pag; sourceTree = "<group>"; };
 		1851A95A29A5B90200B5A6F0 /* pk_main.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = pk_main.pag; sourceTree = "<group>"; };
+		1851A95E29A713C600B5A6F0 /* PKProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKProgressViewController.swift; sourceTree = "<group>"; };
+		1851A96129A7144500B5A6F0 /* PKProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKProgressView.swift; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +243,23 @@
 				1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */,
 			);
 			path = EasyPlay;
+			sourceTree = "<group>";
+		};
+		1851A95C29A7136100B5A6F0 /* PKProgress */ = {
+			isa = PBXGroup;
+			children = (
+				1851A95E29A713C600B5A6F0 /* PKProgressViewController.swift */,
+				1851A96129A7144500B5A6F0 /* PKProgressView.swift */,
+			);
+			path = PKProgress;
+			sourceTree = "<group>";
+		};
+		1851A95D29A7139B00B5A6F0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1851A95C29A7136100B5A6F0 /* PKProgress */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		185D817D28770B7200B9A838 /* YNavigationController */ = {
@@ -620,6 +641,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1851A95D29A7139B00B5A6F0 /* Components */,
 				18E99E14299671640050874A /* JDownloader */,
 				18CA89E328FD782D00BB3BE1 /* RxSwift */,
 				189B12CF28F04C2300EA1F51 /* Codable */,
@@ -826,8 +848,10 @@
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
+				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
+				1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */,
 				18E99E1A299674B50050874A /* JDownloader.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,

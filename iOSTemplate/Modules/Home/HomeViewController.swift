@@ -30,6 +30,9 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "Animation"),
                 ListRow(title: "WKWebView")
             ]),
+            ListSection(title: "组件", rows: [
+                ListRow(title: "PK进度条")
+            ]),
             ListSection(title: "多线程", rows: [
                 ListRow(title: "GCD"),
                 ListRow(title: "Operation")
@@ -79,6 +82,8 @@ extension HomeViewController {
             viewController = AnimationDemoViewController()
         case ("UIKit", "WKWebView"):
             viewController = WKWebViewDemoViewController()
+        case ("组件", "PK进度条"):
+            viewController = PKProgressViewController()
         case ("多线程", "GCD"):
             viewController = GCDViewController()
         case ("多线程", "Operation"):

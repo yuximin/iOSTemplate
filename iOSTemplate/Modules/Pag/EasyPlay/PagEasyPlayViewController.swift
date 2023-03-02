@@ -56,7 +56,12 @@ class PagEasyPlayViewController: UIViewController {
     // MARK: - action
     
     @objc private func didTapPlay(_ sender: UIButton) {
-        self.pagView.setProgress(0)
+//        self.pagView.setProgress(0)
+//        if self.pagView.isPlaying() {
+//            self.pagView.stop()
+//        }
+//        self.pagFile = nil
+//        loadPagResource()
         self.pagView.play()
     }
     
@@ -99,6 +104,6 @@ extension PagEasyPlayViewController: PAGViewListener {
     }
     
     func onAnimationUpdate(_ pagView: PAGView!) {
-        print("whaley log -- PagEasyPlayViewController onAnimationUpdate: \(Double(pagView.duration() / 1000000) * pagView.getProgress())")
+        print("whaley log -- PagEasyPlayViewController onAnimationUpdate: \(pagView.getProgress())")
     }
 }
