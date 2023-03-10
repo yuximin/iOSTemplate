@@ -19,6 +19,7 @@ PODS:
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
+  - Protobuf (3.22.0)
   - RongCloudIM/ChatRoom (5.2.5.1):
     - RongCloudIM/IMLibCore
   - RongCloudIM/CustomerService (5.2.5.1):
@@ -43,6 +44,15 @@ PODS:
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
+  - SSZipArchive (2.4.3)
+  - SVGAPlayer (2.5.7):
+    - SVGAPlayer/Core (= 2.5.7)
+    - SVGAPlayer/ProtoFiles (= 2.5.7)
+  - SVGAPlayer/Core (2.5.7):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.7):
+    - Protobuf (~> 3.4)
   - Tiercel (3.2.5)
 
 DEPENDENCIES:
@@ -54,6 +64,7 @@ DEPENDENCIES:
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SnapKit (~> 5.6.0)
+  - SVGAPlayer (~> 2.3)
   - Tiercel
 
 SPEC REPOS:
@@ -62,11 +73,14 @@ SPEC REPOS:
     - FSPagerView
     - libpag
     - LookinServer
+    - Protobuf
     - RongCloudIM
     - RxCocoa
     - RxRelay
     - RxSwift
     - SnapKit
+    - SSZipArchive
+    - SVGAPlayer
     - Tiercel
 
 SPEC CHECKSUMS:
@@ -74,13 +88,16 @@ SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
+  Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RongCloudIM: 4e405c43e8f5699dc8431d3a513eeca31b7a99c2
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+  SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: bc33b1927cc0bf01cebc6eeae8b3cabc1b72a2b1
+PODFILE CHECKSUM: 139d71f8b70a922ee9e8c8187cdbd6f7dd9fbd56
 
 COCOAPODS: 1.11.3

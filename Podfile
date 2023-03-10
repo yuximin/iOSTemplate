@@ -17,4 +17,5 @@ target 'iOSTemplate' do
   pod 'RxCocoa', '6.5.0'
   pod 'AFNetworking', '~> 4.0'
   pod 'LookinServer', :configurations => ['Debug']
+  pod 'SVGAPlayer', '~>2.3'
 end

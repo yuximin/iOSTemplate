@@ -16,7 +16,8 @@ class AnimationDemoViewController: ListViewController {
 
         sections = [
             ListSection(title: "类型", rows: [
-                ListRow(title: "无限旋转")
+                ListRow(title: "无限旋转"),
+                ListRow(title: "UICollectionView reload时cell中动画效果")
             ])
         ]
     }
@@ -32,6 +33,9 @@ extension AnimationDemoViewController {
         switch (sectionItem.title, rowItem.title) {
         case ("类型", "无限旋转"):
             let viewController = AnimationDemo1ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case ("类型", "UICollectionView reload时cell中动画效果"):
+            let viewController = AnimationDemo2ViewController()
             navigationController?.pushViewController(viewController, animated: true)
         default:
             break
