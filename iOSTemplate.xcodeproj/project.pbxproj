@@ -17,6 +17,7 @@
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
 		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
+		183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */; };
 		1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */; };
 		1851A95929A4F8D200B5A6F0 /* draw.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95829A4F3DA00B5A6F0 /* draw.pag */; };
 		1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95A29A5B90200B5A6F0 /* pk_main.pag */; };
@@ -114,6 +115,7 @@
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
+		183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterDemoViewController.swift; sourceTree = "<group>"; };
 		1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagEasyPlayViewController.swift; sourceTree = "<group>"; };
 		1851A95829A4F3DA00B5A6F0 /* draw.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = draw.pag; sourceTree = "<group>"; };
 		1851A95A29A5B90200B5A6F0 /* pk_main.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = pk_main.pag; sourceTree = "<group>"; };
@@ -283,6 +285,22 @@
 				1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */,
 			);
 			path = Demo1;
+			sourceTree = "<group>";
+		};
+		183FC55629C1777D00F29573 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				183FC55729C1778700F29573 /* DateFormatter */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		183FC55729C1778700F29573 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */,
+			);
+			path = DateFormatter;
 			sourceTree = "<group>";
 		};
 		1851A95429A4F30400B5A6F0 /* EasyPlay */ = {
@@ -729,6 +747,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				183FC55629C1777D00F29573 /* Foundation */,
 				1851A95D29A7139B00B5A6F0 /* Components */,
 				18E99E14299671640050874A /* JDownloader */,
 				18CA89E328FD782D00BB3BE1 /* RxSwift */,
@@ -1002,6 +1021,7 @@
 				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
+				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
