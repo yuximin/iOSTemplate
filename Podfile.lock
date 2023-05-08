@@ -14,11 +14,17 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Alamofire (5.6.4)
   - FSPagerView (0.8.3)
   - libpag (4.0.5.66)
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
   - Protobuf (3.22.0)
   - RongCloudIM/ChatRoom (5.2.5.1):
     - RongCloudIM/IMLibCore
@@ -60,6 +66,7 @@ DEPENDENCIES:
   - FSPagerView
   - libpag
   - LookinServer
+  - Moya/RxSwift (~> 15.0)
   - RongCloudIM/IMKit (~> 5.2.5)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
@@ -70,9 +77,11 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Alamofire
     - FSPagerView
     - libpag
     - LookinServer
+    - Moya
     - Protobuf
     - RongCloudIM
     - RxCocoa
@@ -85,9 +94,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RongCloudIM: 4e405c43e8f5699dc8431d3a513eeca31b7a99c2
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
@@ -98,6 +109,6 @@ SPEC CHECKSUMS:
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: 139d71f8b70a922ee9e8c8187cdbd6f7dd9fbd56
+PODFILE CHECKSUM: 9b3582ce54a5db2e394371dbe5b5ce85a38e9a45
 
 COCOAPODS: 1.11.3

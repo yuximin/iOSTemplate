@@ -41,7 +41,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "Operation")
             ]),
             ListSection(title: "网络编程", rows: [
-                ListRow(title: "UISession")
+                ListRow(title: "UISession"),
+                ListRow(title: "Moya")
             ]),
             ListSection(title: "三方库", rows: [
                 ListRow(title: "Tiercel - swift下载器"),
@@ -95,6 +96,8 @@ extension HomeViewController {
             viewController = OperationViewController()
         case ("网络编程", "UISession"):
             viewController = SessionViewController()
+        case ("网络编程", "Moya"):
+            viewController = MoyaDemoViewController()
         case ("三方库", "Tiercel - swift下载器"):
             viewController = TiercelDemoViewController()
         case ("三方库", "Pag - 动效播放"):

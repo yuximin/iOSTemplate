@@ -41,7 +41,7 @@ class PagEasyPlayViewController: UIViewController {
     }
     
     private func loadPagResource() {
-        guard let path = Bundle.main.path(forResource: "pk_main", ofType: "pag") else {
+        guard let path = Bundle.main.path(forResource: "vip_badge_13", ofType: "pag") else {
             return
         }
         
@@ -56,12 +56,13 @@ class PagEasyPlayViewController: UIViewController {
     // MARK: - action
     
     @objc private func didTapPlay(_ sender: UIButton) {
-//        self.pagView.setProgress(0)
-//        if self.pagView.isPlaying() {
-//            self.pagView.stop()
-//        }
-//        self.pagFile = nil
-//        loadPagResource()
+        self.pagView.setProgress(0)
+        if self.pagView.isPlaying() {
+            self.pagView.stop()
+        }
+        self.pagFile = nil
+        loadPagResource()
+        
         self.pagView.play()
     }
     
@@ -71,6 +72,7 @@ class PagEasyPlayViewController: UIViewController {
         let view = PAGView()
         view.setRepeatCount(1)
         view.add(self)
+        view.backgroundColor = .black
         return view
     }()
     

@@ -18,4 +18,14 @@ target 'iOSTemplate' do
   pod 'AFNetworking', '~> 4.0'
   pod 'LookinServer', :configurations => ['Debug']
   pod 'SVGAPlayer', '~>2.3'
+#  pod 'Moya', '~> 15.0'
+  pod 'Moya/RxSwift', '~> 15.0'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
+  end
 end

@@ -15,6 +15,7 @@
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
+		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
 		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
 		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
 		183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */; };
@@ -23,6 +24,8 @@
 		1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95A29A5B90200B5A6F0 /* pk_main.pag */; };
 		1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95E29A713C600B5A6F0 /* PKProgressViewController.swift */; };
 		1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A96129A7144500B5A6F0 /* PKProgressView.swift */; };
+		1854053B2A08F23100F0DEB3 /* vip_badge_12.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1854053A2A08F23100F0DEB3 /* vip_badge_12.pag */; };
+		1854053D2A08F32200F0DEB3 /* vip_badge_13.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1854053C2A08F32200F0DEB3 /* vip_badge_13.pag */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
@@ -113,6 +116,7 @@
 		039C8BEA28000685002624EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
+		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
 		183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterDemoViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		1851A95A29A5B90200B5A6F0 /* pk_main.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = pk_main.pag; sourceTree = "<group>"; };
 		1851A95E29A713C600B5A6F0 /* PKProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKProgressViewController.swift; sourceTree = "<group>"; };
 		1851A96129A7144500B5A6F0 /* PKProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKProgressView.swift; sourceTree = "<group>"; };
+		1854053A2A08F23100F0DEB3 /* vip_badge_12.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = vip_badge_12.pag; sourceTree = "<group>"; };
+		1854053C2A08F32200F0DEB3 /* vip_badge_13.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = vip_badge_13.pag; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +276,14 @@
 			path = Tiercel;
 			sourceTree = "<group>";
 		};
+		18192FFC29F681D900FB9BA5 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		1832A6CB28E41A9F0050B7A7 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +362,7 @@
 		1871E52528792E65007C518F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				18192FFC29F681D900FB9BA5 /* Moya */,
 				1871E52728792EC7007C518F /* Session */,
 			);
 			path = Network;
@@ -705,6 +720,8 @@
 		18F8021C2876CD130070A3DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1854053A2A08F23100F0DEB3 /* vip_badge_12.pag */,
+				1854053C2A08F32200F0DEB3 /* vip_badge_13.pag */,
 				18C57CA929B59CC300997B96 /* avatarFrame0.pag */,
 				18C57C9B29B59CC200997B96 /* avatarFrame1.pag */,
 				18C57C9D29B59CC200997B96 /* avatarFrame2.pag */,
@@ -840,6 +857,7 @@
 				TargetAttributes = {
 					039C8BDA28000684002624EB = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -868,6 +886,7 @@
 			files = (
 				18C57CBD29B59CC300997B96 /* avatarFrame0.pag in Resources */,
 				18C57CC129B59CC300997B96 /* avatarFrame15.pag in Resources */,
+				1854053D2A08F32200F0DEB3 /* vip_badge_13.pag in Resources */,
 				18C57CB329B59CC300997B96 /* avatarFrame8.pag in Resources */,
 				1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */,
 				18C57CB429B59CC300997B96 /* avatarFrame6.pag in Resources */,
@@ -888,6 +907,7 @@
 				039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */,
 				18C57CB029B59CC300997B96 /* avatarFrame4.pag in Resources */,
 				039C8BE828000685002624EB /* Assets.xcassets in Resources */,
+				1854053B2A08F23100F0DEB3 /* vip_badge_12.pag in Resources */,
 				18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */,
 				18C57CB929B59CC300997B96 /* avatarFrame5.pag in Resources */,
 				18C57CB829B59CC300997B96 /* avatarFrame17.pag in Resources */,
@@ -1002,6 +1022,7 @@
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
+				18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */,
 				18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */,
 				18D56D3B29BAE1BF005FF8D5 /* AnimationDemo2Cell.swift in Sources */,
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
@@ -1166,6 +1187,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JQM76K3G2N;
@@ -1184,6 +1206,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.iOSTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1195,6 +1219,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JQM76K3G2N;
@@ -1213,6 +1238,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.iOSTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
