@@ -18,6 +18,8 @@
 		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
 		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
 		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
+		183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */; };
+		183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E08742A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift */; };
 		183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */; };
 		1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */; };
 		1851A95929A4F8D200B5A6F0 /* draw.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95829A4F3DA00B5A6F0 /* draw.pag */; };
@@ -119,6 +121,8 @@
 		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
+		183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagImageViewListViewController.swift; sourceTree = "<group>"; };
+		183E08742A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagImageViewListItemCell.swift; sourceTree = "<group>"; };
 		183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterDemoViewController.swift; sourceTree = "<group>"; };
 		1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagEasyPlayViewController.swift; sourceTree = "<group>"; };
 		1851A95829A4F3DA00B5A6F0 /* draw.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = draw.pag; sourceTree = "<group>"; };
@@ -299,6 +303,15 @@
 				1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */,
 			);
 			path = Demo1;
+			sourceTree = "<group>";
+		};
+		183E08712A0B828900D3A1C9 /* PagImageViewList */ = {
+			isa = PBXGroup;
+			children = (
+				183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */,
+				183E08742A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift */,
+			);
+			path = PagImageViewList;
 			sourceTree = "<group>";
 		};
 		183FC55629C1777D00F29573 /* Foundation */ = {
@@ -519,6 +532,7 @@
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
 			isa = PBXGroup;
 			children = (
+				183E08712A0B828900D3A1C9 /* PagImageViewList */,
 				18C57C9529B5939500997B96 /* PagTest */,
 				1851A95429A4F30400B5A6F0 /* EasyPlay */,
 				18AABA3B28C1F7C500AAAFCC /* LuckyTurntable */,
@@ -1029,6 +1043,7 @@
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
 				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
+				183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */,
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
@@ -1043,6 +1058,7 @@
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
 				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
+				183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,

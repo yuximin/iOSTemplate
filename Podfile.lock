@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (5.6.4)
   - FSPagerView (0.8.3)
-  - libpag (4.0.5.66)
+  - libpag (4.2.77)
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
@@ -96,7 +96,7 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
-  libpag: 3463cf84f8eb0adc0f0a681261966b381b468fb4
+  libpag: 2e8c034da39c775f04fb12e4ac7375d073424e7d
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab

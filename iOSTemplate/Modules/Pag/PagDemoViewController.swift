@@ -16,7 +16,8 @@ class PagDemoViewController: ListViewController {
             ListSection(title: "Case", rows: [
                 ListRow(title: "简单演示"),
                 ListRow(title: "幸运转盘"),
-                ListRow(title: "性能测试")
+                ListRow(title: "性能测试"),
+                ListRow(title: "PAGImageViewList")
             ])
         ]
     }
@@ -38,6 +39,9 @@ extension PagDemoViewController {
             navigationController?.pushViewController(viewController, animated: true)
         case ("Case", "性能测试"):
             let viewController = PagTestViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        case ("Case", "PAGImageViewList"):
+            let viewController = PagImageViewListViewController()
             navigationController?.pushViewController(viewController, animated: true)
         default:
             break
