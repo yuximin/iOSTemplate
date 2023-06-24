@@ -41,6 +41,7 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "Operation")
             ]),
             ListSection(title: "网络编程", rows: [
+                ListRow(title: "URL"),
                 ListRow(title: "UISession"),
                 ListRow(title: "Moya")
             ]),
@@ -94,6 +95,8 @@ extension HomeViewController {
             viewController = GCDViewController()
         case ("多线程", "Operation"):
             viewController = OperationViewController()
+        case ("网络编程", "URL"):
+            viewController = URLDemoViewController()
         case ("网络编程", "UISession"):
             viewController = SessionViewController()
         case ("网络编程", "Moya"):

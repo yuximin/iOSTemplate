@@ -16,6 +16,7 @@
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
+		181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E95FE2A247405004EE81D /* URLDemoViewController.swift */; };
 		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
 		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
 		183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */; };
@@ -43,6 +44,9 @@
 		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
 		18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18932032288E62D9007E5872 /* UILabelDemoViewController.swift */; };
+		1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */; };
+		189335A32A458266006DDFC8 /* XMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189335A22A458266006DDFC8 /* XMCache.swift */; };
+		189335A52A458469006DDFC8 /* XMDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189335A42A458469006DDFC8 /* XMDownloadTask.swift */; };
 		189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */; };
 		189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C428EE809B00EA1F51 /* CellPackageCell.swift */; };
 		189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C828EE821500EA1F51 /* CellPackageModel.swift */; };
@@ -119,6 +123,7 @@
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
+		181E95FE2A247405004EE81D /* URLDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
 		183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagImageViewListViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +151,9 @@
 		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18932032288E62D9007E5872 /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
+		1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDownloader.swift; sourceTree = "<group>"; };
+		189335A22A458266006DDFC8 /* XMCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCache.swift; sourceTree = "<group>"; };
+		189335A42A458469006DDFC8 /* XMDownloadTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMDownloadTask.swift; sourceTree = "<group>"; };
 		189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageViewController.swift; sourceTree = "<group>"; };
 		189B12C428EE809B00EA1F51 /* CellPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageCell.swift; sourceTree = "<group>"; };
 		189B12C828EE821500EA1F51 /* CellPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageModel.swift; sourceTree = "<group>"; };
@@ -276,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */,
+				1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */,
 			);
 			path = Tiercel;
 			sourceTree = "<group>";
@@ -286,6 +295,14 @@
 				18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */,
 			);
 			path = Moya;
+			sourceTree = "<group>";
+		};
+		181E95FD2A2473EF004EE81D /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				181E95FE2A247405004EE81D /* URLDemoViewController.swift */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 		1832A6CB28E41A9F0050B7A7 /* WKWebView */ = {
@@ -375,6 +392,7 @@
 		1871E52528792E65007C518F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				181E95FD2A2473EF004EE81D /* URL */,
 				18192FFC29F681D900FB9BA5 /* Moya */,
 				1871E52728792EC7007C518F /* Session */,
 			);
@@ -474,6 +492,16 @@
 				18932032288E62D9007E5872 /* UILabelDemoViewController.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		189335A12A4581F4006DDFC8 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				18E99E19299674B50050874A /* JDownloader.swift */,
+				189335A22A458266006DDFC8 /* XMCache.swift */,
+				189335A42A458469006DDFC8 /* XMDownloadTask.swift */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 		189B12C028EE7F0200EA1F51 /* CellPackage */ = {
@@ -704,9 +732,9 @@
 		18E99E14299671640050874A /* JDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				189335A12A4581F4006DDFC8 /* Code */,
 				18E99E15299671B40050874A /* JDownloaderViewController.swift */,
 				18E99E17299674930050874A /* JDownloaderViewModel.swift */,
-				18E99E19299674B50050874A /* JDownloader.swift */,
 			);
 			path = JDownloader;
 			sourceTree = "<group>";
@@ -1012,10 +1040,12 @@
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
+				189335A32A458266006DDFC8 /* XMCache.swift in Sources */,
 				1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */,
 				18E99E1A299674B50050874A /* JDownloader.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
+				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
 				033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */,
@@ -1052,11 +1082,13 @@
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
+				1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
+				189335A52A458469006DDFC8 /* XMDownloadTask.swift in Sources */,
 				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
 				183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,

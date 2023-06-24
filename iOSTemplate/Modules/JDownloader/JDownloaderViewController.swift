@@ -97,17 +97,18 @@ extension JDownloaderViewController {
     
     private func startDownload() {
         Logger.info("JDownloader start download")
-        guard let url = URL(string: "https://github.com/yuximin/StaticResources/blob/master/Test/musics.zip?raw=true") else {
+        guard let url = URL(string: "https://github.com/yuximin/StaticResources/blame/master/Test/test.zip?raw=true") else {
             return
         }
-        
-        let downloader = JDownloader()
-        downloader.startDownloadWithURL(url)
+
+        let cache = XMCache(identifier: "com.cache.test")
+        let downloader = JDownloader(cache: cache)
+        downloader.downloadFileWithURL(url)
         self.downloader = downloader
     }
     
     private func cancelDownload() {
         Logger.info("JDownloader stop download")
-        downloader?.cancelDownload()
+//        downloader?.cancelDownload()
     }
 }

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Alamofire (5.6.4)
+  - Alamofire (5.7.1)
   - FSPagerView (0.8.3)
   - libpag (4.2.77)
   - LookinServer (1.1.5):
@@ -94,7 +94,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   libpag: 2e8c034da39c775f04fb12e4ac7375d073424e7d
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
@@ -109,6 +109,6 @@ SPEC CHECKSUMS:
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
 
-PODFILE CHECKSUM: 9b3582ce54a5db2e394371dbe5b5ce85a38e9a45
+PODFILE CHECKSUM: 94cd80451c69837bddca4e3a68e15d60a423d698
 
 COCOAPODS: 1.11.3
