@@ -16,7 +16,7 @@ public class TiercelDownloader: NSObject {
     private var progressHandlersMap: Protected<[DownloadTask: [ProgressHandler]]> = Protected([:])
     private var completionHandlersMap: Protected<[DownloadTask: [CompletionHandler]]> = Protected([:])
     
-    private let cache: Cache
+    public let cache: Cache
     private let sessionManager: SessionManager
     
     // MARK: - init

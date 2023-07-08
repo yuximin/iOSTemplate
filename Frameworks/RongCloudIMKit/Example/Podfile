@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RongCloudIMKit_Example' do
+  pod 'RongCloudIMKit', :path => '../'
+
+  target 'RongCloudIMKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

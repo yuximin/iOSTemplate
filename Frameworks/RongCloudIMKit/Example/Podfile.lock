@@ -1,0 +1,16 @@
+PODS:
+  - RongCloudIMKit (0.1.0)
+
+DEPENDENCIES:
+  - RongCloudIMKit (from `../`)
+
+EXTERNAL SOURCES:
+  RongCloudIMKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RongCloudIMKit: 1d1319db1746b1e62e353e91a9a7c336aff84403
+
+PODFILE CHECKSUM: 630ac2a25ca370cd8f81d9ebbdb7e1a1ef91b8b3
+
+COCOAPODS: 1.11.3

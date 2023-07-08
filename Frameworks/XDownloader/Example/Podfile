@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'XDownloader_Example' do
+  pod 'XDownloader', :path => '../'
+
+  target 'XDownloader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

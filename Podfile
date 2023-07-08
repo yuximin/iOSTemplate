@@ -20,6 +20,7 @@ target 'iOSTemplate' do
   pod 'SVGAPlayer', '~>2.3'
 #  pod 'Moya', '~> 15.0'
   pod 'Moya/RxSwift', '~> 15.0'
+  pod 'XDownloader', :path => 'Frameworks/XDownloader'
 end
 
 post_install do |installer|

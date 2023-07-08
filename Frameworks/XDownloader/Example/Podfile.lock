@@ -1,0 +1,16 @@
+PODS:
+  - XDownloader (0.1.0)
+
+DEPENDENCIES:
+  - XDownloader (from `../`)
+
+EXTERNAL SOURCES:
+  XDownloader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XDownloader: f1d84c7220098ed53ab15d949b7ad6ee3b823423
+
+PODFILE CHECKSUM: 27e25166cd0b2a979df7607eb612bfd028477cf4
+
+COCOAPODS: 1.11.3

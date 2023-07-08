@@ -15,13 +15,17 @@ class TiercelDemoViewController: ListViewController {
         return downloader
     }()
     
-    var downloader1: TiercelDownloader = {
-        let downloader = TiercelDownloader(identifier: "com.download.pag", cacheDirectory: "com.cache.pag")
-        return downloader
-    }()
+//    var downloader1: TiercelDownloader = {
+//        let downloader = TiercelDownloader(identifier: "com.download.pag", cacheDirectory: "com.cache.pag")
+//        return downloader
+//    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        downloader.cache.clearDiskCache { cache in
+//            cache.retrieveAllTasks()
+        }
 
         sections = [
             ListSection(title: "Base", rows: [
@@ -52,7 +56,8 @@ extension TiercelDemoViewController {
 extension TiercelDemoViewController {
     
     func baseTestDownlader() {
-        downloader.downloadFileWithURLString("https://dev-static.ohlaapp.cn/d/f77842c04b3f55af5579f888bf659375.pag") { progress in
+        let urlString = "https://github.com/yuximin/StaticResources/blame/master/Test/test.zip?raw=true"
+        downloader.downloadFileWithURLString(urlString) { progress in
             print("download progress 11 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
         } completion: { result in
             switch result {
@@ -63,37 +68,37 @@ extension TiercelDemoViewController {
             }
         }
         
-        downloader.downloadFileWithURLString("https://dev-static.ohlaapp.cn/d/f77842c04b3f55af5579f888bf659375.pag") { progress in
-            print("download progress 22 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
-        } completion: { result in
-            switch result {
-            case .success(let path):
-                print("download success 22: \(path)")
-            case .failure(let error):
-                print("download failure 22: \(error.localizedDescription)")
-            }
-        }
-        
-        downloader1.downloadFileWithURLString("https://dev-static.ohlaapp.cn/d/f77842c04b3f55af5579f888bf659375.pag") { progress in
-            print("download progress 33 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
-        } completion: { result in
-            switch result {
-            case .success(let path):
-                print("download success 33: \(path)")
-            case .failure(let error):
-                print("download failure 33: \(error.localizedDescription)")
-            }
-        }
-        
-        downloader1.downloadFileWithURLString("https://dev-static.ohlaapp.cn/d/f77842c04b3f55af5579f888bf659375.pag") { progress in
-            print("download progress 44 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
-        } completion: { result in
-            switch result {
-            case .success(let path):
-                print("download success 44: \(path)")
-            case .failure(let error):
-                print("download failure 44: \(error.localizedDescription)")
-            }
-        }
+//        downloader.downloadFileWithURLString(urlString) { progress in
+//            print("download progress 22 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
+//        } completion: { result in
+//            switch result {
+//            case .success(let path):
+//                print("download success 22: \(path)")
+//            case .failure(let error):
+//                print("download failure 22: \(error.localizedDescription)")
+//            }
+//        }
+//
+//        downloader.downloadFileWithURLString(urlString) { progress in
+//            print("download progress 33 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
+//        } completion: { result in
+//            switch result {
+//            case .success(let path):
+//                print("download success 33: \(path)")
+//            case .failure(let error):
+//                print("download failure 33: \(error.localizedDescription)")
+//            }
+//        }
+//
+//        downloader.downloadFileWithURLString(urlString) { progress in
+//            print("download progress 44 - \(progress.completedUnitCount) \(progress.totalUnitCount)")
+//        } completion: { result in
+//            switch result {
+//            case .success(let path):
+//                print("download success 44: \(path)")
+//            case .failure(let error):
+//                print("download failure 44: \(error.localizedDescription)")
+//            }
+//        }
     }
 }

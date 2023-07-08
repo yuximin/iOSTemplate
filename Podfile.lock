@@ -60,6 +60,7 @@ PODS:
   - SVGAPlayer/ProtoFiles (2.5.7):
     - Protobuf (~> 3.4)
   - Tiercel (3.2.5)
+  - XDownloader (0.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.6.0)
   - SVGAPlayer (~> 2.3)
   - Tiercel
+  - XDownloader (from `Frameworks/XDownloader`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -92,6 +94,10 @@ SPEC REPOS:
     - SVGAPlayer
     - Tiercel
 
+EXTERNAL SOURCES:
+  XDownloader:
+    :path: Frameworks/XDownloader
+
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
@@ -108,7 +114,8 @@ SPEC CHECKSUMS:
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
+  XDownloader: f1d84c7220098ed53ab15d949b7ad6ee3b823423
 
-PODFILE CHECKSUM: 94cd80451c69837bddca4e3a68e15d60a423d698
+PODFILE CHECKSUM: 2130f8bab7df9f23688e7cbd56b5433033782d5f
 
 COCOAPODS: 1.11.3

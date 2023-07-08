@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import XDownloader
 
 class JDownloaderViewController: UIViewController {
     
-    private var downloader: JDownloader?
+    private var downloader: XDownloader?
 
     // MARK: - life cycle
     
@@ -100,15 +101,45 @@ extension JDownloaderViewController {
         guard let url = URL(string: "https://github.com/yuximin/StaticResources/blame/master/Test/test.zip?raw=true") else {
             return
         }
-
-        let cache = XMCache(identifier: "com.cache.test")
-        let downloader = JDownloader(cache: cache)
-        downloader.downloadFileWithURL(url)
+        
+        let downloader = XDownloader(identifier: "pagEffect")
         self.downloader = downloader
+        
+        downloader.downloadFileWithURLConvertible(url) { progress in
+            print("downloader progress 111:", progress.completedUnitCount)
+        } completion: { result in
+            switch result {
+            case let .success(path):
+                print("downloader success 111:", path)
+            case let .failure(error):
+                print("downloader failure 111:", error.localizedDescription)
+            }
+        }
+        
+        downloader.downloadFileWithURLConvertible(url) { progress in
+            print("downloader progress 222:", progress.completedUnitCount)
+        } completion: { result in
+            switch result {
+            case let .success(path):
+                print("downloader success 222:", path)
+            case let .failure(error):
+                print("downloader failure 222:", error.localizedDescription)
+            }
+        }
+        
+        downloader.downloadFileWithURLConvertible(url) { progress in
+            print("downloader progress 333:", progress.completedUnitCount)
+        } completion: { result in
+            switch result {
+            case let .success(path):
+                print("downloader success 333:", path)
+            case let .failure(error):
+                print("downloader failure 333:", error.localizedDescription)
+            }
+        }
     }
     
     private func cancelDownload() {
         Logger.info("JDownloader stop download")
-//        downloader?.cancelDownload()
     }
 }

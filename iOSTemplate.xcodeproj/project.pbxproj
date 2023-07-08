@@ -45,8 +45,6 @@
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
 		18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18932032288E62D9007E5872 /* UILabelDemoViewController.swift */; };
 		1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */; };
-		189335A32A458266006DDFC8 /* XMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189335A22A458266006DDFC8 /* XMCache.swift */; };
-		189335A52A458469006DDFC8 /* XMDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189335A42A458469006DDFC8 /* XMDownloadTask.swift */; };
 		189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */; };
 		189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C428EE809B00EA1F51 /* CellPackageCell.swift */; };
 		189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12C828EE821500EA1F51 /* CellPackageModel.swift */; };
@@ -104,7 +102,6 @@
 		18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E1229951C860050874A /* AFNetworkingViewController.swift */; };
 		18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E15299671B40050874A /* JDownloaderViewController.swift */; };
 		18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E17299674930050874A /* JDownloaderViewModel.swift */; };
-		18E99E1A299674B50050874A /* JDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E19299674B50050874A /* JDownloader.swift */; };
 		18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8021A2876CBBE0070A3DA /* GCDViewController.swift */; };
 		18F802292876FEFA0070A3DA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F802282876FEFA0070A3DA /* Logger.swift */; };
 		18F8041E28E46E3500B21DBC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 18F8041D28E46E3500B21DBC /* test.html */; };
@@ -152,8 +149,6 @@
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18932032288E62D9007E5872 /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
 		1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDownloader.swift; sourceTree = "<group>"; };
-		189335A22A458266006DDFC8 /* XMCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCache.swift; sourceTree = "<group>"; };
-		189335A42A458469006DDFC8 /* XMDownloadTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMDownloadTask.swift; sourceTree = "<group>"; };
 		189B12C128EE7F4C00EA1F51 /* CellPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageViewController.swift; sourceTree = "<group>"; };
 		189B12C428EE809B00EA1F51 /* CellPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageCell.swift; sourceTree = "<group>"; };
 		189B12C828EE821500EA1F51 /* CellPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageModel.swift; sourceTree = "<group>"; };
@@ -211,7 +206,6 @@
 		18E99E1229951C860050874A /* AFNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingViewController.swift; sourceTree = "<group>"; };
 		18E99E15299671B40050874A /* JDownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewController.swift; sourceTree = "<group>"; };
 		18E99E17299674930050874A /* JDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewModel.swift; sourceTree = "<group>"; };
-		18E99E19299674B50050874A /* JDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloader.swift; sourceTree = "<group>"; };
 		18F8021A2876CBBE0070A3DA /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		18F802282876FEFA0070A3DA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		18F8041D28E46E3500B21DBC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -494,16 +488,6 @@
 			path = UILabel;
 			sourceTree = "<group>";
 		};
-		189335A12A4581F4006DDFC8 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				18E99E19299674B50050874A /* JDownloader.swift */,
-				189335A22A458266006DDFC8 /* XMCache.swift */,
-				189335A42A458469006DDFC8 /* XMDownloadTask.swift */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
 		189B12C028EE7F0200EA1F51 /* CellPackage */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,7 +716,6 @@
 		18E99E14299671640050874A /* JDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				189335A12A4581F4006DDFC8 /* Code */,
 				18E99E15299671B40050874A /* JDownloaderViewController.swift */,
 				18E99E17299674930050874A /* JDownloaderViewModel.swift */,
 			);
@@ -1040,9 +1023,7 @@
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
-				189335A32A458266006DDFC8 /* XMCache.swift in Sources */,
 				1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */,
-				18E99E1A299674B50050874A /* JDownloader.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
@@ -1088,7 +1069,6 @@
 				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
-				189335A52A458469006DDFC8 /* XMDownloadTask.swift in Sources */,
 				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
 				183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
