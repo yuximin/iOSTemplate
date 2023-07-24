@@ -28,7 +28,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "LayoutSubviews"),
                 ListRow(title: "PresentAndPush"),
                 ListRow(title: "Animation"),
-                ListRow(title: "WKWebView")
+                ListRow(title: "WKWebView"),
+                ListRow(title: "GradientView")
             ]),
             ListSection(title: "Foundation", rows: [
                 ListRow(title: "DateFormatter")
@@ -87,6 +88,8 @@ extension HomeViewController {
             viewController = AnimationDemoViewController()
         case ("UIKit", "WKWebView"):
             viewController = WKWebViewDemoViewController()
+        case ("UIKit", "GradientView"):
+            viewController = GradientViewController()
         case ("Foundation", "DateFormatter"):
             viewController = DateFormatterDemoViewController()
         case ("组件", "PK进度条"):
