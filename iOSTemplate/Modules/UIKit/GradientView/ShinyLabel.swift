@@ -7,24 +7,46 @@
 
 import UIKit
 
-class ShinyLabel: UIView {
+public class ShinyLabel: UIView {
     
-    var text: String? {
+    public var text: String? {
         didSet {
-            contentLabel.text = text
-            shinyLabel?.text = text
+            self.contentLabel.text = text
+            self.shinyLabel?.text = text
+        }
+    }
+    
+    public var attributedText: NSAttributedString? {
+        didSet {
+            self.contentLabel.attributedText = attributedText
+            self.shinyLabel?.attributedText = attributedText
+        }
+    }
+    
+    public var textColor: UIColor = UIColor.black {
+        didSet {
+            self.contentLabel.textColor = textColor
         }
     }
 
-    var textColor: UIColor = .white {
+    public var font: UIFont = UIFont.systemFont(ofSize: 16.0) {
         didSet {
-            contentLabel.textColor = textColor
+            self.contentLabel.font = font
+            self.shinyLabel?.font = font
         }
     }
 
-    var font: UIFont = .systemFont(ofSize: 17) {
+    public var textAlignment: NSTextAlignment = .natural {
         didSet {
-            contentLabel.font = font
+            self.contentLabel.textAlignment = textAlignment
+            self.shinyLabel?.textAlignment = textAlignment
+        }
+    }
+
+    public var adjustsFontSizeToFitWidth: Bool = false {
+        didSet {
+            self.contentLabel.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
+            self.shinyLabel?.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
         }
     }
 
@@ -32,24 +54,24 @@ class ShinyLabel: UIView {
     
     private let animationKey = "animation.key.shiny"
     
-    private weak var shinyLabel: UILabel?
-    private weak var shinyMaskLayer: CAGradientLayer?
+    private var shinyLabel: UILabel?
+    private var shinyMaskLayer: CAGradientLayer?
 
     // MARK: - lifecycle
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
 
         setupUI()
     }
 
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
 
         setupUI()
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         self.updateAnimation()
@@ -72,16 +94,22 @@ class ShinyLabel: UIView {
 
     private lazy var contentLabel: UILabel = {
         let label = UILabel()
-        label.text = self.text
+        if let attributedText = self.attributedText {
+            label.attributedText = self.attributedText
+        } else {
+            label.text = self.text
+        }
         label.textColor = self.textColor
         label.font = self.font
+        label.textAlignment = self.textAlignment
+        label.adjustsFontSizeToFitWidth = self.adjustsFontSizeToFitWidth
         return label
     }()
 }
 
 // MARK: - interface
 extension ShinyLabel {
-    func startAnimation(textColor: UIColor, shinyColor: UIColor) {
+    public func startAnimation(textColor: UIColor, shinyColor: UIColor) {
         if self.isAnimating {
             self.contentLabel.textColor = textColor
             self.shinyLabel?.textColor = shinyColor
@@ -92,9 +120,15 @@ extension ShinyLabel {
         self.contentLabel.textColor = textColor
         
         let shinyLabel = UILabel()
-        shinyLabel.text = self.text
+        if let attributedText = self.attributedText {
+            shinyLabel.attributedText = attributedText
+        } else {
+            shinyLabel.text = self.text
+        }
         shinyLabel.textColor = shinyColor
         shinyLabel.font = self.font
+        shinyLabel.textAlignment = self.textAlignment
+        shinyLabel.adjustsFontSizeToFitWidth = self.adjustsFontSizeToFitWidth
         self.addSubview(shinyLabel)
         self.shinyLabel = shinyLabel
         
@@ -111,7 +145,7 @@ extension ShinyLabel {
         self.updateAnimation()
     }
     
-    func stopAnimation() {
+    public func stopAnimation() {
         guard self.isAnimating else {
             return
         }
@@ -119,24 +153,28 @@ extension ShinyLabel {
         
         self.contentLabel.textColor = self.textColor
         self.shinyLabel?.removeFromSuperview()
+        self.shinyLabel = nil
         self.shinyMaskLayer?.removeAnimation(forKey: self.animationKey)
         self.shinyMaskLayer?.removeFromSuperlayer()
+        self.shinyMaskLayer = nil
     }
     
     private func updateAnimation() {
-        if self.shinyLabel?.frame == self.bounds {
+        if self.contentLabel.frame == .zero {
             return
         }
         
-        self.shinyLabel?.frame = self.bounds
-        self.shinyMaskLayer?.frame = CGRect(origin: .zero, size: CGSize(width: self.bounds.width * 0.2, height: self.bounds.height))
+        let contentFrame = self.contentLabel.frame
+        self.shinyLabel?.frame = contentFrame
+        let shinyMaskLayerWidth = contentFrame.size.height
+        self.shinyMaskLayer?.frame = CGRect(origin: .zero, size: CGSize(width: shinyMaskLayerWidth, height: contentFrame.size.height))
         self.shinyMaskLayer?.removeAnimation(forKey: self.animationKey)
         if let shinyMaskLayer = self.shinyMaskLayer {
             let animation = CABasicAnimation(keyPath: "transform.translation.x")
-            animation.duration = (self.bounds.width * 1.2) / 70.0
+            animation.duration = max(3.0, (contentFrame.size.width + shinyMaskLayerWidth) / 70.0)
             animation.repeatCount = .infinity
-            animation.fromValue = -self.bounds.width * 0.2
-            animation.toValue = self.bounds.width
+            animation.fromValue = -shinyMaskLayerWidth
+            animation.toValue = contentFrame.size.width
             animation.isRemovedOnCompletion = false
             shinyMaskLayer.add(animation, forKey: self.animationKey)
         }
