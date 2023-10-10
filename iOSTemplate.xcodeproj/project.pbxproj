@@ -31,6 +31,16 @@
 		1854053D2A08F32200F0DEB3 /* vip_badge_13.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1854053C2A08F32200F0DEB3 /* vip_badge_13.pag */; };
 		185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D817E28770C0000B9A838 /* YNavigationController.swift */; };
 		185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D81842878112E00B9A838 /* GCDViewModel.swift */; };
+		18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18631A9D2AD3F23F008DF0AB /* CustomTabBarController.swift */; };
+		18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18631A9F2AD3F26B008DF0AB /* TabBarDemoViewController.swift */; };
+		18631AA22AD3F410008DF0AB /* TBCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18631AA12AD3F410008DF0AB /* TBCustomButton.swift */; };
+		18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18631AA32AD3F581008DF0AB /* TBCustomTabBar.swift */; };
+		18631AA62AD42B9A008DF0AB /* TBCustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18631AA52AD42B9A008DF0AB /* TBCustomTabBarItem.swift */; };
+		18631AAD2AD42D8D008DF0AB /* tab_bar_animation_party.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18631AA82AD42D8D008DF0AB /* tab_bar_animation_party.pag */; };
+		18631AAE2AD42D8D008DF0AB /* tab_bar_animation_me.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18631AA92AD42D8D008DF0AB /* tab_bar_animation_me.pag */; };
+		18631AAF2AD42D8D008DF0AB /* tab_bar_animation_moment.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18631AAA2AD42D8D008DF0AB /* tab_bar_animation_moment.pag */; };
+		18631AB02AD42D8D008DF0AB /* tab_bar_animation_message.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18631AAB2AD42D8D008DF0AB /* tab_bar_animation_message.pag */; };
+		18631AB12AD42D8D008DF0AB /* tab_bar_animation_explore.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18631AAC2AD42D8D008DF0AB /* tab_bar_animation_explore.pag */; };
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
@@ -137,6 +147,16 @@
 		1854053C2A08F32200F0DEB3 /* vip_badge_13.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = vip_badge_13.pag; sourceTree = "<group>"; };
 		185D817E28770C0000B9A838 /* YNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNavigationController.swift; sourceTree = "<group>"; };
 		185D81842878112E00B9A838 /* GCDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewModel.swift; sourceTree = "<group>"; };
+		18631A9D2AD3F23F008DF0AB /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		18631A9F2AD3F26B008DF0AB /* TabBarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoViewController.swift; sourceTree = "<group>"; };
+		18631AA12AD3F410008DF0AB /* TBCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCustomButton.swift; sourceTree = "<group>"; };
+		18631AA32AD3F581008DF0AB /* TBCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCustomTabBar.swift; sourceTree = "<group>"; };
+		18631AA52AD42B9A008DF0AB /* TBCustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCustomTabBarItem.swift; sourceTree = "<group>"; };
+		18631AA82AD42D8D008DF0AB /* tab_bar_animation_party.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = tab_bar_animation_party.pag; sourceTree = "<group>"; };
+		18631AA92AD42D8D008DF0AB /* tab_bar_animation_me.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = tab_bar_animation_me.pag; sourceTree = "<group>"; };
+		18631AAA2AD42D8D008DF0AB /* tab_bar_animation_moment.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = tab_bar_animation_moment.pag; sourceTree = "<group>"; };
+		18631AAB2AD42D8D008DF0AB /* tab_bar_animation_message.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = tab_bar_animation_message.pag; sourceTree = "<group>"; };
+		18631AAC2AD42D8D008DF0AB /* tab_bar_animation_explore.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = tab_bar_animation_explore.pag; sourceTree = "<group>"; };
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +398,39 @@
 			path = YNavigationController;
 			sourceTree = "<group>";
 		};
+		18631A9B2AD3F1EB008DF0AB /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18631A9C2AD3F210008DF0AB /* CustomTabBar */,
+				18631A9F2AD3F26B008DF0AB /* TabBarDemoViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		18631A9C2AD3F210008DF0AB /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				18631AA72AD42D8D008DF0AB /* pag */,
+				18631A9D2AD3F23F008DF0AB /* CustomTabBarController.swift */,
+				18631AA12AD3F410008DF0AB /* TBCustomButton.swift */,
+				18631AA32AD3F581008DF0AB /* TBCustomTabBar.swift */,
+				18631AA52AD42B9A008DF0AB /* TBCustomTabBarItem.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		18631AA72AD42D8D008DF0AB /* pag */ = {
+			isa = PBXGroup;
+			children = (
+				18631AA82AD42D8D008DF0AB /* tab_bar_animation_party.pag */,
+				18631AA92AD42D8D008DF0AB /* tab_bar_animation_me.pag */,
+				18631AAA2AD42D8D008DF0AB /* tab_bar_animation_moment.pag */,
+				18631AAB2AD42D8D008DF0AB /* tab_bar_animation_message.pag */,
+				18631AAC2AD42D8D008DF0AB /* tab_bar_animation_explore.pag */,
+			);
+			path = pag;
+			sourceTree = "<group>";
+		};
 		1871E52028792152007C518F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +525,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18631A9B2AD3F1EB008DF0AB /* TabBarController */,
 				18B862AF2A694F6F000F5449 /* GradientView */,
 				1832A6CB28E41A9F0050B7A7 /* WKWebView */,
 				18C7282328DEEDE0003982C7 /* Animation */,
@@ -926,6 +980,7 @@
 				18C57CBD29B59CC300997B96 /* avatarFrame0.pag in Resources */,
 				18C57CC129B59CC300997B96 /* avatarFrame15.pag in Resources */,
 				1854053D2A08F32200F0DEB3 /* vip_badge_13.pag in Resources */,
+				18631AAE2AD42D8D008DF0AB /* tab_bar_animation_me.pag in Resources */,
 				18C57CB329B59CC300997B96 /* avatarFrame8.pag in Resources */,
 				1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */,
 				18C57CB429B59CC300997B96 /* avatarFrame6.pag in Resources */,
@@ -934,10 +989,12 @@
 				18C57CB729B59CC300997B96 /* avatarFrame12.pag in Resources */,
 				18C57CB629B59CC300997B96 /* avatarFrame18.pag in Resources */,
 				18C57CBA29B59CC300997B96 /* avatarFrame7.pag in Resources */,
+				18631AAF2AD42D8D008DF0AB /* tab_bar_animation_moment.pag in Resources */,
 				18C57CBB29B59CC300997B96 /* avatarFrame19.pag in Resources */,
 				18C57CAE29B59CC300997B96 /* avatarFrame16.pag in Resources */,
 				18C57CB529B59CC300997B96 /* avatarFrame3.pag in Resources */,
 				1851A95929A4F8D200B5A6F0 /* draw.pag in Resources */,
+				18631AB02AD42D8D008DF0AB /* tab_bar_animation_message.pag in Resources */,
 				18C57CBF29B59CC300997B96 /* avatarFrame13.pag in Resources */,
 				18C57CB129B59CC300997B96 /* avatarFrame2.pag in Resources */,
 				18C57CBE29B59CC300997B96 /* avatarFrame9.pag in Resources */,
@@ -948,9 +1005,11 @@
 				039C8BE828000685002624EB /* Assets.xcassets in Resources */,
 				1854053B2A08F23100F0DEB3 /* vip_badge_12.pag in Resources */,
 				18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */,
+				18631AAD2AD42D8D008DF0AB /* tab_bar_animation_party.pag in Resources */,
 				18C57CB929B59CC300997B96 /* avatarFrame5.pag in Resources */,
 				18C57CB829B59CC300997B96 /* avatarFrame17.pag in Resources */,
 				18C57CB229B59CC300997B96 /* avatarFrame11.pag in Resources */,
+				18631AB12AD42D8D008DF0AB /* tab_bar_animation_explore.pag in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,6 +1090,8 @@
 				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
 				18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
+				18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */,
+				18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
@@ -1042,6 +1103,7 @@
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
+				18631AA62AD42B9A008DF0AB /* TBCustomTabBarItem.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
 				033DC80A287AA9B300AA8F29 /* ListSection.swift in Sources */,
 				18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */,
@@ -1078,6 +1140,7 @@
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
+				18631AA22AD3F410008DF0AB /* TBCustomButton.swift in Sources */,
 				1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
@@ -1089,6 +1152,7 @@
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
+				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,

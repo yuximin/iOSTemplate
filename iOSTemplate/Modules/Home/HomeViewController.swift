@@ -29,7 +29,8 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRow(title: "PresentAndPush"),
                 ListRow(title: "Animation"),
                 ListRow(title: "WKWebView"),
-                ListRow(title: "GradientView")
+                ListRow(title: "GradientView"),
+                ListRow(title: "UITabBarController")
             ]),
             ListSection(title: "Foundation", rows: [
                 ListRow(title: "DateFormatter")
@@ -90,6 +91,8 @@ extension HomeViewController {
             viewController = WKWebViewDemoViewController()
         case ("UIKit", "GradientView"):
             viewController = GradientViewController()
+        case ("UIKit", "UITabBarController"):
+            viewController = TabBarDemoViewController()
         case ("Foundation", "DateFormatter"):
             viewController = DateFormatterDemoViewController()
         case ("组件", "PK进度条"):
