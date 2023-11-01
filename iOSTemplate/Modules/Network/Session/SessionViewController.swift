@@ -10,40 +10,26 @@ import UIKit
 class SessionViewController: ListViewController {
     
     let viewModel = SessionViewModel()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        sections = [
-            ListSection(title: "初级", rows: [
-                ListRow(title: "dataTask"),
-                ListRow(title: "dataTaskWithRequest"),
-                ListRow(title: "Custom Session")
+    
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "初级", rowItems: [
+                ListRowItem(title: "dataTask", tapAction: { [weak self] in
+                    self?.viewModel.loadJson()
+                }),
+                ListRowItem(title: "dataTaskWithRequest", tapAction: { [weak self] in
+                    self?.viewModel.loadJsonWithRequest()
+                }),
+                ListRowItem(title: "Custom Session", tapAction: { [weak self] in
+                    self?.viewModel.loadJsonWithCustomSession()
+                })
             ]),
-            ListSection(title: "Tasks", rows: [
-                ListRow(title: "downloadTask")
+            ListSectionItem(title: "Tasks", rowItems: [
+                ListRowItem(title: "downloadTask", tapAction: { [weak self] in
+                    self?.viewModel.downloadTask()
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension SessionViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("初级", "dataTask"):
-            viewModel.loadJson()
-        case ("初级", "dataTaskWithRequest"):
-            viewModel.loadJsonWithRequest()
-        case ("初级", "Custom Session"):
-            viewModel.loadJsonWithCustomSession()
-        case ("Tasks", "downloadTask"):
-            viewModel.downloadTask()
-        default:
-            break
-        }
-    }
 }

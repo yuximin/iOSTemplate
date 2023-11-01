@@ -9,36 +9,19 @@ import UIKit
 
 class LayoutSubviewsDemoViewController: ListViewController {
     
-    // MARK: - life cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        sections = [
-            ListSection(title: "布局方式", rows: [
-                ListRow(title: "手动布局"),
-                ListRow(title: "自动布局")
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "布局方式", rowItems: [
+                ListRowItem(title: "手动布局", tapAction: { [weak self] in
+                    let viewController = LayoutSubviewsDemoSubViewController(isAutoLayout: false)
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "自动布局", tapAction: { [weak self] in
+                    let viewController = LayoutSubviewsDemoSubViewController(isAutoLayout: true)
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension LayoutSubviewsDemoViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("布局方式", "手动布局"):
-            let viewController = LayoutSubviewsDemoSubViewController(isAutoLayout: false)
-            navigationController?.pushViewController(viewController, animated: true)
-        case ("布局方式", "自动布局"):
-            let viewController = LayoutSubviewsDemoSubViewController(isAutoLayout: true)
-            navigationController?.pushViewController(viewController, animated: true)
-        default:
-            break
-        }
-    }
 }

@@ -17,51 +17,34 @@ class GCDViewController: ListViewController {
     /// 并行队列
     let concurrentQueue = DispatchQueue(label: "com.temp.concurrent.queue", attributes: .concurrent)
     
-    // MARK: - life cycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        sections = [
-            ListSection(title: "初级", rows: [
-                ListRow(title: "同步串行队列"),
-                ListRow(title: "同步并发队列"),
-                ListRow(title: "异步串行队列"),
-                ListRow(title: "异步并发队列")
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "初级", rowItems: [
+                ListRowItem(title: "同步串行队列", tapAction: { [weak self] in
+                    self?.syncSerialQueue()
+                }),
+                ListRowItem(title: "同步并发队列", tapAction: { [weak self] in
+                    self?.syncConcurrentQueue()
+                }),
+                ListRowItem(title: "异步串行队列", tapAction: { [weak self] in
+                    self?.asyncSerialQueue()
+                }),
+                ListRowItem(title: "异步并发队列", tapAction: { [weak self] in
+                    self?.asyncConcurrentQueue()
+                })
                 
             ]),
-            ListSection(title: "进阶", rows: [
-                ListRow(title: "DispatchGroup"),
-                ListRow(title: "DispatchWorkItem.barrier")
+            ListSectionItem(title: "进阶", rowItems: [
+                ListRowItem(title: "DispatchGroup", tapAction: { [weak self] in
+                    self?.dispatchGroup()
+                }),
+                ListRowItem(title: "DispatchWorkItem.barrier", tapAction: { [weak self] in
+                    self?.barrier()
+                })
             ])
         ]
     }
     
-}
-
-// MARK: - UITableViewDelegate
-extension GCDViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("初级", "同步串行队列"):
-            syncSerialQueue()
-        case ("初级", "同步并发队列"):
-            syncConcurrentQueue()
-        case ("初级", "异步串行队列"):
-            asyncSerialQueue()
-        case ("初级", "异步并发队列"):
-            asyncConcurrentQueue()
-        case ("进阶", "DispatchGroup"):
-            dispatchGroup()
-        case ("进阶", "DispatchWorkItem.barrier"):
-            barrier()
-        default:
-            break
-        }
-    }
 }
 
 // MARK: - 初级

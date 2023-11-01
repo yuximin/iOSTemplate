@@ -10,52 +10,35 @@ import UIKit
 class OperationViewController: ListViewController {
     
     let viewModel = OperationViewModel()
-
-    // MARK: - life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        sections = [
-            ListSection(title: "初级", rows: [
-                ListRow(title: "简单使用"),
-                ListRow(title: "最大并发数"),
-                ListRow(title: "栅栏"),
-                ListRow(title: "依赖"),
-                ListRow(title: "自定义 Operation")
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "初级", rowItems: [
+                ListRowItem(title: "简单使用", tapAction: { [weak self] in
+                    self?.simple()
+                }),
+                ListRowItem(title: "最大并发数", tapAction: { [weak self] in
+                    self?.maxCount()
+                }),
+                ListRowItem(title: "栅栏", tapAction: { [weak self] in
+                    self?.barrier()
+                }),
+                ListRowItem(title: "依赖", tapAction: { [weak self] in
+                    self?.dependency()
+                }),
+                ListRowItem(title: "自定义 Operation", tapAction: { [weak self] in
+                    self?.customOperation()
+                })
                 
             ]),
-            ListSection(title: "实操", rows: [
-                ListRow(title: "下载器")
+            ListSectionItem(title: "实操", rowItems: [
+                ListRowItem(title: "下载器", tapAction: { [weak self] in
+                    self?.downloader()
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension OperationViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("初级", "简单使用"):
-            simple()
-        case ("初级", "最大并发数"):
-            maxCount()
-        case ("初级", "栅栏"):
-            barrier()
-        case ("初级", "依赖"):
-            dependency()
-        case ("初级", "自定义 Operation"):
-            customOperation()
-        case ("实操", "下载器"):
-            downloader()
-        default:
-            break
-        }
-        
-    }
 }
 
 // MARK: - 初级

@@ -26,30 +26,19 @@ class TiercelDemoViewController: ListViewController {
         downloader.cache.clearDiskCache { cache in
 //            cache.retrieveAllTasks()
         }
-
-        sections = [
-            ListSection(title: "Base", rows: [
-                ListRow(title: "Test")
+        
+    }
+    
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "Base", rowItems: [
+                ListRowItem(title: "Test", tapAction: { [weak self] in
+                    self?.baseTestDownlader()
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension TiercelDemoViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("Base", "Test"):
-//            baseTest()
-            baseTestDownlader()
-        default:
-            break
-        }
-    }
 }
 
 // MARK: - method

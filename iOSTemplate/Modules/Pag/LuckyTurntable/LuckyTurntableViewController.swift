@@ -276,7 +276,7 @@ extension LuckyTurntableViewController {
            number <= joinPlayers.count,
            let image = joinPlayers[number - 1].avatar,
            let cgImage = image.cgImage {
-            imageLayer.replace(PAGImage.fromCGImage(cgImage))
+            imageLayer.setImage(PAGImage.fromCGImage(cgImage))
         }
     }
     
@@ -289,7 +289,7 @@ extension LuckyTurntableViewController {
             if let imageLayer = pagFile.getLayersByName("\(i + 1)").first as? PAGImageLayer,
                let image = joinPlayers[i].avatar,
                let cgImage = image.cgImage {
-                 imageLayer.replace(PAGImage.fromCGImage(cgImage))
+                imageLayer.setImage(PAGImage.fromCGImage(cgImage))
             }
         }
     }

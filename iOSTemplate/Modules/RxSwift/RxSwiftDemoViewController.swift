@@ -8,33 +8,17 @@
 import UIKit
 
 class RxSwiftDemoViewController: ListViewController {
-
-    // MARK: - life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        sections = [
-            ListSection(title: "Demo", rows: [
-                ListRow(title: "Demo1")
-            ])
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "Demo",
+                            rowItems: [
+                                ListRowItem(title: "Demo1", tapAction: { [weak self] in
+                                    let viewController = RxSwiftDemo1ViewController()
+                                    self?.navigationController?.pushViewController(viewController, animated: true)
+                                })
+                            ])
         ]
     }
-
-}
-
-// MARK: - UITableViewDelegate
-extension RxSwiftDemoViewController {
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("Demo", "Demo1"):
-            let viewController = RxSwiftDemo1ViewController()
-            navigationController?.pushViewController(viewController, animated: true)
-        default:
-            break
-        }
-    }
 }

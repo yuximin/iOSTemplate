@@ -8,33 +8,16 @@
 import UIKit
 
 class TabBarDemoViewController: ListViewController {
-
-    // MARK: - life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        sections = [
-            ListSection(title: "示例", rows: [
-                ListRow(title: "自定义TabBar")
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "示例", rowItems: [
+                ListRowItem(title: "自定义TabBar", tapAction: { [weak self] in
+                    let viewController = CustomTabBarController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension TabBarDemoViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("示例", "自定义TabBar"):
-            let viewController = CustomTabBarController()
-            navigationController?.pushViewController(viewController, animated: true)
-        default:
-            break
-        }
-    }
 }

@@ -112,7 +112,7 @@ extension SessionViewModel: URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         Logger.info("location:", location)
         let fileManager = FileManager.default
-        var dstURL = location.deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Library/Caches", isDirectory: true).appendingPathComponent("a.mp4")
+        let dstURL = location.deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Library/Caches", isDirectory: true).appendingPathComponent("a.mp4")
         do {
             try fileManager.moveItem(at: location, to: dstURL)
         } catch {

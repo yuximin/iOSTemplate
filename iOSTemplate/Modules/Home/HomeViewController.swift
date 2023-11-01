@@ -13,120 +13,125 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
     var isNavigationBarHidden: Bool {
         true
     }
-
-    // MARK: - life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        sections = [
-            ListSection(title: "UIKit", rows: [
-                ListRow(title: "UIImage"),
-                ListRow(title: "UILabel"),
-                ListRow(title: "UICollectionView"),
-                ListRow(title: "UIStackView"),
-                ListRow(title: "LayoutSubviews"),
-                ListRow(title: "PresentAndPush"),
-                ListRow(title: "Animation"),
-                ListRow(title: "WKWebView"),
-                ListRow(title: "GradientView"),
-                ListRow(title: "UITabBarController")
+    override func updateSectionItems() {
+        sectionItems = [
+            ListSectionItem(title: "UIKit", rowItems: [
+                ListRowItem(title: "UIImage", tapAction: { [weak self] in
+                    let viewController = UIImageDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "UILabel", tapAction: { [weak self] in
+                    let viewController = UILabelDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "UICollectionView", tapAction: { [weak self] in
+                    let viewController = CollectionViewDemoController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "UIStackView", tapAction: { [weak self] in
+                    let viewController = UIStackViewDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "LayoutSubviews", tapAction: { [weak self] in
+                    let viewController = LayoutSubviewsDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "PresentAndPush", tapAction: { [weak self] in
+                    let viewController = PresentAndPushViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "Animation", tapAction: { [weak self] in
+                    let viewController = AnimationDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "WKWebView", tapAction: { [weak self] in
+                    let viewController = WKWebViewDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "GradientView", tapAction: { [weak self] in
+                    let viewController = GradientViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "UITabBarController", tapAction: { [weak self] in
+                    let viewController = TabBarDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "Foundation", rows: [
-                ListRow(title: "DateFormatter")
+            ListSectionItem(title: "Foundation", rowItems: [
+                ListRowItem(title: "DateFormatter", tapAction: { [weak self] in
+                    let viewController = DateFormatterDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "组件", rows: [
-                ListRow(title: "PK进度条")
+            ListSectionItem(title: "组件", rowItems: [
+                ListRowItem(title: "PK进度条", tapAction: { [weak self] in
+                    let viewController = PKProgressViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "多线程", rows: [
-                ListRow(title: "GCD"),
-                ListRow(title: "Operation")
+            ListSectionItem(title: "多线程", rowItems: [
+                ListRowItem(title: "GCD", tapAction: { [weak self] in
+                    let viewController = GCDViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "Operation", tapAction: { [weak self] in
+                    let viewController = OperationViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "网络编程", rows: [
-                ListRow(title: "URL"),
-                ListRow(title: "UISession"),
-                ListRow(title: "Moya")
+            ListSectionItem(title: "网络编程", rowItems: [
+                ListRowItem(title: "URL", tapAction: { [weak self] in
+                    let viewController = URLDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "UISession", tapAction: { [weak self] in
+                    let viewController = SessionViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "Moya", tapAction: { [weak self] in
+                    let viewController = MoyaDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "三方库", rows: [
-                ListRow(title: "Tiercel - swift下载器"),
-                ListRow(title: "Pag - 动效播放"),
-                ListRow(title: "融云"),
-                ListRow(title: "RxSwift"),
-                ListRow(title: "AFNetworking")
+            ListSectionItem(title: "三方库", rowItems: [
+                ListRowItem(title: "Tiercel - swift下载器", tapAction: { [weak self] in
+                    let viewController = TiercelDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "Pag - 动效播放", tapAction: { [weak self] in
+                    let viewController = PagDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "融云", tapAction: { [weak self] in
+                    let viewController = RongCloudViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "RxSwift", tapAction: { [weak self] in
+                    let viewController = RxSwiftDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "AFNetworking", tapAction: { [weak self] in
+                    let viewController = AFNetworkingViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "Codable", rows: [
-                ListRow(title: "Demo")
+            ListSectionItem(title: "Codable", rowItems: [
+                ListRowItem(title: "Demo", tapAction: { [weak self] in
+                    let viewController = CodableDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ]),
-            ListSection(title: "示例项目", rows: [
-                ListRow(title: "下载器")
+            ListSectionItem(title: "示例项目", rowItems: [
+                ListRowItem(title: "下载器", tapAction: { [weak self] in
+                    let viewController = JDownloaderViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "二维码扫描", tapAction: { [weak self] in
+                    let viewController = QRCodeScanDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ])
         ]
-    }
-
-}
-
-// MARK: - UITableViewDelegate
-extension HomeViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController: UIViewController?
-        
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("UIKit", "UIImage"):
-            viewController = UIImageDemoViewController()
-        case ("UIKit", "UILabel"):
-            viewController = UILabelDemoViewController()
-        case ("UIKit", "UICollectionView"):
-            viewController = CollectionViewDemoController()
-        case ("UIKit", "UIStackView"):
-            viewController = UIStackViewDemoViewController()
-        case ("UIKit", "LayoutSubviews"):
-            viewController = LayoutSubviewsDemoViewController()
-        case ("UIKit", "PresentAndPush"):
-            viewController = PresentAndPushViewController()
-        case ("UIKit", "Animation"):
-            viewController = AnimationDemoViewController()
-        case ("UIKit", "WKWebView"):
-            viewController = WKWebViewDemoViewController()
-        case ("UIKit", "GradientView"):
-            viewController = GradientViewController()
-        case ("UIKit", "UITabBarController"):
-            viewController = TabBarDemoViewController()
-        case ("Foundation", "DateFormatter"):
-            viewController = DateFormatterDemoViewController()
-        case ("组件", "PK进度条"):
-            viewController = PKProgressViewController()
-        case ("多线程", "GCD"):
-            viewController = GCDViewController()
-        case ("多线程", "Operation"):
-            viewController = OperationViewController()
-        case ("网络编程", "URL"):
-            viewController = URLDemoViewController()
-        case ("网络编程", "UISession"):
-            viewController = SessionViewController()
-        case ("网络编程", "Moya"):
-            viewController = MoyaDemoViewController()
-        case ("三方库", "Tiercel - swift下载器"):
-            viewController = TiercelDemoViewController()
-        case ("三方库", "Pag - 动效播放"):
-            viewController = PagDemoViewController()
-        case ("三方库", "融云"):
-            viewController = RongCloudViewController()
-        case ("三方库", "RxSwift"):
-            viewController = RxSwiftDemoViewController()
-        case ("三方库", "AFNetworking"):
-            viewController = AFNetworkingViewController()
-        case ("Codable", "Demo"):
-            viewController = CodableDemoViewController()
-        case ("示例项目", "下载器"):
-            viewController = JDownloaderViewController()
-        default:
-            viewController = nil
-        }
-        
-        if let viewController = viewController {
-            navigationController?.pushViewController(viewController, animated: true)
-        }
     }
 }

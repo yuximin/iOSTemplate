@@ -8,33 +8,16 @@
 import UIKit
 
 class WKWebViewDemoViewController: ListViewController {
-
-    // MARK: - life cycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        sections = [
-            ListSection(title: "基础", rows: [
-                ListRow(title: "WebView与原生交互")
+    override func updateSectionItems() {
+        self.sectionItems = [
+            ListSectionItem(title: "基础", rowItems: [
+                ListRowItem(title: "WebView与原生交互", tapAction: { [weak self] in
+                    let viewController = WKWebViewDemo1ViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
             ])
         ]
     }
 
-}
-
-// MARK: - UITableViewDelegate
-extension WKWebViewDemoViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sectionItem = sections[indexPath.section]
-        let rowItem = sectionItem.rows[indexPath.row]
-        switch (sectionItem.title, rowItem.title) {
-        case ("基础", "WebView与原生交互"):
-            let viewController = WKWebViewDemo1ViewController()
-            navigationController?.pushViewController(viewController, animated: true)
-        default:
-            break
-        }
-    }
 }

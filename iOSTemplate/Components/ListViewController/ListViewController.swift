@@ -9,30 +9,35 @@ import UIKit
 
 class ListViewController: UITableViewController {
     
-    var sections: [ListSection] = []
-
+    var sectionItems: [ListSectionItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        
+        updateSectionItems()
     }
     
+    func updateSectionItems() {
+        // 子类继承
+    }
 }
 
 // MARK: - UITableViewDataSource
 extension ListViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        sections.count
+        sectionItems.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        sections[section].rows.count
+        sectionItems[section].rowItems.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        let rowItem = sections[indexPath.section].rows[indexPath.row]
+        let rowItem = sectionItems[indexPath.section].rowItems[indexPath.row]
         cell.textLabel?.text = rowItem.title
         return cell
     }
@@ -41,6 +46,12 @@ extension ListViewController {
 // MARK: - UITableViewDelegate
 extension ListViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        sections[section].title
+        sectionItems[section].title
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sectionItem = self.sectionItems[indexPath.section]
+        let rowItem = sectionItem.rowItems[indexPath.row]
+        rowItem.tapAction?()
     }
 }

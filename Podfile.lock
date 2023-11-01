@@ -16,10 +16,12 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (5.7.1)
   - FSPagerView (0.8.3)
-  - libpag (4.2.77)
+  - Kingfisher (6.3.1)
+  - libpag (4.3.27)
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
+  - MINDownloader (0.1.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -65,8 +67,10 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
   - FSPagerView
-  - libpag
+  - Kingfisher
+  - libpag (~> 4.3.3)
   - LookinServer
+  - MINDownloader
   - Moya/RxSwift (~> 15.0)
   - RongCloudIM/IMKit (~> 5.2.5)
   - RxCocoa (= 6.5.0)
@@ -77,10 +81,13 @@ DEPENDENCIES:
   - XDownloader (from `Frameworks/XDownloader`)
 
 SPEC REPOS:
+  "git@github.com:yuximin/Specs.git":
+    - MINDownloader
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Alamofire
     - FSPagerView
+    - Kingfisher
     - libpag
     - LookinServer
     - Moya
@@ -102,8 +109,10 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
-  libpag: 2e8c034da39c775f04fb12e4ac7375d073424e7d
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  libpag: b39c9de84d405313bd1b3953240de2361cbe2e32
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
+  MINDownloader: 39db211f32032d573d75cab04c8422eb1606c2ed
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RongCloudIM: 4e405c43e8f5699dc8431d3a513eeca31b7a99c2
@@ -116,6 +125,6 @@ SPEC CHECKSUMS:
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
   XDownloader: f1d84c7220098ed53ab15d949b7ad6ee3b823423
 
-PODFILE CHECKSUM: 2130f8bab7df9f23688e7cbd56b5433033782d5f
+PODFILE CHECKSUM: 981c2ed9643c117d144e6aa8c4edc0456e1c29a6
 
 COCOAPODS: 1.11.3
