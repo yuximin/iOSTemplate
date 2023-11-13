@@ -17,6 +17,7 @@
 		1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
+		181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AE4E12AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift */; };
 		181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E95FE2A247405004EE81D /* URLDemoViewController.swift */; };
 		1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */; };
 		1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */; };
@@ -134,6 +135,7 @@
 		1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanDemoViewController.swift; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
+		181AE4E12AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWaterMarkViewController.swift; sourceTree = "<group>"; };
 		181E95FE2A247405004EE81D /* URLDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CC28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemoViewController.swift; sourceTree = "<group>"; };
 		1832A6CF28E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo1ViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,14 @@
 			path = Moya;
 			sourceTree = "<group>";
 		};
+		181AE4E02AFDD278008ACF89 /* WaterMark */ = {
+			isa = PBXGroup;
+			children = (
+				181AE4E12AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift */,
+			);
+			path = WaterMark;
+			sourceTree = "<group>";
+		};
 		181E95FD2A2473EF004EE81D /* URL */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +520,7 @@
 		188494E9289BCF8200E4C464 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				181AE4E02AFDD278008ACF89 /* WaterMark */,
 				188494EA289BCF8F00E4C464 /* Orientation */,
 				188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */,
 			);
@@ -1110,6 +1121,7 @@
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
+				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
 				1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,

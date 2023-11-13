@@ -21,6 +21,7 @@ target 'iOSTemplate' do
 #  pod 'Moya', '~> 15.0'
   pod 'Moya/RxSwift', '~> 15.0'
   pod 'XDownloader', :path => 'Frameworks/XDownloader'
+  pod 'SDWebImage'
   pod 'Kingfisher'
   pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
 end
