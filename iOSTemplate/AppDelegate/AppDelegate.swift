@@ -22,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
+        ServiceManager.shared.registerModuleFromPlistFile("ServiceConfig")
+        if let noteModule = ServiceManager.shared.createModuleWithProtocol(NoteProtocol.self) as? NoteProtocol {
+            noteModule.writeNote()
+        }
+        
         return true
     }
 

@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Alamofire (5.7.1)
+  - BeeHive (1.6.0)
   - FSPagerView (0.8.3)
   - Kingfisher (6.3.1)
   - libpag (4.3.27)
@@ -66,9 +67,21 @@ PODS:
     - Protobuf (~> 3.4)
   - Tiercel (3.2.5)
   - XDownloader (0.1.0)
+  - ZIKRouter/ServiceRouter (1.1.1)
+  - ZIKRouter/ViewRouter (1.1.1):
+    - ZIKRouter/ServiceRouter
+  - ZRouter (1.1.1):
+    - ZRouter/ServiceRouter (= 1.1.1)
+    - ZRouter/ViewRouter (= 1.1.1)
+  - ZRouter/ServiceRouter (1.1.1):
+    - ZIKRouter/ServiceRouter (>= 1.1.1)
+  - ZRouter/ViewRouter (1.1.1):
+    - ZIKRouter/ViewRouter (>= 1.1.1)
+    - ZRouter/ServiceRouter
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
+  - BeeHive
   - FSPagerView
   - Kingfisher
   - libpag
@@ -83,6 +96,7 @@ DEPENDENCIES:
   - SVGAPlayer (~> 2.3)
   - Tiercel
   - XDownloader (from `Frameworks/XDownloader`)
+  - ZRouter (>= 1.0.12)
 
 SPEC REPOS:
   "git@github.com:yuximin/Specs.git":
@@ -90,6 +104,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Alamofire
+    - BeeHive
     - FSPagerView
     - Kingfisher
     - libpag
@@ -105,6 +120,8 @@ SPEC REPOS:
     - SSZipArchive
     - SVGAPlayer
     - Tiercel
+    - ZIKRouter
+    - ZRouter
 
 EXTERNAL SOURCES:
   XDownloader:
@@ -113,6 +130,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   libpag: b39c9de84d405313bd1b3953240de2361cbe2e32
@@ -130,7 +148,9 @@ SPEC CHECKSUMS:
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
   XDownloader: f1d84c7220098ed53ab15d949b7ad6ee3b823423
+  ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
+  ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: 8f3f3d2f5582765aee484c856f3ddd3f02d63d60
+PODFILE CHECKSUM: 939aecd0faab18a2a1133036b7d87fb2f3dcf0c1
 
 COCOAPODS: 1.11.3

@@ -24,6 +24,9 @@
 		183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */; };
 		183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183E08742A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift */; };
 		183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */; };
+		184598692B31884D00489885 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184598682B31884D00489885 /* NoteService.swift */; };
+		1845986C2B31886600489885 /* NoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845986B2B31886600489885 /* NoteProtocol.swift */; };
+		1845986F2B31893700489885 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845986E2B31893700489885 /* ServiceManager.swift */; };
 		1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */; };
 		1851A95929A4F8D200B5A6F0 /* draw.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95829A4F3DA00B5A6F0 /* draw.pag */; };
 		1851A95B29A5B99C00B5A6F0 /* pk_main.pag in Resources */ = {isa = PBXBuildFile; fileRef = 1851A95A29A5B90200B5A6F0 /* pk_main.pag */; };
@@ -46,6 +49,7 @@
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
+		18832D652B32D26D00C3E2F3 /* ServiceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */; };
 		188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */; };
 		188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */; };
 		188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494D12897EE6400E4C464 /* NormalCollectionViewCell.swift */; };
@@ -142,6 +146,9 @@
 		183E08722A0B82A300D3A1C9 /* PagImageViewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagImageViewListViewController.swift; sourceTree = "<group>"; };
 		183E08742A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagImageViewListItemCell.swift; sourceTree = "<group>"; };
 		183FC55829C177A100F29573 /* DateFormatterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterDemoViewController.swift; sourceTree = "<group>"; };
+		184598682B31884D00489885 /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
+		1845986B2B31886600489885 /* NoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteProtocol.swift; sourceTree = "<group>"; };
+		1845986E2B31893700489885 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		1851A95529A4F34B00B5A6F0 /* PagEasyPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagEasyPlayViewController.swift; sourceTree = "<group>"; };
 		1851A95829A4F3DA00B5A6F0 /* draw.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = draw.pag; sourceTree = "<group>"; };
 		1851A95A29A5B90200B5A6F0 /* pk_main.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = pk_main.pag; sourceTree = "<group>"; };
@@ -164,6 +171,7 @@
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceConfig.plist; sourceTree = "<group>"; };
 		188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoController.swift; sourceTree = "<group>"; };
 		188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewStyle1ViewController.swift; sourceTree = "<group>"; };
 		188494D12897EE6400E4C464 /* NormalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -386,6 +394,41 @@
 			path = DateFormatter;
 			sourceTree = "<group>";
 		};
+		184598662B3187EB00489885 /* ProtocolService */ = {
+			isa = PBXGroup;
+			children = (
+				18832D632B32D22600C3E2F3 /* ServiceConfig */,
+				1845986D2B31892000489885 /* ServiceManager */,
+				1845986A2B31885200489885 /* NoteProtocol */,
+				184598672B31880300489885 /* NoteService */,
+			);
+			path = ProtocolService;
+			sourceTree = "<group>";
+		};
+		184598672B31880300489885 /* NoteService */ = {
+			isa = PBXGroup;
+			children = (
+				184598682B31884D00489885 /* NoteService.swift */,
+			);
+			path = NoteService;
+			sourceTree = "<group>";
+		};
+		1845986A2B31885200489885 /* NoteProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1845986B2B31886600489885 /* NoteProtocol.swift */,
+			);
+			path = NoteProtocol;
+			sourceTree = "<group>";
+		};
+		1845986D2B31892000489885 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				1845986E2B31893700489885 /* ServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
 		1851A95429A4F30400B5A6F0 /* EasyPlay */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +522,14 @@
 				033DC80B287AAC9E00AA8F29 /* SessionViewModel.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		18832D632B32D22600C3E2F3 /* ServiceConfig */ = {
+			isa = PBXGroup;
+			children = (
+				18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */,
+			);
+			path = ServiceConfig;
 			sourceTree = "<group>";
 		};
 		188494CA2897EC3700E4C464 /* UICollectionView */ = {
@@ -879,6 +930,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				184598662B3187EB00489885 /* ProtocolService */,
 				1816F1D82ADEAC55009179DC /* QRCodeScan */,
 				183FC55629C1777D00F29573 /* Foundation */,
 				1851A95D29A7139B00B5A6F0 /* Components */,
@@ -1023,6 +1075,7 @@
 				18C57CB129B59CC300997B96 /* avatarFrame2.pag in Resources */,
 				18C57CBE29B59CC300997B96 /* avatarFrame9.pag in Resources */,
 				18F8041E28E46E3500B21DBC /* test.html in Resources */,
+				18832D652B32D26D00C3E2F3 /* ServiceConfig.plist in Resources */,
 				18C57CC029B59CC300997B96 /* avatarFrame14.pag in Resources */,
 				039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */,
 				18C57CB029B59CC300997B96 /* avatarFrame4.pag in Resources */,
@@ -1106,6 +1159,7 @@
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */,
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
+				184598692B31884D00489885 /* NoteService.swift in Sources */,
 				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
 				189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */,
@@ -1122,6 +1176,7 @@
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
+				1845986C2B31886600489885 /* NoteProtocol.swift in Sources */,
 				18CBBFC328AF3F4300EC0473 /* PushViewController.swift in Sources */,
 				1851A95F29A713C600B5A6F0 /* PKProgressViewController.swift in Sources */,
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
@@ -1158,6 +1213,7 @@
 				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
 				183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */,
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
+				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,

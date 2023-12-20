@@ -24,6 +24,8 @@ target 'iOSTemplate' do
   pod 'SDWebImage'
   pod 'Kingfisher'
   pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
+  pod "BeeHive"
+  pod 'ZRouter', '>= 1.0.12'
 end
 
 post_install do |installer|
