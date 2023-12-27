@@ -71,6 +71,8 @@
 		18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */; };
 		18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */; };
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
+		18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */; };
+		18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD42B3C01F8002A410D /* Reusable.swift */; };
 		18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817C287822EB00D3F3E0 /* OperationViewController.swift */; };
 		18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817E287823A900D3F3E0 /* OperationViewModel.swift */; };
 		18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08182287856E100D3F3E0 /* SimpleOperation.swift */; };
@@ -120,6 +122,9 @@
 		18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E1229951C860050874A /* AFNetworkingViewController.swift */; };
 		18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E15299671B40050874A /* JDownloaderViewController.swift */; };
 		18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E17299674930050874A /* JDownloaderViewModel.swift */; };
+		18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */; };
+		18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */; };
+		18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */; };
 		18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8021A2876CBBE0070A3DA /* GCDViewController.swift */; };
 		18F802292876FEFA0070A3DA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F802282876FEFA0070A3DA /* Logger.swift */; };
 		18F8041E28E46E3500B21DBC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 18F8041D28E46E3500B21DBC /* test.html */; };
@@ -193,6 +198,8 @@
 		18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTurntableViewController.swift; sourceTree = "<group>"; };
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
+		18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGListTestViewController.swift; sourceTree = "<group>"; };
+		18AE0DD42B3C01F8002A410D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		18B0817C287822EB00D3F3E0 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		18B0817E287823A900D3F3E0 /* OperationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewModel.swift; sourceTree = "<group>"; };
 		18B08182287856E100D3F3E0 /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
@@ -242,6 +249,9 @@
 		18E99E1229951C860050874A /* AFNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingViewController.swift; sourceTree = "<group>"; };
 		18E99E15299671B40050874A /* JDownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewController.swift; sourceTree = "<group>"; };
 		18E99E17299674930050874A /* JDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewModel.swift; sourceTree = "<group>"; };
+		18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
+		18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */ = {isa = PBXFileReference; lastKnownFileType = file; name = avatar_frame_test.pag; path = ../../../../../../Downloads/avatar_frame_test.pag; sourceTree = "<group>"; };
+		18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGImageRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
 		18F8021A2876CBBE0070A3DA /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		18F802282876FEFA0070A3DA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		18F8041D28E46E3500B21DBC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -301,6 +311,7 @@
 		039C8BDD28000684002624EB /* iOSTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				18AE0DD22B3C007E002A410D /* Libs */,
 				188494D32897EEE000E4C464 /* Extension */,
 				18F8021D2876CD2D0070A3DA /* AppDelegate */,
 				18F802202876CDFB0070A3DA /* Components */,
@@ -676,6 +687,8 @@
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
 			isa = PBXGroup;
 			children = (
+				18AE0DCF2B3C0039002A410D /* PAGListTest */,
+				18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */,
 				183E08712A0B828900D3A1C9 /* PagImageViewList */,
 				18C57C9529B5939500997B96 /* PagTest */,
 				1851A95429A4F30400B5A6F0 /* EasyPlay */,
@@ -691,6 +704,30 @@
 				18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */,
 			);
 			path = LuckyTurntable;
+			sourceTree = "<group>";
+		};
+		18AE0DCF2B3C0039002A410D /* PAGListTest */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */,
+			);
+			path = PAGListTest;
+			sourceTree = "<group>";
+		};
+		18AE0DD22B3C007E002A410D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0DD32B3C01DE002A410D /* Reusable */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		18AE0DD32B3C01DE002A410D /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0DD42B3C01F8002A410D /* Reusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		18B0817B287822D500D3F3E0 /* Operation */ = {
@@ -863,6 +900,15 @@
 			path = JDownloader;
 			sourceTree = "<group>";
 		};
+		18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */ = {
+			isa = PBXGroup;
+			children = (
+				18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */,
+				18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */,
+			);
+			path = PagRemoteURLLoad;
+			sourceTree = "<group>";
+		};
 		18F802182876C5630070A3DA /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,6 +954,7 @@
 				18C57CA429B59CC300997B96 /* avatarFrame17.pag */,
 				18C57CA229B59CC300997B96 /* avatarFrame18.pag */,
 				18C57CA729B59CC300997B96 /* avatarFrame19.pag */,
+				18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */,
 				1851A95A29A5B90200B5A6F0 /* pk_main.pag */,
 				1851A95829A4F3DA00B5A6F0 /* draw.pag */,
 				18F8041D28E46E3500B21DBC /* test.html */,
@@ -1083,6 +1130,7 @@
 				1854053B2A08F23100F0DEB3 /* vip_badge_12.pag in Resources */,
 				18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */,
 				18631AAD2AD42D8D008DF0AB /* tab_bar_animation_party.pag in Resources */,
+				18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */,
 				18C57CB929B59CC300997B96 /* avatarFrame5.pag in Resources */,
 				18C57CB829B59CC300997B96 /* avatarFrame17.pag in Resources */,
 				18C57CB229B59CC300997B96 /* avatarFrame11.pag in Resources */,
@@ -1167,6 +1215,7 @@
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
 				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
 				18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */,
+				18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */,
 				18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */,
@@ -1209,6 +1258,7 @@
 				18CBBFC128AF3F3500EC0473 /* PresentViewController.swift in Sources */,
 				18C7282228DDE700003982C7 /* RongCloudViewModel.swift in Sources */,
 				18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */,
+				18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */,
 				18CDA1802A6BDC75004029A8 /* ShinyLabel.swift in Sources */,
 				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
 				183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */,
@@ -1216,6 +1266,7 @@
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
+				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
 				189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
@@ -1236,6 +1287,7 @@
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
+				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
 			);

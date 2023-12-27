@@ -28,6 +28,14 @@ class PagDemoViewController: ListViewController {
                                 ListRowItem(title: "PAGImageViewList", tapAction: { [weak self] in
                                     let viewController = PagImageViewListViewController()
                                     self?.navigationController?.pushViewController(viewController, animated: true)
+                                }),
+                                ListRowItem(title: "PAGView通过远程链接加载资源", tapAction: { [weak self] in
+                                    let viewController = PAGRemoteURLLoadViewController()
+                                    self?.navigationController?.pushViewController(viewController, animated: true)
+                                }),
+                                ListRowItem(title: "PAGImageView通过远程链接加载资源", tapAction: { [weak self] in
+                                    let viewController = PAGImageRemoteURLLoadViewController()
+                                    self?.navigationController?.pushViewController(viewController, animated: true)
                                 })
                             ])
         ]

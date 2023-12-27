@@ -71,3 +71,23 @@ extension String {
         return result
     }
 }
+
+/// MARK: - 计算子字符串个数
+extension String {
+    public func countForSubstring(_ subString: String) -> Int {
+        var rangeArray = [Range<String.Index>]()
+        var searchedRange: Range<String.Index>
+        guard let sr = self.range(of: self) else {
+            return rangeArray.count
+        }
+        searchedRange = sr
+        
+        var resultRange = self.range(of: subString, options: .regularExpression, range: searchedRange, locale: nil)
+        while let range = resultRange {
+            rangeArray.append(range)
+            searchedRange = Range(uncheckedBounds: (range.upperBound, searchedRange.upperBound))
+            resultRange = self.range(of: subString, options: .regularExpression, range: searchedRange, locale: nil)
+        }
+        return rangeArray.count
+    }
+}
