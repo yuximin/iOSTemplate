@@ -73,6 +73,16 @@
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
 		18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */; };
 		18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD42B3C01F8002A410D /* Reusable.swift */; };
+		18AE0DD72B3C0376002A410D /* PAGListTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD62B3C0376002A410D /* PAGListTestCell.swift */; };
+		18AE0DDA2B3C0528002A410D /* PagPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD92B3C0528002A410D /* PagPlayerView.swift */; };
+		18AE0DE22B3C057A002A410D /* ResourceDownloadDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DDC2B3C057A002A410D /* ResourceDownloadDiskCache.swift */; };
+		18AE0DE32B3C057A002A410D /* ResourceDownloadError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DDD2B3C057A002A410D /* ResourceDownloadError.swift */; };
+		18AE0DE42B3C057A002A410D /* ResourceDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DDE2B3C057A002A410D /* ResourceDownloader.swift */; };
+		18AE0DE52B3C057A002A410D /* ResourceDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DDF2B3C057A002A410D /* ResourceDownloadOperation.swift */; };
+		18AE0DE62B3C057A002A410D /* ResourceDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DE02B3C057A002A410D /* ResourceDownloadManager.swift */; };
+		18AE0DE72B3C057A002A410D /* ResourceDownloadWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DE12B3C057A002A410D /* ResourceDownloadWrapper.swift */; };
+		18AE0DE92B3C0758002A410D /* LevelConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DE82B3C0758002A410D /* LevelConfigModel.swift */; };
+		18AE0DEB2B3C0FEB002A410D /* PagPlayerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DEA2B3C0FEB002A410D /* PagPlayerImageView.swift */; };
 		18B0817D287822EB00D3F3E0 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817C287822EB00D3F3E0 /* OperationViewController.swift */; };
 		18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0817E287823A900D3F3E0 /* OperationViewModel.swift */; };
 		18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B08182287856E100D3F3E0 /* SimpleOperation.swift */; };
@@ -200,6 +210,16 @@
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
 		18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGListTestViewController.swift; sourceTree = "<group>"; };
 		18AE0DD42B3C01F8002A410D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		18AE0DD62B3C0376002A410D /* PAGListTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGListTestCell.swift; sourceTree = "<group>"; };
+		18AE0DD92B3C0528002A410D /* PagPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagPlayerView.swift; sourceTree = "<group>"; };
+		18AE0DDC2B3C057A002A410D /* ResourceDownloadDiskCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloadDiskCache.swift; sourceTree = "<group>"; };
+		18AE0DDD2B3C057A002A410D /* ResourceDownloadError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloadError.swift; sourceTree = "<group>"; };
+		18AE0DDE2B3C057A002A410D /* ResourceDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloader.swift; sourceTree = "<group>"; };
+		18AE0DDF2B3C057A002A410D /* ResourceDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloadOperation.swift; sourceTree = "<group>"; };
+		18AE0DE02B3C057A002A410D /* ResourceDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloadManager.swift; sourceTree = "<group>"; };
+		18AE0DE12B3C057A002A410D /* ResourceDownloadWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceDownloadWrapper.swift; sourceTree = "<group>"; };
+		18AE0DE82B3C0758002A410D /* LevelConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelConfigModel.swift; sourceTree = "<group>"; };
+		18AE0DEA2B3C0FEB002A410D /* PagPlayerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagPlayerImageView.swift; sourceTree = "<group>"; };
 		18B0817C287822EB00D3F3E0 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		18B0817E287823A900D3F3E0 /* OperationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewModel.swift; sourceTree = "<group>"; };
 		18B08182287856E100D3F3E0 /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
@@ -687,6 +707,7 @@
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
 			isa = PBXGroup;
 			children = (
+				18AE0DD82B3C0512002A410D /* PAGPlayer */,
 				18AE0DCF2B3C0039002A410D /* PAGListTest */,
 				18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */,
 				183E08712A0B828900D3A1C9 /* PagImageViewList */,
@@ -710,6 +731,7 @@
 			isa = PBXGroup;
 			children = (
 				18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */,
+				18AE0DD62B3C0376002A410D /* PAGListTestCell.swift */,
 			);
 			path = PAGListTest;
 			sourceTree = "<group>";
@@ -717,6 +739,7 @@
 		18AE0DD22B3C007E002A410D /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18AE0DDB2B3C057A002A410D /* ResourceDownloader */,
 				18AE0DD32B3C01DE002A410D /* Reusable */,
 			);
 			path = Libs;
@@ -728,6 +751,29 @@
 				18AE0DD42B3C01F8002A410D /* Reusable.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		18AE0DD82B3C0512002A410D /* PAGPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0DD92B3C0528002A410D /* PagPlayerView.swift */,
+				18AE0DE82B3C0758002A410D /* LevelConfigModel.swift */,
+				18AE0DEA2B3C0FEB002A410D /* PagPlayerImageView.swift */,
+			);
+			path = PAGPlayer;
+			sourceTree = "<group>";
+		};
+		18AE0DDB2B3C057A002A410D /* ResourceDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0DDC2B3C057A002A410D /* ResourceDownloadDiskCache.swift */,
+				18AE0DDD2B3C057A002A410D /* ResourceDownloadError.swift */,
+				18AE0DDE2B3C057A002A410D /* ResourceDownloader.swift */,
+				18AE0DDF2B3C057A002A410D /* ResourceDownloadOperation.swift */,
+				18AE0DE02B3C057A002A410D /* ResourceDownloadManager.swift */,
+				18AE0DE12B3C057A002A410D /* ResourceDownloadWrapper.swift */,
+			);
+			path = ResourceDownloader;
 			sourceTree = "<group>";
 		};
 		18B0817B287822D500D3F3E0 /* Operation */ = {
@@ -1207,6 +1253,8 @@
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */,
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
+				18AE0DE42B3C057A002A410D /* ResourceDownloader.swift in Sources */,
+				18AE0DE22B3C057A002A410D /* ResourceDownloadDiskCache.swift in Sources */,
 				184598692B31884D00489885 /* NoteService.swift in Sources */,
 				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
@@ -1232,8 +1280,10 @@
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
+				18AE0DD72B3C0376002A410D /* PAGListTestCell.swift in Sources */,
 				18631AA62AD42B9A008DF0AB /* TBCustomTabBarItem.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
+				18AE0DE72B3C057A002A410D /* ResourceDownloadWrapper.swift in Sources */,
 				033DC80A287AA9B300AA8F29 /* ListSectionItem.swift in Sources */,
 				18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */,
 				18C57C9729B593CD00997B96 /* PagTestViewController.swift in Sources */,
@@ -1241,6 +1291,7 @@
 				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
 				18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */,
 				188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */,
+				18AE0DDA2B3C0528002A410D /* PagPlayerView.swift in Sources */,
 				18CA89E828FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift in Sources */,
 				18D56D3829BAE123005FF8D5 /* AnimationDemo2ViewController.swift in Sources */,
 				185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */,
@@ -1250,6 +1301,7 @@
 				033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */,
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
+				18AE0DE92B3C0758002A410D /* LevelConfigModel.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
 				18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */,
@@ -1265,6 +1317,7 @@
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
+				18AE0DE32B3C057A002A410D /* ResourceDownloadError.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
@@ -1283,13 +1336,16 @@
 				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
 				183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
+				18AE0DEB2B3C0FEB002A410D /* PagPlayerImageView.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
+				18AE0DE62B3C057A002A410D /* ResourceDownloadManager.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
+				18AE0DE52B3C057A002A410D /* ResourceDownloadOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

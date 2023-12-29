@@ -36,6 +36,10 @@ class PagDemoViewController: ListViewController {
                                 ListRowItem(title: "PAGImageView通过远程链接加载资源", tapAction: { [weak self] in
                                     let viewController = PAGImageRemoteURLLoadViewController()
                                     self?.navigationController?.pushViewController(viewController, animated: true)
+                                }),
+                                ListRowItem(title: "PAGView列表性能测试", tapAction: { [weak self] in
+                                    let viewController = PAGListTestViewController()
+                                    self?.navigationController?.pushViewController(viewController, animated: true)
                                 })
                             ])
         ]
