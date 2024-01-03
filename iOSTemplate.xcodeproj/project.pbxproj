@@ -71,6 +71,7 @@
 		18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */; };
 		18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */; };
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
+		18AC67392B43E1B30074591A /* DemoUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC67382B43E1B30074591A /* DemoUIViewController.swift */; };
 		18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */; };
 		18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD42B3C01F8002A410D /* Reusable.swift */; };
 		18AE0DD72B3C0376002A410D /* PAGListTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0DD62B3C0376002A410D /* PAGListTestCell.swift */; };
@@ -208,6 +209,7 @@
 		18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTurntableViewController.swift; sourceTree = "<group>"; };
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
+		18AC67382B43E1B30074591A /* DemoUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUIViewController.swift; sourceTree = "<group>"; };
 		18AE0DD02B3C0055002A410D /* PAGListTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGListTestViewController.swift; sourceTree = "<group>"; };
 		18AE0DD42B3C01F8002A410D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		18AE0DD62B3C0376002A410D /* PAGListTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGListTestCell.swift; sourceTree = "<group>"; };
@@ -629,6 +631,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18AC67372B43E16D0074591A /* DemoUIViewController */,
 				18631A9B2AD3F1EB008DF0AB /* TabBarController */,
 				18B862AF2A694F6F000F5449 /* GradientView */,
 				1832A6CB28E41A9F0050B7A7 /* WKWebView */,
@@ -725,6 +728,14 @@
 				18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */,
 			);
 			path = LuckyTurntable;
+			sourceTree = "<group>";
+		};
+		18AC67372B43E16D0074591A /* DemoUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18AC67382B43E1B30074591A /* DemoUIViewController.swift */,
+			);
+			path = DemoUIViewController;
 			sourceTree = "<group>";
 		};
 		18AE0DCF2B3C0039002A410D /* PAGListTest */ = {
@@ -1313,6 +1324,7 @@
 				18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */,
 				18CDA1802A6BDC75004029A8 /* ShinyLabel.swift in Sources */,
 				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
+				18AC67392B43E1B30074591A /* DemoUIViewController.swift in Sources */,
 				183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */,
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,

@@ -56,6 +56,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRowItem(title: "UITabBarController", tapAction: { [weak self] in
                     let viewController = TabBarDemoViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "DemoUIViewController", tapAction: { [weak self] in
+                    let viewController = DemoUIViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ]),
             ListSectionItem(title: "Foundation", rowItems: [

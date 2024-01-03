@@ -125,13 +125,13 @@ class PAGImageRemoteURLLoadViewController: UIViewController {
 //        guard let path = Bundle.main.path(forResource: "avatar_frame_test", ofType: "pag") else { return }
         
         self.loadPAGFile(path: path) { [weak self] pagFile in
-//            self?.pagFile = pagFile
+            self?.pagFile = pagFile
 //            self?.pagImageView.setComposition(pagFile)
             
-//            if pagFile == nil {
-//                self?.pausePlay()
-//            }
-//            self?.startPlay()
+            if pagFile == nil {
+                self?.pausePlay()
+            }
+            self?.startPlay()
         }
     }
     

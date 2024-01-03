@@ -18,7 +18,7 @@ PODS:
   - BeeHive (1.6.0)
   - FSPagerView (0.8.3)
   - Kingfisher (6.3.1)
-  - libpag (4.3.43)
+  - libpag (4.3.45)
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
@@ -133,7 +133,7 @@ SPEC CHECKSUMS:
   BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
-  libpag: dfb5904399f41e6c7f58fee076c5370f5bd92970
+  libpag: 5abe80aba308e2aa7af4de69f0061aeaa81a3089
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
   MINDownloader: 39db211f32032d573d75cab04c8422eb1606c2ed
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
