@@ -62,6 +62,12 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                     self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ]),
+            ListSectionItem(title: "组件化", rowItems: [
+                ListRowItem(title: "UIModuleManager", tapAction: { [weak self] in
+                    let viewController = ModuleViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
+            ]),
             ListSectionItem(title: "Foundation", rowItems: [
                 ListRowItem(title: "DateFormatter", tapAction: { [weak self] in
                     let viewController = DateFormatterDemoViewController()

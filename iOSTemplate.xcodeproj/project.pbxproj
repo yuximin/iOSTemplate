@@ -133,6 +133,19 @@
 		18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E1229951C860050874A /* AFNetworkingViewController.swift */; };
 		18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E15299671B40050874A /* JDownloaderViewController.swift */; };
 		18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E17299674930050874A /* JDownloaderViewModel.swift */; };
+		18ED92B32B4503240054AE26 /* UIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92B22B4503240054AE26 /* UIModule.swift */; };
+		18ED92B62B4503E40054AE26 /* ModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92B52B4503E40054AE26 /* ModuleViewController.swift */; };
+		18ED92B82B4506C40054AE26 /* UIModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92B72B4506C40054AE26 /* UIModuleManager.swift */; };
+		18ED92BC2B45076B0054AE26 /* BottomBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92BB2B45076B0054AE26 /* BottomBarModule.swift */; };
+		18ED92BE2B4509900054AE26 /* UIModuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92BD2B4509900054AE26 /* UIModuleType.swift */; };
+		18ED92C02B457CB00054AE26 /* UIBottomBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92BF2B457CB00054AE26 /* UIBottomBarModule.swift */; };
+		18ED92C32B457D610054AE26 /* OperateBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92C22B457D610054AE26 /* OperateBarModule.swift */; };
+		18ED92C52B457D6E0054AE26 /* UIOperateBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92C42B457D6E0054AE26 /* UIOperateBarModule.swift */; };
+		18ED92C82B457F740054AE26 /* PlayerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92C72B457F740054AE26 /* PlayerModule.swift */; };
+		18ED92CA2B457F810054AE26 /* UIPlayerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92C92B457F810054AE26 /* UIPlayerModule.swift */; };
+		18ED92CD2B457FBD0054AE26 /* InfoBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92CC2B457FBD0054AE26 /* InfoBarModule.swift */; };
+		18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92CE2B457FC40054AE26 /* UIInfoBarModule.swift */; };
+		18ED92D12B4583EC0054AE26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92D02B4583EC0054AE26 /* Constants.swift */; };
 		18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */; };
 		18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */; };
 		18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */; };
@@ -271,6 +284,19 @@
 		18E99E1229951C860050874A /* AFNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingViewController.swift; sourceTree = "<group>"; };
 		18E99E15299671B40050874A /* JDownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewController.swift; sourceTree = "<group>"; };
 		18E99E17299674930050874A /* JDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewModel.swift; sourceTree = "<group>"; };
+		18ED92B22B4503240054AE26 /* UIModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModule.swift; sourceTree = "<group>"; };
+		18ED92B52B4503E40054AE26 /* ModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewController.swift; sourceTree = "<group>"; };
+		18ED92B72B4506C40054AE26 /* UIModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleManager.swift; sourceTree = "<group>"; };
+		18ED92BB2B45076B0054AE26 /* BottomBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarModule.swift; sourceTree = "<group>"; };
+		18ED92BD2B4509900054AE26 /* UIModuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleType.swift; sourceTree = "<group>"; };
+		18ED92BF2B457CB00054AE26 /* UIBottomBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBottomBarModule.swift; sourceTree = "<group>"; };
+		18ED92C22B457D610054AE26 /* OperateBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateBarModule.swift; sourceTree = "<group>"; };
+		18ED92C42B457D6E0054AE26 /* UIOperateBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOperateBarModule.swift; sourceTree = "<group>"; };
+		18ED92C72B457F740054AE26 /* PlayerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModule.swift; sourceTree = "<group>"; };
+		18ED92C92B457F810054AE26 /* UIPlayerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlayerModule.swift; sourceTree = "<group>"; };
+		18ED92CC2B457FBD0054AE26 /* InfoBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBarModule.swift; sourceTree = "<group>"; };
+		18ED92CE2B457FC40054AE26 /* UIInfoBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInfoBarModule.swift; sourceTree = "<group>"; };
+		18ED92D02B4583EC0054AE26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
 		18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */ = {isa = PBXFileReference; lastKnownFileType = file; name = avatar_frame_test.pag; path = ../../../../../../Downloads/avatar_frame_test.pag; sourceTree = "<group>"; };
 		18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGImageRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
@@ -595,6 +621,7 @@
 		188494D32897EEE000E4C464 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				18ED92D02B4583EC0054AE26 /* Constants.swift */,
 				188494D42897EEF800E4C464 /* String+Extension.swift */,
 				188494E7289BC67900E4C464 /* UIImage+Extension.swift */,
 			);
@@ -957,6 +984,81 @@
 			path = JDownloader;
 			sourceTree = "<group>";
 		};
+		18ED92B02B4502DD0054AE26 /* ModuleHandler */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92B42B4503920054AE26 /* ModuleViewController */,
+				18ED92B12B4502FC0054AE26 /* UIModule */,
+				18ED92B92B4507250054AE26 /* UIModules */,
+			);
+			path = ModuleHandler;
+			sourceTree = "<group>";
+		};
+		18ED92B12B4502FC0054AE26 /* UIModule */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92B22B4503240054AE26 /* UIModule.swift */,
+				18ED92B72B4506C40054AE26 /* UIModuleManager.swift */,
+				18ED92BD2B4509900054AE26 /* UIModuleType.swift */,
+			);
+			path = UIModule;
+			sourceTree = "<group>";
+		};
+		18ED92B42B4503920054AE26 /* ModuleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92B52B4503E40054AE26 /* ModuleViewController.swift */,
+			);
+			path = ModuleViewController;
+			sourceTree = "<group>";
+		};
+		18ED92B92B4507250054AE26 /* UIModules */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92CB2B457FA90054AE26 /* InfoBarModule */,
+				18ED92C62B457F570054AE26 /* PlayerModule */,
+				18ED92C12B457D420054AE26 /* OperateBarModule */,
+				18ED92BA2B45073D0054AE26 /* BottomBarModule */,
+			);
+			path = UIModules;
+			sourceTree = "<group>";
+		};
+		18ED92BA2B45073D0054AE26 /* BottomBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92BB2B45076B0054AE26 /* BottomBarModule.swift */,
+				18ED92BF2B457CB00054AE26 /* UIBottomBarModule.swift */,
+			);
+			path = BottomBarModule;
+			sourceTree = "<group>";
+		};
+		18ED92C12B457D420054AE26 /* OperateBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92C22B457D610054AE26 /* OperateBarModule.swift */,
+				18ED92C42B457D6E0054AE26 /* UIOperateBarModule.swift */,
+			);
+			path = OperateBarModule;
+			sourceTree = "<group>";
+		};
+		18ED92C62B457F570054AE26 /* PlayerModule */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92C72B457F740054AE26 /* PlayerModule.swift */,
+				18ED92C92B457F810054AE26 /* UIPlayerModule.swift */,
+			);
+			path = PlayerModule;
+			sourceTree = "<group>";
+		};
+		18ED92CB2B457FA90054AE26 /* InfoBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				18ED92CC2B457FBD0054AE26 /* InfoBarModule.swift */,
+				18ED92CE2B457FC40054AE26 /* UIInfoBarModule.swift */,
+			);
+			path = InfoBarModule;
+			sourceTree = "<group>";
+		};
 		18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1034,6 +1136,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18ED92B02B4502DD0054AE26 /* ModuleHandler */,
 				184598662B3187EB00489885 /* ProtocolService */,
 				1816F1D82ADEAC55009179DC /* QRCodeScan */,
 				183FC55629C1777D00F29573 /* Foundation */,
@@ -1263,25 +1366,32 @@
 			files = (
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */,
+				18ED92BC2B45076B0054AE26 /* BottomBarModule.swift in Sources */,
 				188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */,
 				18AE0DE42B3C057A002A410D /* ResourceDownloader.swift in Sources */,
 				18AE0DE22B3C057A002A410D /* ResourceDownloadDiskCache.swift in Sources */,
 				184598692B31884D00489885 /* NoteService.swift in Sources */,
 				181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */,
+				18ED92B82B4506C40054AE26 /* UIModuleManager.swift in Sources */,
+				18ED92CD2B457FBD0054AE26 /* InfoBarModule.swift in Sources */,
 				18B0817F287823A900D3F3E0 /* OperationViewModel.swift in Sources */,
 				189B12C928EE821500EA1F51 /* CellPackageModel.swift in Sources */,
 				188494E8289BC67900E4C464 /* UIImage+Extension.swift in Sources */,
 				1871E52928792FB2007C518F /* SessionViewController.swift in Sources */,
+				18ED92B62B4503E40054AE26 /* ModuleViewController.swift in Sources */,
 				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
 				18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */,
 				18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */,
 				18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */,
+				18ED92C32B457D610054AE26 /* OperateBarModule.swift in Sources */,
+				18ED92C02B457CB00054AE26 /* UIBottomBarModule.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
+				18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
 				1845986C2B31886600489885 /* NoteProtocol.swift in Sources */,
@@ -1291,6 +1401,7 @@
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
+				18ED92C52B457D6E0054AE26 /* UIOperateBarModule.swift in Sources */,
 				18AE0DD72B3C0376002A410D /* PAGListTestCell.swift in Sources */,
 				18631AA62AD42B9A008DF0AB /* TBCustomTabBarItem.swift in Sources */,
 				18F802292876FEFA0070A3DA /* Logger.swift in Sources */,
@@ -1298,6 +1409,7 @@
 				033DC80A287AA9B300AA8F29 /* ListSectionItem.swift in Sources */,
 				18C7282828DEEEBB003982C7 /* AnimationDemo1ViewController.swift in Sources */,
 				18C57C9729B593CD00997B96 /* PagTestViewController.swift in Sources */,
+				18ED92D12B4583EC0054AE26 /* Constants.swift in Sources */,
 				188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */,
 				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
 				18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */,
@@ -1315,6 +1427,7 @@
 				18AE0DE92B3C0758002A410D /* LevelConfigModel.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
+				18ED92C82B457F740054AE26 /* PlayerModule.swift in Sources */,
 				18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */,
 				18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */,
 				18D56D3B29BAE1BF005FF8D5 /* AnimationDemo2Cell.swift in Sources */,
@@ -1336,6 +1449,7 @@
 				189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
+				18ED92B32B4503240054AE26 /* UIModule.swift in Sources */,
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
 				18631AA22AD3F410008DF0AB /* TBCustomButton.swift in Sources */,
 				1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */,
@@ -1354,6 +1468,8 @@
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
+				18ED92CA2B457F810054AE26 /* UIPlayerModule.swift in Sources */,
+				18ED92BE2B4509900054AE26 /* UIModuleType.swift in Sources */,
 				18AE0DE62B3C057A002A410D /* ResourceDownloadManager.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,
 				033DC808287AA94C00AA8F29 /* ListViewController.swift in Sources */,
