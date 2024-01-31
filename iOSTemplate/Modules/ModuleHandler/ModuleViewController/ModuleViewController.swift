@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class ModuleViewController: UIViewController {
     
@@ -27,6 +28,7 @@ class ModuleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "ModuleViewController"
         self.setupUI()
         self.uiModuleManager.viewDidLoad()
     }
@@ -58,6 +60,20 @@ class ModuleViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.uiModuleManager.viewDidAppear(animated)
+        
+        let viewController = UIViewController()
+        viewController.title = "Demo"
+        viewController.view.backgroundColor = .gray
+        self.addChild(viewController)
+        self.view.addSubview(viewController.view)
+        viewController.view.frame = self.view.bounds
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapView))
+        viewController.view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func didTapView() {
+        print("TopViewController:", UIApplication.shared.topViewController()?.title ?? "nil")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -136,4 +152,32 @@ class ModuleViewController: UIViewController {
         view.backgroundColor = .gray
         return view
     }()
+}
+
+public extension UIApplication {
+    
+    func topViewController(isNeedRecurseChild: Bool = true, controller: UIViewController? = UIApplication.shared.delegate?.window??.rootViewController) -> UIViewController? {
+        if let nav = controller as? UINavigationController {
+            return topViewController(isNeedRecurseChild: isNeedRecurseChild, controller: nav.topViewController)
+        } else if let tabBar = controller as? UITabBarController {
+            return topViewController(isNeedRecurseChild: isNeedRecurseChild, controller: tabBar.selectedViewController)
+        } else if let presented = controller?.presentedViewController {
+            return topViewController(isNeedRecurseChild: isNeedRecurseChild, controller: presented)
+        } else {
+            if isNeedRecurseChild {
+                let children = controller?.children ?? []
+                if children.isEmpty {
+                    return controller
+                } else {
+                    if let visibleChild = children.first(where: { $0.view.window != nil}) {
+                        return topViewController(isNeedRecurseChild: isNeedRecurseChild, controller: visibleChild)
+                    } else {
+                        return controller
+                    }
+                }
+            } else {
+                return controller
+            }
+        }
+    }
 }

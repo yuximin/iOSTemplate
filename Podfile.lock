@@ -55,6 +55,7 @@ PODS:
   - SDWebImage (5.18.3):
     - SDWebImage/Core (= 5.18.3)
   - SDWebImage/Core (5.18.3)
+  - SMSDK (0.1.0)
   - SnapKit (5.6.0)
   - SSZipArchive (2.4.3)
   - SVGAPlayer (2.5.7):
@@ -92,6 +93,7 @@ DEPENDENCIES:
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SDWebImage
+  - SMSDK (from `Frameworks/SMSDK`)
   - SnapKit (~> 5.6.0)
   - SVGAPlayer (~> 2.3)
   - Tiercel
@@ -124,6 +126,8 @@ SPEC REPOS:
     - ZRouter
 
 EXTERNAL SOURCES:
+  SMSDK:
+    :path: Frameworks/SMSDK
   XDownloader:
     :path: Frameworks/XDownloader
 
@@ -143,6 +147,7 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SMSDK: c2781444b6f2350f078662341a0a19882532f1a8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
@@ -151,6 +156,6 @@ SPEC CHECKSUMS:
   ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
   ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: 939aecd0faab18a2a1133036b7d87fb2f3dcf0c1
+PODFILE CHECKSUM: fbb476cca3aa9ac0fa9d1798dd7131ca5f518181
 
 COCOAPODS: 1.11.3

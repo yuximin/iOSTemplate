@@ -9,12 +9,29 @@ import Foundation
 
 class XMDownloadTask {
     
+    typealias CallbackToken = Int
+    
+    struct TaskCallback {
+        var onCompleted: () -> Void
+        var queue: DispatchQueue
+    }
+    
     let url: URL
     
     private let task: URLSessionDownloadTask
     private let cache: XMCache
     private var progressHandlers: [XDownloader.ProgressHandler] = []
     private var completionHandlers: [XDownloader.CompletionHandler] = []
+    
+    private let lock = NSLock()
+    
+    var callbacksCache: [CallbackToken: TaskCallback] = [:]
+    
+    var callbacks: [TaskCallback] {
+        lock.lock()
+        defer { lock.unlock() }
+        return Array(callbacksCache.values)
+    }
     
     var taskIdentifier: Int {
         task.taskIdentifier

@@ -20,12 +20,14 @@ target 'iOSTemplate' do
   pod 'SVGAPlayer', '~>2.3'
 #  pod 'Moya', '~> 15.0'
   pod 'Moya/RxSwift', '~> 15.0'
-  pod 'XDownloader', :path => 'Frameworks/XDownloader'
   pod 'SDWebImage'
   pod 'Kingfisher'
   pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
   pod "BeeHive"
   pod 'ZRouter', '>= 1.0.12'
+  
+  pod 'XDownloader', :path => 'Frameworks/XDownloader'
+  pod 'SMSDK', :path => 'Frameworks/SMSDK'
 end
 
 post_install do |installer|
