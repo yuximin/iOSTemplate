@@ -68,6 +68,8 @@
 		189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */; };
 		189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12D028F04C5500EA1F51 /* CodableDemoViewController.swift */; };
 		189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B12D328F04EDC00EA1F51 /* CodableModel.swift */; };
+		18A3F18A2BA054BD00C9C883 /* UIButtonDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3F1892BA054BD00C9C883 /* UIButtonDemoViewController.swift */; };
+		18A3F18D2BA054DC00C9C883 /* FloatButtonDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3F18C2BA054DC00C9C883 /* FloatButtonDemoViewController.swift */; };
 		18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */; };
 		18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */; };
 		18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */; };
@@ -219,6 +221,8 @@
 		189B12CD28EEAB2100EA1F51 /* CellPackageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPackageItem.swift; sourceTree = "<group>"; };
 		189B12D028F04C5500EA1F51 /* CodableDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableDemoViewController.swift; sourceTree = "<group>"; };
 		189B12D328F04EDC00EA1F51 /* CodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableModel.swift; sourceTree = "<group>"; };
+		18A3F1892BA054BD00C9C883 /* UIButtonDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDemoViewController.swift; sourceTree = "<group>"; };
+		18A3F18C2BA054DC00C9C883 /* FloatButtonDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatButtonDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3928C1F71700AAAFCC /* PagDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagDemoViewController.swift; sourceTree = "<group>"; };
 		18AABA3C28C1F80500AAAFCC /* LuckyTurntableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTurntableViewController.swift; sourceTree = "<group>"; };
 		18AABA3E28C2010900AAAFCC /* luckyTurntable.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = luckyTurntable.pag; sourceTree = "<group>"; };
@@ -658,6 +662,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				18A3F1882BA054A000C9C883 /* UIButton */,
 				18AC67372B43E16D0074591A /* DemoUIViewController */,
 				18631A9B2AD3F1EB008DF0AB /* TabBarController */,
 				18B862AF2A694F6F000F5449 /* GradientView */,
@@ -732,6 +737,23 @@
 				189B12D328F04EDC00EA1F51 /* CodableModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18A3F1882BA054A000C9C883 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				18A3F18B2BA054C400C9C883 /* FloatButton */,
+				18A3F1892BA054BD00C9C883 /* UIButtonDemoViewController.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		18A3F18B2BA054C400C9C883 /* FloatButton */ = {
+			isa = PBXGroup;
+			children = (
+				18A3F18C2BA054DC00C9C883 /* FloatButtonDemoViewController.swift */,
+			);
+			path = FloatButton;
 			sourceTree = "<group>";
 		};
 		18AABA3828C1F6F500AAAFCC /* Pag */ = {
@@ -1385,6 +1407,7 @@
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */,
 				18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */,
+				18A3F18A2BA054BD00C9C883 /* UIButtonDemoViewController.swift in Sources */,
 				18ED92C32B457D610054AE26 /* OperateBarModule.swift in Sources */,
 				18ED92C02B457CB00054AE26 /* UIBottomBarModule.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
@@ -1447,6 +1470,7 @@
 				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
 				189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */,
+				18A3F18D2BA054DC00C9C883 /* FloatButtonDemoViewController.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,
 				18C7281F28DDE566003982C7 /* RongCloudViewController.swift in Sources */,
 				18ED92B32B4503240054AE26 /* UIModule.swift in Sources */,

@@ -17,6 +17,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
     override func updateSectionItems() {
         sectionItems = [
             ListSectionItem(title: "UIKit", rowItems: [
+                ListRowItem(title: "UIButton", tapAction: { [weak self] in
+                    let viewController = UIButtonDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
                 ListRowItem(title: "UIImage", tapAction: { [weak self] in
                     let viewController = UIImageDemoViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
