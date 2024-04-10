@@ -128,6 +128,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRowItem(title: "AFNetworking", tapAction: { [weak self] in
                     let viewController = AFNetworkingViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "Hero", tapAction: { [weak self] in
+                    let viewController = HeroDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ]),
             ListSectionItem(title: "Codable", rowItems: [

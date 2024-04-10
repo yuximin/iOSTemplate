@@ -25,6 +25,7 @@ target 'iOSTemplate' do
   pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
   pod "BeeHive"
   pod 'ZRouter', '>= 1.0.12'
+  pod 'Hero'
   
   pod 'XDownloader', :path => 'Frameworks/XDownloader'
   pod 'SMSDK', :path => 'Frameworks/SMSDK'

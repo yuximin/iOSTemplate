@@ -17,6 +17,7 @@ PODS:
   - Alamofire (5.7.1)
   - BeeHive (1.6.0)
   - FSPagerView (0.8.3)
+  - Hero (1.6.3)
   - Kingfisher (6.3.1)
   - libpag (4.3.45)
   - LookinServer (1.1.5):
@@ -84,6 +85,7 @@ DEPENDENCIES:
   - AFNetworking (~> 4.0)
   - BeeHive
   - FSPagerView
+  - Hero
   - Kingfisher
   - libpag
   - LookinServer
@@ -108,6 +110,7 @@ SPEC REPOS:
     - Alamofire
     - BeeHive
     - FSPagerView
+    - Hero
     - Kingfisher
     - libpag
     - LookinServer
@@ -136,6 +139,7 @@ SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Hero: 419d43384355b3168512bd8ac6a33aadd3dc575b
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   libpag: 5abe80aba308e2aa7af4de69f0061aeaa81a3089
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
@@ -156,6 +160,6 @@ SPEC CHECKSUMS:
   ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
   ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: fbb476cca3aa9ac0fa9d1798dd7131ca5f518181
+PODFILE CHECKSUM: 45fa16c23ed5e838ce4ffaa3c14c5f469ce2d180
 
 COCOAPODS: 1.15.2

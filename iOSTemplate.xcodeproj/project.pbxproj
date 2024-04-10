@@ -148,6 +148,8 @@
 		18ED92CD2B457FBD0054AE26 /* InfoBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92CC2B457FBD0054AE26 /* InfoBarModule.swift */; };
 		18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92CE2B457FC40054AE26 /* UIInfoBarModule.swift */; };
 		18ED92D12B4583EC0054AE26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92D02B4583EC0054AE26 /* Constants.swift */; };
+		18EE0B652BC63A930039431E /* HeroDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B642BC63A930039431E /* HeroDemoViewController.swift */; };
+		18EE0B672BC63CF50039431E /* HeroDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B662BC63CF50039431E /* HeroDemoSubViewController.swift */; };
 		18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */; };
 		18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */; };
 		18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */; };
@@ -301,6 +303,8 @@
 		18ED92CC2B457FBD0054AE26 /* InfoBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBarModule.swift; sourceTree = "<group>"; };
 		18ED92CE2B457FC40054AE26 /* UIInfoBarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInfoBarModule.swift; sourceTree = "<group>"; };
 		18ED92D02B4583EC0054AE26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18EE0B642BC63A930039431E /* HeroDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDemoViewController.swift; sourceTree = "<group>"; };
+		18EE0B662BC63CF50039431E /* HeroDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDemoSubViewController.swift; sourceTree = "<group>"; };
 		18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
 		18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */ = {isa = PBXFileReference; lastKnownFileType = file; name = avatar_frame_test.pag; path = ../../../../../../Downloads/avatar_frame_test.pag; sourceTree = "<group>"; };
 		18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGImageRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
@@ -1081,6 +1085,15 @@
 			path = InfoBarModule;
 			sourceTree = "<group>";
 		};
+		18EE0B632BC63A780039431E /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				18EE0B642BC63A930039431E /* HeroDemoViewController.swift */,
+				18EE0B662BC63CF50039431E /* HeroDemoSubViewController.swift */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
 		18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,6 +1106,7 @@
 		18F802182876C5630070A3DA /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				18EE0B632BC63A780039431E /* Hero */,
 				18E99E1129951C5B0050874A /* AFNetworkingDemo */,
 				18B0818428785D9500D3F3E0 /* Downloader */,
 				18F802192876CBA70070A3DA /* GCD */,
@@ -1386,6 +1400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE0B652BC63A930039431E /* HeroDemoViewController.swift in Sources */,
 				033DC80F287AD4DD00AA8F29 /* UserInfoModel.swift in Sources */,
 				18CA89E528FD785600BB3BE1 /* RxSwiftDemoViewController.swift in Sources */,
 				18ED92BC2B45076B0054AE26 /* BottomBarModule.swift in Sources */,
@@ -1483,6 +1498,7 @@
 				1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
+				18EE0B672BC63CF50039431E /* HeroDemoSubViewController.swift in Sources */,
 				183FC55929C177A100F29573 /* DateFormatterDemoViewController.swift in Sources */,
 				183E08752A0B84AF00D3A1C9 /* PagImageViewListItemCell.swift in Sources */,
 				1871E52228792174007C518F /* DownloaderViewController.swift in Sources */,
