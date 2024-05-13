@@ -150,6 +150,9 @@
 		18ED92D12B4583EC0054AE26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED92D02B4583EC0054AE26 /* Constants.swift */; };
 		18EE0B652BC63A930039431E /* HeroDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B642BC63A930039431E /* HeroDemoViewController.swift */; };
 		18EE0B672BC63CF50039431E /* HeroDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B662BC63CF50039431E /* HeroDemoSubViewController.swift */; };
+		18EE0B6D2BC684450039431E /* PopViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B6C2BC684450039431E /* PopViewDemoViewController.swift */; };
+		18EE0B6F2BC684840039431E /* UIApplication+PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B6E2BC684840039431E /* UIApplication+PopView.swift */; };
+		18EE0B722BC685A10039431E /* AppPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B712BC685A10039431E /* AppPopView.swift */; };
 		18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */; };
 		18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */; };
 		18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */; };
@@ -305,6 +308,9 @@
 		18ED92D02B4583EC0054AE26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		18EE0B642BC63A930039431E /* HeroDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDemoViewController.swift; sourceTree = "<group>"; };
 		18EE0B662BC63CF50039431E /* HeroDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDemoSubViewController.swift; sourceTree = "<group>"; };
+		18EE0B6C2BC684450039431E /* PopViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopViewDemoViewController.swift; sourceTree = "<group>"; };
+		18EE0B6E2BC684840039431E /* UIApplication+PopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+PopView.swift"; sourceTree = "<group>"; };
+		18EE0B712BC685A10039431E /* AppPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopView.swift; sourceTree = "<group>"; };
 		18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
 		18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */ = {isa = PBXFileReference; lastKnownFileType = file; name = avatar_frame_test.pag; path = ../../../../../../Downloads/avatar_frame_test.pag; sourceTree = "<group>"; };
 		18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGImageRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
@@ -1094,6 +1100,24 @@
 			path = Hero;
 			sourceTree = "<group>";
 		};
+		18EE0B6B2BC684210039431E /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				18EE0B702BC684A00039431E /* Module */,
+				18EE0B6C2BC684450039431E /* PopViewDemoViewController.swift */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		18EE0B702BC684A00039431E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				18EE0B6E2BC684840039431E /* UIApplication+PopView.swift */,
+				18EE0B712BC685A10039431E /* AppPopView.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		18F0AAEB2B396B22007CDA58 /* PagRemoteURLLoad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1172,6 +1196,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18EE0B6B2BC684210039431E /* PopView */,
 				18ED92B02B4502DD0054AE26 /* ModuleHandler */,
 				184598662B3187EB00489885 /* ProtocolService */,
 				1816F1D82ADEAC55009179DC /* QRCodeScan */,
@@ -1460,11 +1485,13 @@
 				18AABA3A28C1F71700AAAFCC /* PagDemoViewController.swift in Sources */,
 				18AABA3D28C1F80500AAAFCC /* LuckyTurntableViewController.swift in Sources */,
 				033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */,
+				18EE0B6D2BC684450039431E /* PopViewDemoViewController.swift in Sources */,
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18AE0DE92B3C0758002A410D /* LevelConfigModel.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
+				18EE0B722BC685A10039431E /* AppPopView.swift in Sources */,
 				18ED92C82B457F740054AE26 /* PlayerModule.swift in Sources */,
 				18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */,
 				18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */,
@@ -1484,6 +1511,7 @@
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
+				18EE0B6F2BC684840039431E /* UIApplication+PopView.swift in Sources */,
 				189B12CE28EEAB2100EA1F51 /* CellPackageItem.swift in Sources */,
 				18A3F18D2BA054DC00C9C883 /* FloatButtonDemoViewController.swift in Sources */,
 				18CBBFBF28AF3F1700EC0473 /* PresentAndPushViewController.swift in Sources */,

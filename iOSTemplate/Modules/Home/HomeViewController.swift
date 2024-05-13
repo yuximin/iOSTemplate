@@ -148,6 +148,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRowItem(title: "二维码扫描", tapAction: { [weak self] in
                     let viewController = QRCodeScanDemoViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "PopView", tapAction: { [weak self] in
+                    let viewController = PopViewDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ])
         ]
