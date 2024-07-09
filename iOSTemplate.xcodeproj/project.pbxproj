@@ -154,7 +154,6 @@
 		18EE0B6F2BC684840039431E /* UIApplication+PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B6E2BC684840039431E /* UIApplication+PopView.swift */; };
 		18EE0B722BC685A10039431E /* AppPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE0B712BC685A10039431E /* AppPopView.swift */; };
 		18F0AAED2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */; };
-		18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */ = {isa = PBXBuildFile; fileRef = 18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */; };
 		18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */; };
 		18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8021A2876CBBE0070A3DA /* GCDViewController.swift */; };
 		18F802292876FEFA0070A3DA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F802282876FEFA0070A3DA /* Logger.swift */; };
@@ -312,7 +311,6 @@
 		18EE0B6E2BC684840039431E /* UIApplication+PopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+PopView.swift"; sourceTree = "<group>"; };
 		18EE0B712BC685A10039431E /* AppPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopView.swift; sourceTree = "<group>"; };
 		18F0AAEC2B396B5D007CDA58 /* PAGRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
-		18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */ = {isa = PBXFileReference; lastKnownFileType = file; name = avatar_frame_test.pag; path = ../../../../../../Downloads/avatar_frame_test.pag; sourceTree = "<group>"; };
 		18F0AAF02B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGImageRemoteURLLoadViewController.swift; sourceTree = "<group>"; };
 		18F8021A2876CBBE0070A3DA /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		18F802282876FEFA0070A3DA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -1173,7 +1171,6 @@
 				18C57CA429B59CC300997B96 /* avatarFrame17.pag */,
 				18C57CA229B59CC300997B96 /* avatarFrame18.pag */,
 				18C57CA729B59CC300997B96 /* avatarFrame19.pag */,
-				18F0AAEE2B399CC2007CDA58 /* avatar_frame_test.pag */,
 				1851A95A29A5B90200B5A6F0 /* pk_main.pag */,
 				1851A95829A4F3DA00B5A6F0 /* draw.pag */,
 				18F8041D28E46E3500B21DBC /* test.html */,
@@ -1351,7 +1348,6 @@
 				1854053B2A08F23100F0DEB3 /* vip_badge_12.pag in Resources */,
 				18AABA3F28C2011000AAAFCC /* luckyTurntable.pag in Resources */,
 				18631AAD2AD42D8D008DF0AB /* tab_bar_animation_party.pag in Resources */,
-				18F0AAEF2B399CC2007CDA58 /* avatar_frame_test.pag in Resources */,
 				18C57CB929B59CC300997B96 /* avatarFrame5.pag in Resources */,
 				18C57CB829B59CC300997B96 /* avatarFrame17.pag in Resources */,
 				18C57CB229B59CC300997B96 /* avatarFrame11.pag in Resources */,
