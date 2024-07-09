@@ -55,6 +55,34 @@ class UILabelDemoViewController: UIViewController {
         } else {
             colorsLabel.textColor = .red
         }
+        
+        let strokeLabel = UILabel()
+        strokeLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        strokeLabel.attributedText = NSAttributedString(string: "测试测试测试",
+                                                        attributes: [
+                                                            .foregroundColor: UIColor.black,
+                                                            .strokeColor: UIColor.red,
+                                                            .strokeWidth: 4
+                                                        ])
+        view.addSubview(strokeLabel)
+        strokeLabel.snp.makeConstraints { make in
+            make.top.equalTo(colorsLabel.snp.bottom).offset(10)
+            make.centerX.equalToSuperview()
+        }
+        
+        let stroke2Label = UILabel()
+        stroke2Label.font = .systemFont(ofSize: 18, weight: .bold)
+        stroke2Label.attributedText = NSAttributedString(string: "测试测试测试",
+                                                         attributes: [
+                                                            .foregroundColor: UIColor.black,
+                                                            .strokeColor: UIColor.red,
+                                                            .strokeWidth: -4
+                                                         ])
+        view.addSubview(stroke2Label)
+        stroke2Label.snp.makeConstraints { make in
+            make.top.equalTo(strokeLabel.snp.bottom).offset(10)
+            make.centerX.equalToSuperview()
+        }
     }
 
 }
