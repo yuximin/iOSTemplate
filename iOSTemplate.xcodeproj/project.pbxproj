@@ -58,6 +58,12 @@
 		188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */; };
 		188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */; };
 		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
+		188F378F2C60A5D800DD96F7 /* ScrollStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */; };
+		188F37922C60A5F900DD96F7 /* ScrollStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37912C60A5F900DD96F7 /* ScrollStackView.swift */; };
+		188F37942C60A90C00DD96F7 /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */; };
+		188F37972C60BEE500DD96F7 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37962C60BEE500DD96F7 /* SystemViewController.swift */; };
+		188F379A2C60BF3D00DD96F7 /* LanguageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */; };
+		188F379C2C60C18900DD96F7 /* LanguageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F379B2C60C18900DD96F7 /* LanguageContext.swift */; };
 		188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F57F52875B96C006DD570 /* HomeViewController.swift */; };
 		18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18932032288E62D9007E5872 /* UILabelDemoViewController.swift */; };
 		1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */; };
@@ -215,6 +221,12 @@
 		188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationViewController.swift; sourceTree = "<group>"; };
 		188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageDemoViewController.swift; sourceTree = "<group>"; };
 		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
+		188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackViewController.swift; sourceTree = "<group>"; };
+		188F37912C60A5F900DD96F7 /* ScrollStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackView.swift; sourceTree = "<group>"; };
+		188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
+		188F37962C60BEE500DD96F7 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
+		188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingViewController.swift; sourceTree = "<group>"; };
+		188F379B2C60C18900DD96F7 /* LanguageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageContext.swift; sourceTree = "<group>"; };
 		188F57F52875B96C006DD570 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18932032288E62D9007E5872 /* UILabelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDemoViewController.swift; sourceTree = "<group>"; };
 		1893359C2A3D8649006DDFC8 /* TiercelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDownloader.swift; sourceTree = "<group>"; };
@@ -659,6 +671,50 @@
 			path = Orientation;
 			sourceTree = "<group>";
 		};
+		188F378C2C60A59B00DD96F7 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				188F378D2C60A5AE00DD96F7 /* ScrollStackView */,
+				188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		188F378D2C60A5AE00DD96F7 /* ScrollStackView */ = {
+			isa = PBXGroup;
+			children = (
+				188F37902C60A5E600DD96F7 /* Views */,
+				188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */,
+			);
+			path = ScrollStackView;
+			sourceTree = "<group>";
+		};
+		188F37902C60A5E600DD96F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				188F37912C60A5F900DD96F7 /* ScrollStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		188F37952C60BECA00DD96F7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				188F37982C60BF2300DD96F7 /* Language */,
+				188F37962C60BEE500DD96F7 /* SystemViewController.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		188F37982C60BF2300DD96F7 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */,
+				188F379B2C60C18900DD96F7 /* LanguageContext.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		188F57F42875B924006DD570 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,6 +726,7 @@
 		18932030288E6248007E5872 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				188F378C2C60A59B00DD96F7 /* ScrollView */,
 				18A3F1882BA054A000C9C883 /* UIButton */,
 				18AC67372B43E16D0074591A /* DemoUIViewController */,
 				18631A9B2AD3F1EB008DF0AB /* TabBarController */,
@@ -1193,6 +1250,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				188F37952C60BECA00DD96F7 /* System */,
 				18EE0B6B2BC684210039431E /* PopView */,
 				18ED92B02B4502DD0054AE26 /* ModuleHandler */,
 				184598662B3187EB00489885 /* ProtocolService */,
@@ -1446,11 +1504,13 @@
 				18A3F18A2BA054BD00C9C883 /* UIButtonDemoViewController.swift in Sources */,
 				18ED92C32B457D610054AE26 /* OperateBarModule.swift in Sources */,
 				18ED92C02B457CB00054AE26 /* UIBottomBarModule.swift in Sources */,
+				188F37972C60BEE500DD96F7 /* SystemViewController.swift in Sources */,
 				18B08183287856E100D3F3E0 /* SimpleOperation.swift in Sources */,
 				1851A95629A4F34B00B5A6F0 /* PagEasyPlayViewController.swift in Sources */,
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */,
+				188F378F2C60A5D800DD96F7 /* ScrollStackViewController.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
 				1845986C2B31886600489885 /* NoteProtocol.swift in Sources */,
@@ -1472,6 +1532,7 @@
 				188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */,
 				188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */,
 				18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */,
+				188F37942C60A90C00DD96F7 /* DemoScrollViewController.swift in Sources */,
 				188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */,
 				18AE0DDA2B3C0528002A410D /* PagPlayerView.swift in Sources */,
 				18CA89E828FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift in Sources */,
@@ -1499,6 +1560,7 @@
 				18CDA1802A6BDC75004029A8 /* ShinyLabel.swift in Sources */,
 				18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */,
 				18AC67392B43E1B30074591A /* DemoUIViewController.swift in Sources */,
+				188F379C2C60C18900DD96F7 /* LanguageContext.swift in Sources */,
 				183E08732A0B82A300D3A1C9 /* PagImageViewListViewController.swift in Sources */,
 				189B12D428F04EDC00EA1F51 /* CodableModel.swift in Sources */,
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
@@ -1515,6 +1577,7 @@
 				18ED92B32B4503240054AE26 /* UIModule.swift in Sources */,
 				1832A6D028E41B9A0050B7A7 /* WKWebViewDemo1ViewController.swift in Sources */,
 				18631AA22AD3F410008DF0AB /* TBCustomButton.swift in Sources */,
+				188F379A2C60BF3D00DD96F7 /* LanguageSettingViewController.swift in Sources */,
 				1893359D2A3D8649006DDFC8 /* TiercelDownloader.swift in Sources */,
 				18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */,
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
@@ -1529,6 +1592,7 @@
 				18AE0DEB2B3C0FEB002A410D /* PagPlayerImageView.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
+				188F37922C60A5F900DD96F7 /* ScrollStackView.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,

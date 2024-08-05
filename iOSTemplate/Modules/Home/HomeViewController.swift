@@ -16,6 +16,12 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
     
     override func updateSectionItems() {
         sectionItems = [
+            ListSectionItem(title: "System", rowItems: [
+                ListRowItem(title: "系统设置", tapAction: { [weak self] in
+                    let viewController = SystemViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
+            ]),
             ListSectionItem(title: "UIKit", rowItems: [
                 ListRowItem(title: "UIButton", tapAction: { [weak self] in
                     let viewController = UIButtonDemoViewController()
@@ -63,6 +69,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 }),
                 ListRowItem(title: "DemoUIViewController", tapAction: { [weak self] in
                     let viewController = DemoUIViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "DemoScrollView", tapAction: { [weak self] in
+                    let viewController = DemoScrollViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ]),
