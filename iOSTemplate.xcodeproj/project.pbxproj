@@ -58,8 +58,8 @@
 		188494EC289BCFBD00E4C464 /* UIImageOrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */; };
 		188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */; };
 		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
-		188F378F2C60A5D800DD96F7 /* ScrollStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */; };
-		188F37922C60A5F900DD96F7 /* ScrollStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37912C60A5F900DD96F7 /* ScrollStackView.swift */; };
+		188F378F2C60A5D800DD96F7 /* ScrollableStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */; };
+		188F37922C60A5F900DD96F7 /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */; };
 		188F37942C60A90C00DD96F7 /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */; };
 		188F37972C60BEE500DD96F7 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37962C60BEE500DD96F7 /* SystemViewController.swift */; };
 		188F379A2C60BF3D00DD96F7 /* LanguageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */; };
@@ -221,8 +221,8 @@
 		188494EB289BCFBD00E4C464 /* UIImageOrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationViewController.swift; sourceTree = "<group>"; };
 		188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageDemoViewController.swift; sourceTree = "<group>"; };
 		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
-		188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackViewController.swift; sourceTree = "<group>"; };
-		188F37912C60A5F900DD96F7 /* ScrollStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollStackView.swift; sourceTree = "<group>"; };
+		188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackViewController.swift; sourceTree = "<group>"; };
+		188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackView.swift; sourceTree = "<group>"; };
 		188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
 		188F37962C60BEE500DD96F7 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
 		188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingViewController.swift; sourceTree = "<group>"; };
@@ -674,25 +674,25 @@
 		188F378C2C60A59B00DD96F7 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				188F378D2C60A5AE00DD96F7 /* ScrollStackView */,
+				188F378D2C60A5AE00DD96F7 /* ScrollableStackView */,
 				188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
-		188F378D2C60A5AE00DD96F7 /* ScrollStackView */ = {
+		188F378D2C60A5AE00DD96F7 /* ScrollableStackView */ = {
 			isa = PBXGroup;
 			children = (
 				188F37902C60A5E600DD96F7 /* Views */,
-				188F378E2C60A5D800DD96F7 /* ScrollStackViewController.swift */,
+				188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */,
 			);
-			path = ScrollStackView;
+			path = ScrollableStackView;
 			sourceTree = "<group>";
 		};
 		188F37902C60A5E600DD96F7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				188F37912C60A5F900DD96F7 /* ScrollStackView.swift */,
+				188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1510,7 +1510,7 @@
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */,
-				188F378F2C60A5D800DD96F7 /* ScrollStackViewController.swift in Sources */,
+				188F378F2C60A5D800DD96F7 /* ScrollableStackViewController.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
 				1845986C2B31886600489885 /* NoteProtocol.swift in Sources */,
@@ -1592,7 +1592,7 @@
 				18AE0DEB2B3C0FEB002A410D /* PagPlayerImageView.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
-				188F37922C60A5F900DD96F7 /* ScrollStackView.swift in Sources */,
+				188F37922C60A5F900DD96F7 /* ScrollableStackView.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,

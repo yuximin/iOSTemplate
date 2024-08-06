@@ -13,7 +13,7 @@ class DemoScrollViewController: ListViewController {
         self.sectionItems = [
             ListSectionItem(title: "ScrollStackView", rowItems: [
                 ListRowItem(title: "ScrollStackView", tapAction: { [weak self] in
-                    let viewController = ScrollStackViewController()
+                    let viewController = ScrollableStackViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ])
