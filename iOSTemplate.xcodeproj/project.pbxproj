@@ -59,7 +59,6 @@
 		188494EE289BD01500E4C464 /* UIImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */; };
 		188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */; };
 		188F378F2C60A5D800DD96F7 /* ScrollableStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */; };
-		188F37922C60A5F900DD96F7 /* ScrollableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */; };
 		188F37942C60A90C00DD96F7 /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */; };
 		188F37972C60BEE500DD96F7 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37962C60BEE500DD96F7 /* SystemViewController.swift */; };
 		188F379A2C60BF3D00DD96F7 /* LanguageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */; };
@@ -222,7 +221,6 @@
 		188494ED289BD01500E4C464 /* UIImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageDemoViewController.swift; sourceTree = "<group>"; };
 		188494EF289BD1A800E4C464 /* UIImageOrientationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageOrientationItemCell.swift; sourceTree = "<group>"; };
 		188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackViewController.swift; sourceTree = "<group>"; };
-		188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackView.swift; sourceTree = "<group>"; };
 		188F37932C60A90C00DD96F7 /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
 		188F37962C60BEE500DD96F7 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
 		188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingViewController.swift; sourceTree = "<group>"; };
@@ -683,18 +681,9 @@
 		188F378D2C60A5AE00DD96F7 /* ScrollableStackView */ = {
 			isa = PBXGroup;
 			children = (
-				188F37902C60A5E600DD96F7 /* Views */,
 				188F378E2C60A5D800DD96F7 /* ScrollableStackViewController.swift */,
 			);
 			path = ScrollableStackView;
-			sourceTree = "<group>";
-		};
-		188F37902C60A5E600DD96F7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				188F37912C60A5F900DD96F7 /* ScrollableStackView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		188F37952C60BECA00DD96F7 /* System */ = {
@@ -1592,7 +1581,6 @@
 				18AE0DEB2B3C0FEB002A410D /* PagPlayerImageView.swift in Sources */,
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
-				188F37922C60A5F900DD96F7 /* ScrollableStackView.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,

@@ -100,11 +100,4 @@ class LanguageContext {
     }
 }
 
-extension UIView {
-    
-    static var isRTL: Bool {
-        UIView.userInterfaceLayoutDirection(for: UIView.appearance().semanticContentAttribute) == .rightToLeft
-    }
-}
-
 

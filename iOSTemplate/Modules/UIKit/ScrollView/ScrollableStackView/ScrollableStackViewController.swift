@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import XMKit
 
 class ScrollableStackViewController: UIViewController {
     

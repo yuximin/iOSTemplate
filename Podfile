@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/yuximin/Specs.git'
 
 platform :ios, '11.0'
 
@@ -26,6 +27,7 @@ target 'iOSTemplate' do
   pod "BeeHive"
   pod 'ZRouter', '>= 1.0.12'
   pod 'Hero'
+  pod 'XMKit', :source => 'https://github.com/yuximin/Specs.git'
   
   pod 'XDownloader', :path => 'Frameworks/XDownloader'
   pod 'SMSDK', :path => 'Frameworks/SMSDK'

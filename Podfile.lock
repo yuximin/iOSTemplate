@@ -69,6 +69,7 @@ PODS:
     - Protobuf (~> 3.4)
   - Tiercel (3.2.5)
   - XDownloader (0.1.0)
+  - XMKit (0.1.9)
   - ZIKRouter/ServiceRouter (1.1.1)
   - ZIKRouter/ViewRouter (1.1.1):
     - ZIKRouter/ServiceRouter
@@ -100,6 +101,7 @@ DEPENDENCIES:
   - SVGAPlayer (~> 2.3)
   - Tiercel
   - XDownloader (from `Frameworks/XDownloader`)
+  - XMKit
   - ZRouter (>= 1.0.12)
 
 SPEC REPOS:
@@ -127,6 +129,8 @@ SPEC REPOS:
     - Tiercel
     - ZIKRouter
     - ZRouter
+  https://github.com/yuximin/Specs.git:
+    - XMKit
 
 EXTERNAL SOURCES:
   SMSDK:
@@ -157,9 +161,10 @@ SPEC CHECKSUMS:
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
   Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
   XDownloader: f1d84c7220098ed53ab15d949b7ad6ee3b823423
+  XMKit: 3d30209a50a0f53c0104b7924f6d68f9042d72c9
   ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
   ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: 45fa16c23ed5e838ce4ffaa3c14c5f469ce2d180
+PODFILE CHECKSUM: d8543d257c9771a628edef5ef10a545518a8181a
 
 COCOAPODS: 1.15.2
