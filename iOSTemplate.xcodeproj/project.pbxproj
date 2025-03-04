@@ -49,6 +49,11 @@
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
+		187311562D71E766008C05F4 /* MiMicDYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */; };
+		187311582D72BC2F008C05F4 /* MimicDYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */; };
+		1873115D2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */; };
+		1873115F2D730537008C05F4 /* MimicDYInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */; };
+		187311612D7306DA008C05F4 /* CustomViewTransitioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */; };
 		18832D652B32D26D00C3E2F3 /* ServiceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */; };
 		188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */; };
 		188494CF2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */; };
@@ -211,6 +216,11 @@
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYMainViewController.swift; sourceTree = "<group>"; };
+		187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYProfileViewController.swift; sourceTree = "<group>"; };
+		1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYNavigationDelegateHandler.swift; sourceTree = "<group>"; };
+		1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYInteractiveTransition.swift; sourceTree = "<group>"; };
+		187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTransitioningViewController.swift; sourceTree = "<group>"; };
 		18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceConfig.plist; sourceTree = "<group>"; };
 		188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoController.swift; sourceTree = "<group>"; };
 		188494CE2897ED3300E4C464 /* CollectionViewStyle1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewStyle1ViewController.swift; sourceTree = "<group>"; };
@@ -605,6 +615,26 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
+		1873114D2D71E07E008C05F4 /* CustomViewTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */,
+				1873115B2D730369008C05F4 /* MimicDYMain */,
+			);
+			path = CustomViewTransitioning;
+			sourceTree = "<group>";
+		};
+		1873115B2D730369008C05F4 /* MimicDYMain */ = {
+			isa = PBXGroup;
+			children = (
+				187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */,
+				187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */,
+				1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */,
+				1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */,
+			);
+			path = MimicDYMain;
+			sourceTree = "<group>";
+		};
 		18832D632B32D22600C3E2F3 /* ServiceConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,8 +719,8 @@
 		188F37952C60BECA00DD96F7 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				188F37982C60BF2300DD96F7 /* Language */,
 				188F37962C60BEE500DD96F7 /* SystemViewController.swift */,
+				188F37982C60BF2300DD96F7 /* Language */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -698,8 +728,8 @@
 		188F37982C60BF2300DD96F7 /* Language */ = {
 			isa = PBXGroup;
 			children = (
-				188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */,
 				188F379B2C60C18900DD96F7 /* LanguageContext.swift */,
+				188F37992C60BF3D00DD96F7 /* LanguageSettingViewController.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -1239,6 +1269,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1873114D2D71E07E008C05F4 /* CustomViewTransitioning */,
 				188F37952C60BECA00DD96F7 /* System */,
 				18EE0B6B2BC684210039431E /* PopView */,
 				18ED92B02B4502DD0054AE26 /* ModuleHandler */,
@@ -1499,6 +1530,7 @@
 				18B0818828785DEA00D3F3E0 /* DownloadOperation.swift in Sources */,
 				1851A96229A7144500B5A6F0 /* PKProgressView.swift in Sources */,
 				18ED92CF2B457FC40054AE26 /* UIInfoBarModule.swift in Sources */,
+				187311562D71E766008C05F4 /* MiMicDYMainViewController.swift in Sources */,
 				188F378F2C60A5D800DD96F7 /* ScrollableStackViewController.swift in Sources */,
 				18CC2E6028DCA06200647E1F /* UIStackViewDemoView.swift in Sources */,
 				181AE4E22AFDD2A5008ACF89 /* ImageWaterMarkViewController.swift in Sources */,
@@ -1508,6 +1540,7 @@
 				18932033288E62D9007E5872 /* UILabelDemoViewController.swift in Sources */,
 				18C7282628DEEE02003982C7 /* AnimationDemoViewController.swift in Sources */,
 				181E95FF2A247405004EE81D /* URLDemoViewController.swift in Sources */,
+				187311582D72BC2F008C05F4 /* MimicDYProfileViewController.swift in Sources */,
 				18F8021B2876CBBE0070A3DA /* GCDViewController.swift in Sources */,
 				18ED92C52B457D6E0054AE26 /* UIOperateBarModule.swift in Sources */,
 				18AE0DD72B3C0376002A410D /* PAGListTestCell.swift in Sources */,
@@ -1533,6 +1566,7 @@
 				033DC80C287AAC9E00AA8F29 /* SessionViewModel.swift in Sources */,
 				18EE0B6D2BC684450039431E /* PopViewDemoViewController.swift in Sources */,
 				1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */,
+				187311612D7306DA008C05F4 /* CustomViewTransitioningViewController.swift in Sources */,
 				188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */,
 				18AE0DE92B3C0758002A410D /* LevelConfigModel.swift in Sources */,
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
@@ -1572,6 +1606,7 @@
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */,
+				1873115D2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
 				18EE0B672BC63CF50039431E /* HeroDemoSubViewController.swift in Sources */,
@@ -1585,6 +1620,7 @@
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
 				18ED92CA2B457F810054AE26 /* UIPlayerModule.swift in Sources */,
+				1873115F2D730537008C05F4 /* MimicDYInteractiveTransition.swift in Sources */,
 				18ED92BE2B4509900054AE26 /* UIModuleType.swift in Sources */,
 				18AE0DE62B3C057A002A410D /* ResourceDownloadManager.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,

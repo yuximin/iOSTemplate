@@ -10,12 +10,16 @@ import SnapKit
 
 class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
     
-    var isNavigationBarHidden: Bool {
-        true
-    }
+    var isNavigationBarHidden: Bool { true }
     
     override func updateSectionItems() {
         sectionItems = [
+            ListSectionItem(title: "自研组件", rowItems: [
+                ListRowItem(title: "视图切换效果", tapAction: { [weak self] in
+                    let viewController = CustomViewTransitioningViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
+                })
+            ]),
             ListSectionItem(title: "System", rowItems: [
                 ListRowItem(title: "系统设置", tapAction: { [weak self] in
                     let viewController = SystemViewController()
