@@ -14,6 +14,8 @@
 		039C8BDF28000684002624EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039C8BDE28000684002624EB /* AppDelegate.swift */; };
 		039C8BE828000685002624EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE728000685002624EB /* Assets.xcassets */; };
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
+		1813ED692D7721B20004B6E1 /* MiMicDYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED682D7721B20004B6E1 /* MiMicDYVideoViewController.swift */; };
+		1813ED6B2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED6A2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift */; };
 		1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
@@ -51,8 +53,7 @@
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
 		187311562D71E766008C05F4 /* MiMicDYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */; };
 		187311582D72BC2F008C05F4 /* MimicDYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */; };
-		1873115D2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */; };
-		1873115F2D730537008C05F4 /* MimicDYInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */; };
+		1873115D2D730499008C05F4 /* MimicDYPanPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115C2D730499008C05F4 /* MimicDYPanPushAnimator.swift */; };
 		187311612D7306DA008C05F4 /* CustomViewTransitioningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */; };
 		18832D652B32D26D00C3E2F3 /* ServiceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */; };
 		188494CC2897EC6C00E4C464 /* CollectionViewDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */; };
@@ -181,6 +182,8 @@
 		039C8BE728000685002624EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039C8BEA28000685002624EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1813ED682D7721B20004B6E1 /* MiMicDYVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYVideoViewController.swift; sourceTree = "<group>"; };
+		1813ED6A2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYVideoViewControllerTransitionAnimator.swift; sourceTree = "<group>"; };
 		1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanDemoViewController.swift; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
@@ -218,8 +221,7 @@
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYMainViewController.swift; sourceTree = "<group>"; };
 		187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYProfileViewController.swift; sourceTree = "<group>"; };
-		1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYNavigationDelegateHandler.swift; sourceTree = "<group>"; };
-		1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYInteractiveTransition.swift; sourceTree = "<group>"; };
+		1873115C2D730499008C05F4 /* MimicDYPanPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYPanPushAnimator.swift; sourceTree = "<group>"; };
 		187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTransitioningViewController.swift; sourceTree = "<group>"; };
 		18832D642B32D26D00C3E2F3 /* ServiceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceConfig.plist; sourceTree = "<group>"; };
 		188494CB2897EC6C00E4C464 /* CollectionViewDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoController.swift; sourceTree = "<group>"; };
@@ -628,9 +630,10 @@
 			isa = PBXGroup;
 			children = (
 				187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */,
+				1873115C2D730499008C05F4 /* MimicDYPanPushAnimator.swift */,
 				187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */,
-				1873115C2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift */,
-				1873115E2D730537008C05F4 /* MimicDYInteractiveTransition.swift */,
+				1813ED682D7721B20004B6E1 /* MiMicDYVideoViewController.swift */,
+				1813ED6A2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift */,
 			);
 			path = MimicDYMain;
 			sourceTree = "<group>";
@@ -1557,6 +1560,7 @@
 				188F37942C60A90C00DD96F7 /* DemoScrollViewController.swift in Sources */,
 				188494F0289BD1A800E4C464 /* UIImageOrientationItemCell.swift in Sources */,
 				18AE0DDA2B3C0528002A410D /* PagPlayerView.swift in Sources */,
+				1813ED692D7721B20004B6E1 /* MiMicDYVideoViewController.swift in Sources */,
 				18CA89E828FD78FE00BB3BE1 /* RxSwiftDemo1ViewController.swift in Sources */,
 				18D56D3829BAE123005FF8D5 /* AnimationDemo2ViewController.swift in Sources */,
 				185D817F28770C0000B9A838 /* YNavigationController.swift in Sources */,
@@ -1589,6 +1593,7 @@
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18AE0DE32B3C057A002A410D /* ResourceDownloadError.swift in Sources */,
+				1813ED6B2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,
 				1832A6CD28E41ABC0050B7A7 /* WKWebViewDemoViewController.swift in Sources */,
@@ -1606,7 +1611,7 @@
 				18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */,
 				18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */,
 				1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */,
-				1873115D2D730499008C05F4 /* MimicDYNavigationDelegateHandler.swift in Sources */,
+				1873115D2D730499008C05F4 /* MimicDYPanPushAnimator.swift in Sources */,
 				18C57C9929B5955000997B96 /* PagTestCell.swift in Sources */,
 				189B12D128F04C5500EA1F51 /* CodableDemoViewController.swift in Sources */,
 				18EE0B672BC63CF50039431E /* HeroDemoSubViewController.swift in Sources */,
@@ -1620,7 +1625,6 @@
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
 				18ED92CA2B457F810054AE26 /* UIPlayerModule.swift in Sources */,
-				1873115F2D730537008C05F4 /* MimicDYInteractiveTransition.swift in Sources */,
 				18ED92BE2B4509900054AE26 /* UIModuleType.swift in Sources */,
 				18AE0DE62B3C057A002A410D /* ResourceDownloadManager.swift in Sources */,
 				18B862B12A694F9D000F5449 /* GradientViewController.swift in Sources */,

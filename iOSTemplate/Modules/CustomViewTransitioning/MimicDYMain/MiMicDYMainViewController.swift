@@ -7,24 +7,59 @@
 
 import UIKit
 
-class MiMicDYMainViewController: UIViewController {
+class MiMicDYMainViewController: UIViewController, YViewControllerAnimatedTransitioning {
     
-    private var navigationDelegateHandler: MimicDYNavigationDelegateHandler?
+    var y_interactiveTransitioning: UIPercentDrivenInteractiveTransition?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .white
         
-        let panGesture = UIPanGestureRecognizer(target: MimicDYInteractiveTransition.shared, action: #selector(MimicDYInteractiveTransition.handlePanGesture(_:)))
+        self.navigationItem.title = "首页"
+        
+        let label = UILabel()
+        label.text = "左滑进入主页"
+        label.textColor = .black
+        self.view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
+        self.addFullScreenPanGestureRecognizer()
+    }
+    
+    private func addFullScreenPanGestureRecognizer() {
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         panGesture.delegate = self
         self.view.addGestureRecognizer(panGesture)
+    }
+    
+    @objc func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: gesture.view)
+        let progress = max(0, -translation.x / UIScreen.main.bounds.size.width)
         
-        MimicDYInteractiveTransition.shared.navigationController = self.navigationController
-        
-        if let navigationController = self.navigationController {
-            self.navigationDelegateHandler = MimicDYNavigationDelegateHandler()
-            navigationController.delegate = self.navigationDelegateHandler
+        switch gesture.state {
+        case .began:
+            guard let navigationController = self.navigationController else { return }
+            
+            let profileVC = MimicDYProfileViewController()
+            navigationController.pushViewController(profileVC, animated: true)
+            self.y_interactiveTransitioning = profileVC.y_interactiveTransitioning
+        case .changed:
+            self.y_interactiveTransitioning?.update(progress)
+        case .cancelled, .ended:
+            let velocity = gesture.velocity(in: gesture.view?.superview).x
+            
+            if velocity < -300 {
+                self.y_interactiveTransitioning?.finish()
+            } else if progress <= 0.5 {
+                self.y_interactiveTransitioning?.cancel()
+            } else {
+                self.y_interactiveTransitioning?.finish()
+            }
+        default:
+            self.y_interactiveTransitioning?.cancel()
         }
     }
 }

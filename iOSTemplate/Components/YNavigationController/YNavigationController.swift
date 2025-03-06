@@ -34,6 +34,8 @@ class YNavigationController: UINavigationController {
         return panGestureRecognizer
     }()
     
+    private var currentInteractiveTransitioning: UIViewControllerInteractiveTransitioning?
+    
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
     }
@@ -111,6 +113,34 @@ extension YNavigationController: UIGestureRecognizerDelegate {
 // MARK: - UINavigationControllerDelegate
 extension YNavigationController: UINavigationControllerDelegate {
     
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> (any UIViewControllerAnimatedTransitioning)? {
+        switch operation {
+        case .push:
+            if let yViewControllerAnimatedTransitioning = toVC as? YViewControllerAnimatedTransitioning {
+                self.currentInteractiveTransitioning = yViewControllerAnimatedTransitioning.y_interactiveTransitioning
+                return yViewControllerAnimatedTransitioning.y_pushAnimatedTransitioning
+            }
+            
+            self.currentInteractiveTransitioning = nil
+            return nil
+        case .pop:
+            if let yViewControllerAnimatedTransitioning = fromVC as? YViewControllerAnimatedTransitioning {
+                self.currentInteractiveTransitioning = yViewControllerAnimatedTransitioning.y_interactiveTransitioning
+                return yViewControllerAnimatedTransitioning.y_popAnimatedTransitioning
+            }
+            
+            self.currentInteractiveTransitioning = nil
+            return nil
+        default:
+            self.currentInteractiveTransitioning = nil
+            return nil
+        }
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: any UIViewControllerAnimatedTransitioning) -> (any UIViewControllerInteractiveTransitioning)? {
+        return self.currentInteractiveTransitioning
+    }
+    
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let viewController = viewController as? UIViewController & YNavigationBarStyleProtocol {
             viewController.navigationController?.navigationBar.isHidden = viewController.isNavigationBarHidden
@@ -118,4 +148,30 @@ extension YNavigationController: UINavigationControllerDelegate {
             viewController.navigationController?.navigationBar.isHidden = false
         }
     }
+}
+
+protocol YViewControllerAnimatedTransitioning {
+    
+    var y_interactiveTransitioning: UIPercentDrivenInteractiveTransition? { get }
+    
+    var y_pushAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { get }
+    
+    var y_popAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { get }
+    
+    var y_presentAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { get }
+    
+    var y_dismissAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { get }
+}
+
+extension YViewControllerAnimatedTransitioning {
+    
+    var y_interactiveTransitioning: UIPercentDrivenInteractiveTransition? { nil }
+    
+    var y_pushAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { nil }
+    
+    var y_popAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { nil }
+    
+    var y_presentAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { nil }
+    
+    var y_dismissAnimatedTransitioning: UIViewControllerAnimatedTransitioning? { nil }
 }
