@@ -15,6 +15,10 @@ class CustomViewTransitioningViewController: ListViewController {
                 ListRowItem(title: "仿抖音首页", tapAction: { [weak self] in
                     let viewController = MiMicDYMainViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "仿抖音评论区", tapAction: { [weak self] in
+                    let viewController = MimicDYCommentDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ])
         ]

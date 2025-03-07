@@ -16,6 +16,8 @@
 		039C8BEB28000685002624EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039C8BE928000685002624EB /* LaunchScreen.storyboard */; };
 		1813ED692D7721B20004B6E1 /* MiMicDYVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED682D7721B20004B6E1 /* MiMicDYVideoViewController.swift */; };
 		1813ED6B2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED6A2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift */; };
+		1813ED6E2D7A95B70004B6E1 /* MimicDYCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED6D2D7A95B70004B6E1 /* MimicDYCommentView.swift */; };
+		1813ED702D7AA4D40004B6E1 /* MimicDYCommentDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813ED6F2D7AA4D40004B6E1 /* MimicDYCommentDemoViewController.swift */; };
 		1816F1DA2ADEAC9A009179DC /* QRCodeScanDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */; };
 		181777AB28BDEA330041DA6D /* TiercelDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */; };
 		18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */; };
@@ -184,6 +186,8 @@
 		039C8BEC28000685002624EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1813ED682D7721B20004B6E1 /* MiMicDYVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYVideoViewController.swift; sourceTree = "<group>"; };
 		1813ED6A2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYVideoViewControllerTransitionAnimator.swift; sourceTree = "<group>"; };
+		1813ED6D2D7A95B70004B6E1 /* MimicDYCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYCommentView.swift; sourceTree = "<group>"; };
+		1813ED6F2D7AA4D40004B6E1 /* MimicDYCommentDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYCommentDemoViewController.swift; sourceTree = "<group>"; };
 		1816F1D92ADEAC9A009179DC /* QRCodeScanDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanDemoViewController.swift; sourceTree = "<group>"; };
 		181777AA28BDEA330041DA6D /* TiercelDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiercelDemoViewController.swift; sourceTree = "<group>"; };
 		18192FFD29F681F100FB9BA5 /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
@@ -404,6 +408,15 @@
 			path = iOSTemplate;
 			sourceTree = "<group>";
 		};
+		1813ED6C2D7A95960004B6E1 /* MimicDYComment */ = {
+			isa = PBXGroup;
+			children = (
+				1813ED6D2D7A95B70004B6E1 /* MimicDYCommentView.swift */,
+				1813ED6F2D7AA4D40004B6E1 /* MimicDYCommentDemoViewController.swift */,
+			);
+			path = MimicDYComment;
+			sourceTree = "<group>";
+		};
 		1816F1D82ADEAC55009179DC /* QRCodeScan */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +634,7 @@
 			isa = PBXGroup;
 			children = (
 				187311602D7306DA008C05F4 /* CustomViewTransitioningViewController.swift */,
+				1813ED6C2D7A95960004B6E1 /* MimicDYComment */,
 				1873115B2D730369008C05F4 /* MimicDYMain */,
 			);
 			path = CustomViewTransitioning;
@@ -1576,6 +1590,7 @@
 				18B0818628785DAB00D3F3E0 /* Downloader.swift in Sources */,
 				189B12C228EE7F4C00EA1F51 /* CellPackageViewController.swift in Sources */,
 				18EE0B722BC685A10039431E /* AppPopView.swift in Sources */,
+				1813ED702D7AA4D40004B6E1 /* MimicDYCommentDemoViewController.swift in Sources */,
 				18ED92C82B457F740054AE26 /* PlayerModule.swift in Sources */,
 				18192FFE29F681F100FB9BA5 /* MoyaDemoViewController.swift in Sources */,
 				18CA89EA28FD7AB400BB3BE1 /* RxSwiftDemo1SubViewController.swift in Sources */,
@@ -1622,6 +1637,7 @@
 				188494D22897EE6400E4C464 /* NormalCollectionViewCell.swift in Sources */,
 				189B12CC28EE886A00EA1F51 /* CellPackageViewModel.swift in Sources */,
 				18631AA42AD3F581008DF0AB /* TBCustomTabBar.swift in Sources */,
+				1813ED6E2D7A95B70004B6E1 /* MimicDYCommentView.swift in Sources */,
 				185D81852878112E00B9A838 /* GCDViewModel.swift in Sources */,
 				18F0AAF12B39A408007CDA58 /* PAGImageRemoteURLLoadViewController.swift in Sources */,
 				18ED92CA2B457F810054AE26 /* UIPlayerModule.swift in Sources */,
