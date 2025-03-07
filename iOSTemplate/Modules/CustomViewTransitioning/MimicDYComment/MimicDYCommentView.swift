@@ -11,6 +11,7 @@ class MimicDYCommentView: UIView {
     
     private var panGestureRecognizer: UIPanGestureRecognizer?
     
+    private var isHorizontal = false
     private var isDragScrollView = false
     private var scrollView: UIScrollView?
     
@@ -62,25 +63,27 @@ class MimicDYCommentView: UIView {
         
         let translation = gestureRecognizer.translation(in: self.contentView)
         
+        let offset = self.isHorizontal ? translation.x : translation.y
+        
         if self.isDragScrollView {
             if let scrollView = self.scrollView,
                scrollView.contentOffset.y <= 0 {
                 // 顶端
-                if translation.y > 0 {
+                if offset > 0 {
                     // 向下滑动
                     self.scrollView?.contentOffset = .zero
                     self.scrollView?.panGestureRecognizer.isEnabled = false
                     self.scrollView?.panGestureRecognizer.isEnabled = true
                     self.isDragScrollView = false
-                    self.contentView.transform = CGAffineTransform(translationX: 0, y: translation.y)
+                    self.contentView.transform = CGAffineTransform(translationX: 0, y: offset)
                 }
             }
         } else {
-            if translation.y > 0 {
+            if offset > 0 {
                 // 向下滑动
-                self.contentView.transform = self.contentView.transform.translatedBy(x: 0, y: translation.y)
-            } else if translation.y < 0 && self.contentView.frame.origin.y > (self.frame.size.height - self.contentView.frame.size.height) {
-                let transform = self.contentView.transform.translatedBy(x: 0, y: translation.y)
+                self.contentView.transform = self.contentView.transform.translatedBy(x: 0, y: offset)
+            } else if offset < 0 && self.contentView.frame.origin.y > (self.frame.size.height - self.contentView.frame.size.height) {
+                let transform = self.contentView.transform.translatedBy(x: 0, y: offset)
                 if transform.ty < 0 {
                     self.contentView.transform = .identity
                 } else {
@@ -205,6 +208,19 @@ extension MimicDYCommentView: UITableViewDataSource, UITableViewDelegate {
 
 // MARK: - UIGestureRecognizerDelegate
 extension MimicDYCommentView: UIGestureRecognizerDelegate {
+    
+    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if gestureRecognizer == self.panGestureRecognizer {
+            if let translation = self.panGestureRecognizer?.translation(in: self.contentView),
+               translation.x > 0 && translation.x > abs(translation.y) {
+                self.isHorizontal = true
+            } else {
+                self.isHorizontal = false
+            }
+        }
+        
+        return true
+    }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if gestureRecognizer == self.panGestureRecognizer {
