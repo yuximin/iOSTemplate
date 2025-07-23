@@ -30,7 +30,6 @@ target 'iOSTemplate' do
   pod 'XMKit', :source => 'https://github.com/yuximin/Specs.git'
   
   pod 'XDownloader', :path => 'Frameworks/XDownloader'
-  pod 'SMSDK', :path => 'Frameworks/SMSDK'
 end
 
 post_install do |installer|
