@@ -23,7 +23,7 @@ target 'iOSTemplate' do
   pod 'Moya/RxSwift', '~> 15.0'
   pod 'SDWebImage'
   pod 'Kingfisher'
-  pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
+#  pod 'MINDownloader', :source => 'git@github.com:yuximin/Specs.git'
   pod "BeeHive"
   pod 'ZRouter', '>= 1.0.12'
   pod 'Hero'

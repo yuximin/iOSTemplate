@@ -23,7 +23,6 @@ PODS:
   - LookinServer (1.1.5):
     - LookinServer/Core (= 1.1.5)
   - LookinServer/Core (1.1.5)
-  - MINDownloader (0.1.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -56,7 +55,6 @@ PODS:
   - SDWebImage (5.18.3):
     - SDWebImage/Core (= 5.18.3)
   - SDWebImage/Core (5.18.3)
-  - SMSDK (0.1.0)
   - SnapKit (5.6.0)
   - SSZipArchive (2.4.3)
   - SVGAPlayer (2.5.7):
@@ -90,13 +88,11 @@ DEPENDENCIES:
   - Kingfisher
   - libpag
   - LookinServer
-  - MINDownloader
   - Moya/RxSwift (~> 15.0)
   - RongCloudIM/IMKit (~> 5.2.5)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
   - SDWebImage
-  - SMSDK (from `Frameworks/SMSDK`)
   - SnapKit (~> 5.6.0)
   - SVGAPlayer (~> 2.3)
   - Tiercel
@@ -105,8 +101,6 @@ DEPENDENCIES:
   - ZRouter (>= 1.0.12)
 
 SPEC REPOS:
-  "git@github.com:yuximin/Specs.git":
-    - MINDownloader
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Alamofire
@@ -133,8 +127,6 @@ SPEC REPOS:
     - XMKit
 
 EXTERNAL SOURCES:
-  SMSDK:
-    :path: Frameworks/SMSDK
   XDownloader:
     :path: Frameworks/XDownloader
 
@@ -147,7 +139,6 @@ SPEC CHECKSUMS:
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   libpag: 5abe80aba308e2aa7af4de69f0061aeaa81a3089
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
-  MINDownloader: 39db211f32032d573d75cab04c8422eb1606c2ed
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RongCloudIM: 4e405c43e8f5699dc8431d3a513eeca31b7a99c2
@@ -155,7 +146,6 @@ SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
-  SMSDK: c2781444b6f2350f078662341a0a19882532f1a8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SVGAPlayer: 318b85a78b61292d6ae9dfcd651f3f0d1cdadd86
@@ -165,6 +155,6 @@ SPEC CHECKSUMS:
   ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
   ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: d8543d257c9771a628edef5ef10a545518a8181a
+PODFILE CHECKSUM: b0f0800df7213cbd6d917f7d11cb8eb3f7c16abf
 
 COCOAPODS: 1.15.2
