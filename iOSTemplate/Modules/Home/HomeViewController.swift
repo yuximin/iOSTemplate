@@ -18,6 +18,10 @@ class HomeViewController: ListViewController, YNavigationBarStyleProtocol {
                 ListRowItem(title: "视图切换效果", tapAction: { [weak self] in
                     let viewController = CustomViewTransitioningViewController()
                     self?.navigationController?.pushViewController(viewController, animated: true)
+                }),
+                ListRowItem(title: "类老虎机数字滚动效果", tapAction: { [weak self] in
+                    let viewController = SlotsNumberDemoViewController()
+                    self?.navigationController?.pushViewController(viewController, animated: true)
                 })
             ]),
             ListSectionItem(title: "System", rowItems: [

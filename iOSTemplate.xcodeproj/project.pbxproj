@@ -53,6 +53,7 @@
 		1871E52228792174007C518F /* DownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52128792174007C518F /* DownloaderViewController.swift */; };
 		1871E52428792187007C518F /* DownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52328792187007C518F /* DownloaderViewModel.swift */; };
 		1871E52928792FB2007C518F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871E52828792FB2007C518F /* SessionViewController.swift */; };
+		1872A6F32E3361EF00061998 /* SlotsNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872A6F22E3361EF00061998 /* SlotsNumberView.swift */; };
 		187311562D71E766008C05F4 /* MiMicDYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */; };
 		187311582D72BC2F008C05F4 /* MimicDYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */; };
 		1873115D2D730499008C05F4 /* MimicDYPanPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873115C2D730499008C05F4 /* MimicDYPanPushAnimator.swift */; };
@@ -145,6 +146,7 @@
 		18D885A028A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */; };
 		18D885A328A750660072DD36 /* LayoutSubviewsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */; };
 		18D885A528A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */; };
+		18DDDC982E30DE4F007A84A5 /* SlotsNumberDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDDC972E30DE4F007A84A5 /* SlotsNumberDemoViewController.swift */; };
 		18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E1229951C860050874A /* AFNetworkingViewController.swift */; };
 		18E99E16299671B40050874A /* JDownloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E15299671B40050874A /* JDownloaderViewController.swift */; };
 		18E99E18299674930050874A /* JDownloaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E99E17299674930050874A /* JDownloaderViewModel.swift */; };
@@ -223,6 +225,7 @@
 		1871E52128792174007C518F /* DownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewController.swift; sourceTree = "<group>"; };
 		1871E52328792187007C518F /* DownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderViewModel.swift; sourceTree = "<group>"; };
 		1871E52828792FB2007C518F /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		1872A6F22E3361EF00061998 /* SlotsNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsNumberView.swift; sourceTree = "<group>"; };
 		187311552D71E766008C05F4 /* MiMicDYMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiMicDYMainViewController.swift; sourceTree = "<group>"; };
 		187311572D72BC2F008C05F4 /* MimicDYProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYProfileViewController.swift; sourceTree = "<group>"; };
 		1873115C2D730499008C05F4 /* MimicDYPanPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicDYPanPushAnimator.swift; sourceTree = "<group>"; };
@@ -315,6 +318,7 @@
 		18D8859F28A74FA00072DD36 /* LayoutSubviewsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoViewController.swift; sourceTree = "<group>"; };
 		18D885A228A750660072DD36 /* LayoutSubviewsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoView.swift; sourceTree = "<group>"; };
 		18D885A428A759290072DD36 /* LayoutSubviewsDemoSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSubviewsDemoSubViewController.swift; sourceTree = "<group>"; };
+		18DDDC972E30DE4F007A84A5 /* SlotsNumberDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsNumberDemoViewController.swift; sourceTree = "<group>"; };
 		18E99E1229951C860050874A /* AFNetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkingViewController.swift; sourceTree = "<group>"; };
 		18E99E15299671B40050874A /* JDownloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewController.swift; sourceTree = "<group>"; };
 		18E99E17299674930050874A /* JDownloaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDownloaderViewModel.swift; sourceTree = "<group>"; };
@@ -1090,6 +1094,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		18DDDC962E30DE31007A84A5 /* SlotsNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				18DDDC992E30DE58007A84A5 /* SlotsNumberView */,
+				18DDDC972E30DE4F007A84A5 /* SlotsNumberDemoViewController.swift */,
+			);
+			path = SlotsNumberView;
+			sourceTree = "<group>";
+		};
+		18DDDC992E30DE58007A84A5 /* SlotsNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				1872A6F22E3361EF00061998 /* SlotsNumberView.swift */,
+			);
+			path = SlotsNumberView;
+			sourceTree = "<group>";
+		};
 		18E99E1129951C5B0050874A /* AFNetworkingDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1286,6 +1307,7 @@
 		18F8021F2876CDC20070A3DA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				18DDDC962E30DE31007A84A5 /* SlotsNumberView */,
 				1873114D2D71E07E008C05F4 /* CustomViewTransitioning */,
 				188F37952C60BECA00DD96F7 /* System */,
 				18EE0B6B2BC684210039431E /* PopView */,
@@ -1535,6 +1557,7 @@
 				189B12C528EE809B00EA1F51 /* CellPackageCell.swift in Sources */,
 				18E99E1329951C860050874A /* AFNetworkingViewController.swift in Sources */,
 				18AE0DD12B3C0055002A410D /* PAGListTestViewController.swift in Sources */,
+				1872A6F32E3361EF00061998 /* SlotsNumberView.swift in Sources */,
 				039C8BDF28000684002624EB /* AppDelegate.swift in Sources */,
 				18631AA02AD3F26B008DF0AB /* TabBarDemoViewController.swift in Sources */,
 				18631A9E2AD3F23F008DF0AB /* CustomTabBarController.swift in Sources */,
@@ -1608,6 +1631,7 @@
 				1845986F2B31893700489885 /* ServiceManager.swift in Sources */,
 				188F57F62875B96C006DD570 /* HomeViewController.swift in Sources */,
 				18AE0DE32B3C057A002A410D /* ResourceDownloadError.swift in Sources */,
+				18DDDC982E30DE4F007A84A5 /* SlotsNumberDemoViewController.swift in Sources */,
 				1813ED6B2D7737B50004B6E1 /* MiMicDYVideoViewControllerTransitionAnimator.swift in Sources */,
 				18CC2E5D28DC9F4F00647E1F /* UIStackViewDemoViewController.swift in Sources */,
 				18AE0DD52B3C01F8002A410D /* Reusable.swift in Sources */,

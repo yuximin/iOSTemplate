@@ -28,6 +28,7 @@ PODS:
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - pop (1.0.12)
   - Protobuf (3.22.0)
   - RongCloudIM/ChatRoom (5.2.5.1):
     - RongCloudIM/IMLibCore
@@ -89,6 +90,7 @@ DEPENDENCIES:
   - libpag
   - LookinServer
   - Moya/RxSwift (~> 15.0)
+  - pop
   - RongCloudIM/IMKit (~> 5.2.5)
   - RxCocoa (= 6.5.0)
   - RxSwift (= 6.5.0)
@@ -111,6 +113,7 @@ SPEC REPOS:
     - libpag
     - LookinServer
     - Moya
+    - pop
     - Protobuf
     - RongCloudIM
     - RxCocoa
@@ -140,6 +143,7 @@ SPEC CHECKSUMS:
   libpag: 5abe80aba308e2aa7af4de69f0061aeaa81a3089
   LookinServer: 2893f2bae53cbf3fd49bbe1a8ea1745582ef1317
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
   RongCloudIM: 4e405c43e8f5699dc8431d3a513eeca31b7a99c2
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
@@ -155,6 +159,6 @@ SPEC CHECKSUMS:
   ZIKRouter: 4efb9f01b4adbd2e15b184f42c7788d60b91a6d2
   ZRouter: eece3cd9726f24839e0f522995e44045bfc71749
 
-PODFILE CHECKSUM: b0f0800df7213cbd6d917f7d11cb8eb3f7c16abf
+PODFILE CHECKSUM: be7613d3f13735e79d74d69a305f1df026ee6bf5
 
 COCOAPODS: 1.15.2

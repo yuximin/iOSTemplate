@@ -27,6 +27,8 @@ target 'iOSTemplate' do
   pod "BeeHive"
   pod 'ZRouter', '>= 1.0.12'
   pod 'Hero'
+  pod 'pop' # facebook动画库
+  
   pod 'XMKit', :source => 'https://github.com/yuximin/Specs.git'
   
   pod 'XDownloader', :path => 'Frameworks/XDownloader'
